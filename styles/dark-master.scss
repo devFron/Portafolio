@@ -10,3 +10,29 @@ body{
     background-color:var(--color-one);
     font-family:roboto;
 }
+.header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 1rem;
+    .header__logo{
+        width: 80px;
+    }
+    .nav{
+        .menu{
+            list-style: none;
+            padding:0;
+            margin:0;
+            display: flex;
+            .menu__item{
+                padding:5px;
+            }
+            .menu__link{
+                color:white;
+                font-weight: 500;
+                text-decoration: none;   
+                font-size:10px; 
+            }
+        }
+    }
+}
