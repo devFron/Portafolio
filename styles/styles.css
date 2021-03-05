@@ -366,3 +366,21 @@ body {
   color: black;
   font-weight: 500;
 }
+
+.main .main__title {
+  text-align: center;
+  font-size: 2rem;
+  margin: 1rem 0 0 0;
+}
+.main .proyects {
+  padding: 1rem 0 0 0;
+  display: flex;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 250px);
+  grid-gap: 1rem;
+}
+.main .proyects .proyect {
+  background-color: red;
+  height: 250px;
+}
