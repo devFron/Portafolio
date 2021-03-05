@@ -341,3 +341,28 @@ template {
 body {
   font-family: roboto;
 }
+
+.header {
+  background-color: #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+.header .header__title {
+  margin: 0;
+}
+.header .nav .menu {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.header .nav .menu .menu__item {
+  padding: 1rem;
+}
+.header .nav .menu .menu__link {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
