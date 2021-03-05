@@ -411,3 +411,25 @@ body {
   justify-content: center;
   border-radius: 100px;
 }
+
+.options .options__option {
+  display: grid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  padding: 1rem 0;
+}
+.options .options__option .option__title {
+  font-weight: 700;
+  font-size: 17px;
+  margin: 0;
+  padding: 1rem 0;
+}
+.options .options__option .option__description {
+  font-weight: 400;
+  text-align: center;
+  margin: 0;
+  padding: 0 0 1rem 0;
+}
