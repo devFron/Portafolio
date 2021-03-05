@@ -96,3 +96,36 @@ body{
         }
     }
 }
+.productive{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:2rem 1rem 2rem 1rem;
+    .productive__image{
+        width: 200px;
+    }
+    .productive__information{
+        color:white;
+        .productive__title{
+            font-size:16px;
+            font-weight: 700;
+            text-align:center;
+        }
+        .productive__description{
+            text-align: start;
+        }
+        .productive__link{
+            color:var(--color-five);
+            text-decoration: none;
+            position: relative;
+            &::before{
+                content: " ";
+                background-color:var(--color-five);
+                position: absolute;
+                top:100%;
+                width: 150px;
+                height: 2px;
+            }
+        }
+    }
+}

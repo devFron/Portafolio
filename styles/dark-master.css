@@ -433,3 +433,37 @@ body {
   margin: 0;
   padding: 0 0 1rem 0;
 }
+
+.productive {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem 2rem 1rem;
+}
+.productive .productive__image {
+  width: 200px;
+}
+.productive .productive__information {
+  color: white;
+}
+.productive .productive__information .productive__title {
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+}
+.productive .productive__information .productive__description {
+  text-align: start;
+}
+.productive .productive__information .productive__link {
+  color: var(--color-five);
+  text-decoration: none;
+  position: relative;
+}
+.productive .productive__information .productive__link::before {
+  content: " ";
+  background-color: var(--color-five);
+  position: absolute;
+  top: 100%;
+  width: 150px;
+  height: 2px;
+}
