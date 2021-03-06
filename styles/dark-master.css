@@ -518,6 +518,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  padding: 10rem 0 0 0;
 }
 .footer .email {
   background-color: var(--color-two);
@@ -525,6 +527,8 @@ body {
   padding: 2rem 0;
   width: 80%;
   box-shadow: 0 0 30px black;
+  position: absolute;
+  top: 0;
 }
 .footer .email .email__title {
   text-align: center;
@@ -552,7 +556,7 @@ body {
 .footer .footer__content {
   background-color: var(--color-three);
   color: white;
-  padding: 0 0 0 1rem;
+  padding: 15rem 0 0 1rem;
 }
 .footer .footer__content .footer__content__logo {
   width: 80px;
