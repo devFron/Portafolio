@@ -698,4 +698,21 @@ body {
   .header .nav .menu .menu__link:hover {
     text-decoration: underline;
   }
+
+  .main .your__files .your__files__image {
+    width: 550px;
+  }
+  .main .your__files .your__files__title {
+    font-size: 35px;
+  }
+  .main .your__files .your__files__description {
+    font-size: 27px;
+    padding: 0 38px;
+    line-height: 2rem;
+  }
+  .main .your__files .your__files__button {
+    font-size: 25px;
+    font-weight: 500;
+    height: 60px;
+  }
 }
