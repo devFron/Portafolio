@@ -726,6 +726,12 @@ body {
     font-size: 20px;
   }
 
+  .productive {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
   .productive .productive__image {
     width: auto;
   }
