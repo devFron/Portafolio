@@ -418,4 +418,17 @@ body{
             }
         }
     }
+    .productive{
+        .productive__image{
+            width: auto;
+        }
+        .productive__information{
+            .productive__title{
+                font-size:35px;
+            }
+            .productive__description{
+                font-size:25px;
+            }
+        }
+    }
 }

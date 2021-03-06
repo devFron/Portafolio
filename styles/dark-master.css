@@ -725,4 +725,14 @@ body {
   .options .options__option .option__description {
     font-size: 20px;
   }
+
+  .productive .productive__image {
+    width: auto;
+  }
+  .productive .productive__information .productive__title {
+    font-size: 35px;
+  }
+  .productive .productive__information .productive__description {
+    font-size: 25px;
+  }
 }
