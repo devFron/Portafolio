@@ -431,4 +431,15 @@ body{
             }
         }
     }
+    .comments{
+        grid-template-columns: repeat(3,450px);
+        grid-template-rows: 1fr;
+        #comment-three{
+            grid-column:auto;
+            grid-row: auto;
+            #comment-text-three{
+                text-align: start;
+            }
+        }
+    }
 }

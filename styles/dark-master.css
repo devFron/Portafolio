@@ -735,4 +735,16 @@ body {
   .productive .productive__information .productive__description {
     font-size: 25px;
   }
+
+  .comments {
+    grid-template-columns: repeat(3, 450px);
+    grid-template-rows: 1fr;
+  }
+  .comments #comment-three {
+    grid-column: auto;
+    grid-row: auto;
+  }
+  .comments #comment-three #comment-text-three {
+    text-align: start;
+  }
 }
