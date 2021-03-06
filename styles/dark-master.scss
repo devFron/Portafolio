@@ -324,4 +324,23 @@ body{
        display:grid;
        grid-template-columns:repeat(2,1fr);
    }
+   .productive{
+       .productive__image{
+           width:400px;
+       }
+       .productive__information{
+           .productive__title{
+               font-size:25px;
+           }
+           .productive__description{
+               font-size:18px;
+           }
+           .productive__link{
+               font-size:20px;
+               &::before{
+                   width:200px;
+               }
+           }
+       }
+   }
 }

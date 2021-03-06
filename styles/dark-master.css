@@ -651,4 +651,20 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .productive .productive__image {
+    width: 400px;
+  }
+  .productive .productive__information .productive__title {
+    font-size: 25px;
+  }
+  .productive .productive__information .productive__description {
+    font-size: 18px;
+  }
+  .productive .productive__information .productive__link {
+    font-size: 20px;
+  }
+  .productive .productive__information .productive__link::before {
+    width: 200px;
+  }
 }
