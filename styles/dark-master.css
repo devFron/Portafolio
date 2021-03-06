@@ -693,6 +693,13 @@ body {
   .comments #comment-three #comment-text-three {
     text-align: center;
   }
+
+  .footer {
+    width: 100%;
+  }
+  .footer .footer__content {
+    width: 98%;
+  }
 }
 @media screen and (min-width: 1000px) {
   .header .nav .menu .menu__link:hover {
@@ -743,7 +750,7 @@ body {
   }
 
   .comments {
-    grid-template-columns: repeat(3, 450px);
+    grid-template-columns: repeat(3, 400px);
     grid-template-rows: 1fr;
   }
   .comments #comment-three {
@@ -767,9 +774,9 @@ body {
     height: 40px;
   }
   .footer .footer__content {
-    width: 99%;
+    width: 98.8%;
     display: grid;
-    grid-template-columns: 850px 1fr 1fr;
+    grid-template-columns: 800px 1fr 1fr;
   }
   .footer .footer__content .footer__content__logo {
     position: absolute;

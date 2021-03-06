@@ -374,6 +374,12 @@ body{
            }
        }
    }
+   .footer{
+       width: 100%;
+       .footer__content{
+           width: 98%;
+       }
+   }
 }
 @media screen and (min-width:1000px){
     .header{
@@ -436,7 +442,7 @@ body{
         }
     }
     .comments{
-        grid-template-columns: repeat(3,450px);
+        grid-template-columns: repeat(3,400px);
         grid-template-rows: 1fr;
         #comment-three{
             grid-column:auto;
@@ -464,9 +470,9 @@ body{
             }
         }
         .footer__content{
-            width: 99%;
+            width: 98.8%;
             display:grid;
-            grid-template-columns:850px 1fr 1fr ;
+            grid-template-columns:800px 1fr 1fr ;
             .footer__content__logo{
                 position: absolute;
             }
