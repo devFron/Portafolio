@@ -513,3 +513,102 @@ body {
   font-size: 12px;
   padding: 1rem 0 0 0;
 }
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer .email {
+  background-color: var(--color-two);
+  color: white;
+  padding: 2rem 0;
+  width: 80%;
+  box-shadow: 0 0 30px black;
+}
+.footer .email .email__title {
+  text-align: center;
+}
+.footer .email .email__description {
+  text-align: center;
+}
+.footer .email .form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer .email .form .input {
+  width: 80%;
+  height: 40px;
+  margin: 1rem;
+  border-radius: 30px;
+  border: none;
+}
+.footer .email .form #send {
+  background-color: var(--color-four);
+  color: white;
+  font-weight: 500;
+}
+.footer .footer__content {
+  background-color: var(--color-three);
+  color: white;
+  padding: 0 0 0 1rem;
+}
+.footer .footer__content .footer__content__logo {
+  width: 80px;
+}
+.footer .footer__content .footer__content__contact .menu__contact {
+  padding: 0;
+  list-style: none;
+}
+.footer .footer__content .footer__content__contact .menu__contact .menu__item__contact {
+  padding: 1rem 1rem 1rem 0;
+}
+.footer .footer__content .footer__content__contact .menu__contact .menu__icon__contact {
+  padding: 0 1rem 0 0;
+}
+.footer .footer__content .menu__options__aboutus {
+  list-style: none;
+  padding: 0;
+}
+.footer .footer__content .menu__options__aboutus .menu__options__item {
+  padding: 1rem 0;
+}
+.footer .footer__content .menu__options__aboutus .menu__options__link {
+  color: white;
+  text-decoration: none;
+}
+.footer .footer__content .menu__options__aboutus .menu__options__link:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+.footer .footer__content .menu__options__contactus {
+  list-style: none;
+  padding: 0;
+}
+.footer .footer__content .menu__options__contactus .menu__options__contact__item {
+  padding: 1rem 0;
+}
+.footer .footer__content .menu__options__contactus .menu__options__contact__link {
+  color: white;
+  text-decoration: none;
+}
+.footer .footer__content .social-media .menu__social-media {
+  padding: 0;
+  list-style: none;
+}
+.footer .footer__content .social-media .menu__social-media .menu__social-media__items {
+  padding: 10px;
+}
+.footer .footer__content .social-media .menu__social-media .menu__social-media__link {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  border: 2px solid var(--color-five);
+  color: var(--color-five);
+  font-size: 25px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
