@@ -630,4 +630,19 @@ body {
   .header .nav .menu .menu__link {
     font-size: 20px;
   }
+
+  .main .your__files .your__files__image {
+    width: 400px;
+  }
+  .main .your__files .your__files__title {
+    font-size: 25px;
+  }
+  .main .your__files .your__files__description {
+    font-size: 20px;
+    padding: 0 1rem;
+  }
+  .main .your__files .your__files__button {
+    width: 300px;
+    height: 40px;
+  }
 }
