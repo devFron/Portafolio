@@ -442,4 +442,51 @@ body{
             }
         }
     }
+    .footer{
+        .email{
+            .email__title{
+                font-size:30px;
+                font-weight: 700;
+            }
+            .email__description{
+                font-size:20px;
+                font-weight: 500;
+            }
+            .form{
+                .input{
+                    width: 50%;
+                    height: 40px;
+                }
+            }
+        }
+        .footer__content{
+            width: 99%;
+            display:grid;
+            grid-template-columns:850px 1fr 1fr ;
+            .footer__content__logo{
+                position: absolute;
+            }
+            .footer__content__contact{
+                .menu__contact{
+                    display:grid;
+                    grid-template-columns:1fr 200px;
+                    #menu-item-contact-phone{
+                        grid-column:2/3;
+                    }
+                }
+            }
+            .footer__content__options{
+                display:flex;
+                justify-content: center;
+                display:grid;
+                grid-template-columns: repeat(2,100px);
+            }
+            .social-media{
+                .menu__social-media{
+                    display:flex;
+                    justify-content: center;
+                }
+            }
+        }
+    }
 }

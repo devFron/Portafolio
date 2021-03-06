@@ -747,4 +747,42 @@ body {
   .comments #comment-three #comment-text-three {
     text-align: start;
   }
+
+  .footer .email .email__title {
+    font-size: 30px;
+    font-weight: 700;
+  }
+  .footer .email .email__description {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .footer .email .form .input {
+    width: 50%;
+    height: 40px;
+  }
+  .footer .footer__content {
+    width: 99%;
+    display: grid;
+    grid-template-columns: 850px 1fr 1fr;
+  }
+  .footer .footer__content .footer__content__logo {
+    position: absolute;
+  }
+  .footer .footer__content .footer__content__contact .menu__contact {
+    display: grid;
+    grid-template-columns: 1fr 200px;
+  }
+  .footer .footer__content .footer__content__contact .menu__contact #menu-item-contact-phone {
+    grid-column: 2/3;
+  }
+  .footer .footer__content .footer__content__options {
+    display: flex;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+  }
+  .footer .footer__content .social-media .menu__social-media {
+    display: flex;
+    justify-content: center;
+  }
 }
