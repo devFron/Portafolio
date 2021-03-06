@@ -407,4 +407,15 @@ body{
             }
         }
     }
+    .options{
+        padding:0 2rem;
+        .options__option{
+            .option__title{
+                font-size:25px;
+            }
+            .option__description{
+                font-size:20px;
+            }
+        }
+    }
 }
