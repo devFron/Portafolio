@@ -667,4 +667,30 @@ body {
   .productive .productive__information .productive__link::before {
     width: 200px;
   }
+
+  .comments {
+    grid-template-columns: repeat(2, 350px);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 1rem;
+  }
+  .comments .comment .comment__text {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .comments .comment .comment__user .comment__user__data .comment__user__data__name {
+    font-size: 20px;
+  }
+  .comments .comment .comment__user .comment__user__data .comment__user__data__position {
+    font-size: 16px;
+  }
+  .comments #comment-three {
+    grid-row: 2/3;
+    grid-column: 1/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .comments #comment-three #comment-text-three {
+    text-align: center;
+  }
 }
