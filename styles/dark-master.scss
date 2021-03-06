@@ -375,3 +375,16 @@ body{
        }
    }
 }
+@media screen and (min-width:1000px){
+    .header{
+        .nav{
+            .menu{
+                .menu__link{
+                    &:hover{
+                        text-decoration:underline;
+                    }
+                }
+            }
+        }
+    }
+}
