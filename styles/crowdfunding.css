@@ -533,26 +533,17 @@ body {
   margin: 0;
   padding: 1rem 0 0 1rem;
 }
-.project .project__cards .project__card .card__title {
-  color: #7d7d7d;
-}
 .project .project__cards .project__card .proyect__card__price {
   color: #3bb4ab;
   font-weight: 500;
   margin: 0;
   padding: 1rem 0 0 1rem;
 }
-.project .project__cards .project__card .card__price__disable {
-  color: #3bb4ac44;
-}
 .project .project__cards .project__card .proyect__card__description {
   color: #7d7d7d;
   font-weight: 500;
   padding: 0 0 0 1rem;
   line-height: 25px;
-}
-.project .project__cards .project__card .card__description {
-  color: #7d7d7d65;
 }
 .project .project__cards .project__card .proyect__card__number {
   font-weight: 700;
@@ -562,18 +553,12 @@ body {
   display: flex;
   align-items: center;
 }
-.project .project__cards .project__card .card-number {
-  color: #7d7d7d5e;
-}
 .project .project__cards .project__card .proyect__card__number-direction {
   font-weight: 500;
   color: #7d7d7d;
   font-size: 1rem;
   margin: 0;
   padding: 0 0 0 1rem;
-}
-.project .project__cards .project__card .number-direction__desable {
-  color: #7d7d7d5e;
 }
 .project .project__cards .project__card .proyect__card__button {
   background-color: #3bb4ab;
@@ -587,9 +572,6 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0 0 1rem 1rem;
-}
-.project .project__cards .project__card .card__button__disable {
-  background-color: #c4c4c4;
 }
 .project .project__cards #proyect-card-three {
   margin-bottom: 1rem;
