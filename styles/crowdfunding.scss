@@ -126,6 +126,9 @@ body{
     background-color:white;
     width: 90%;
     margin:auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
     .total{
         .totals__item{
             height:100px;
@@ -146,6 +149,112 @@ body{
         #totals-item-two{
             border-top:1px solid #eee;
             border-bottom:1px solid #eee;
+        }
+    }
+    .bar{
+        width: 85%;
+        height: 15px;
+        background-color:#eee;
+        border-radius: 20px;
+        margin:0 0 1rem 0;
+        .bar__color{
+            background-color:#3bb4ab;
+            height: 100%;
+            width: 70%;
+            border-radius: 20px;
+        }
+    }
+}
+.project{
+    width: 90%;
+    margin:auto;
+    background-color:white ;
+    .proyect__title{
+        font-weight: 700;
+        padding:1rem 0 0 1rem ;
+    }
+    .proyect__description{
+        color:#c4c4c4;
+        font-weight: 500;
+        line-height: 20px;
+        padding:0 0 0 1rem ;
+    }
+    .project__cards{
+        display:grid;
+        grid-template-rows: repeat(3,1fr);
+        grid-gap:1rem;
+        .project__card{
+            border:1px solid #c4c4c4;
+            width: 90%;
+            margin:auto;
+            border-radius: 10px;
+            .proyect__card__title{
+                font-weight: 700;
+                margin:0;
+                padding:1rem 0 0  1rem;
+            }
+            .card__title{
+                color:#7d7d7d;
+            }
+            .proyect__card__price{
+                color:#3bb4ab;
+                font-weight: 500;
+                margin:0;
+                padding:1rem 0 0  1rem;
+                
+            }
+            .card__price__disable{
+                color:#3bb4ac44;
+            }
+            .proyect__card__description{
+                color: #7d7d7d;
+                font-weight: 500;
+                padding:0 0 0  1rem;
+                line-height: 25px;
+            }
+            .card__description{
+                color: #7d7d7d65;
+            }
+            .proyect__card__number{
+                font-weight: 700;
+                font-size:2rem;
+                margin:0;
+                padding:0 0 1rem  1rem;
+                display:flex;
+                align-items: center;
+            }
+            .card-number{
+                color: #7d7d7d5e;
+            }
+            .proyect__card__number-direction{
+                font-weight: 500;
+                color: #7d7d7d;
+                font-size:1rem;
+                margin:0;
+                padding:0 0 0 1rem;
+            }
+            .number-direction__desable{
+                color: #7d7d7d5e;
+            }
+            .proyect__card__button{
+                background-color: #3bb4ab;
+                text-decoration: none;
+                color:white;
+                display:inline-block;
+                width: 70%;
+                height: 45px;
+                border-radius:20px;
+                display:flex;
+                justify-content: center;
+                align-items:center;
+                margin:0 0 1rem  1rem;
+            }
+            .card__button__disable{
+                background-color: #c4c4c4;
+            }
+        }
+        #proyect-card-three{
+            margin-bottom:1rem;
         }
     }
 }
