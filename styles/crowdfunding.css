@@ -340,6 +340,7 @@ template {
 
 body {
   font-family: roboto;
+  background-color: #eee;
 }
 
 .header {
@@ -352,6 +353,7 @@ body {
   position: relative;
   height: 35vh;
   padding: 1rem;
+  margin: 0 0 15rem 0;
 }
 .header .nav {
   color: white;
@@ -401,9 +403,9 @@ body {
   display: block;
 }
 .header .mastercraft {
+  padding: 1rem 0;
   position: absolute;
   background-color: white;
-  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.377);
   display: flex;
   flex-direction: column;
   align-items: center;
