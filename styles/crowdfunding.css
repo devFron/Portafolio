@@ -577,6 +577,30 @@ body {
   margin-bottom: 1rem;
 }
 
+.card__title {
+  color: #7d7d7d;
+}
+
+.card__price__disable {
+  color: #3bb4ac44;
+}
+
+.card__description {
+  color: #7d7d7d65;
+}
+
+.card-number {
+  color: #7d7d7d5e;
+}
+
+.number-direction__desable {
+  color: #7d7d7d5e;
+}
+
+.card__button__disable {
+  background-color: #c4c4c4;
+}
+
 @media screen and (min-width: 1000px) {
   .header {
     background-image: url(../resources/images/crowdfunding/image-hero-desktop.jpg);
@@ -692,5 +716,29 @@ body {
   }
   .project .project__cards .proyect__card__bottom .proyect__card__number {
     padding: 0 0 0 1rem;
+  }
+
+  .card__title {
+    color: #7d7d7d;
+  }
+
+  .card__price__disable {
+    color: #3bb4ac44;
+  }
+
+  .card__description {
+    color: #7d7d7d65;
+  }
+
+  .card-number {
+    color: #7d7d7d5e;
+  }
+
+  .number-direction__desable {
+    color: #7d7d7d5e;
+  }
+
+  .card__button__disable {
+    background-color: #c4c4c4;
   }
 }
