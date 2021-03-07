@@ -670,4 +670,16 @@ body {
   .totals .bar {
     margin: 1rem 0 1rem 0;
   }
+
+  .project {
+    width: 70%;
+  }
+  .project .proyect__title {
+    font-size: 25px;
+  }
+  .project .proyect__description {
+    font-size: 20px;
+    padding-right: 1rem;
+    line-height: 25px;
+  }
 }
