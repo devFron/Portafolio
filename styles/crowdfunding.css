@@ -459,3 +459,29 @@ body {
 .header .mastercraft .buttons .button__check__box .button__check__desctiption {
   display: none;
 }
+
+.totals {
+  background-color: white;
+  width: 90%;
+  margin: auto;
+}
+.totals .total .totals__item {
+  height: 100px;
+}
+.totals .total .totals__diner {
+  font-weight: 700;
+  font-size: 2rem;
+  margin: 0;
+  padding: 1rem 0;
+  text-align: center;
+}
+.totals .total .totals__diner__description {
+  font-size: 17px;
+  color: #7d7d7d;
+  text-align: center;
+  margin: 0;
+}
+.totals .total #totals-item-two {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
