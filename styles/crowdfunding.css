@@ -360,7 +360,7 @@ body {
 }
 .header .nav .menu__icon {
   font-size: 25px;
-  z-index: 999;
+  z-index: 800;
   position: absolute;
   right: 1rem;
   top: 1rem;
@@ -579,6 +579,130 @@ body {
 }
 .project .project__cards #proyect-card-three {
   margin-bottom: 1rem;
+}
+
+.modal-default {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 1rem;
+  right: 1rem;
+  z-index: 850;
+  box-shadow: 0 0 300px black;
+}
+.modal-default .moda-icon {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  color: #7d7d7d;
+}
+.modal-default .modal__top .modal__top__title {
+  font-weight: 700;
+  font-size: 18px;
+  padding: 1rem;
+  margin: 0;
+}
+.modal-default .modal__top .modal__top__description {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #7d7d7d;
+  margin: 0;
+  padding: 0 1rem 0 1rem;
+}
+.modal-default .back-cards {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+}
+.modal-default .back-cards .back-card {
+  border: 2px solid #eee;
+  width: 90%;
+  margin: auto;
+  border-radius: 10px;
+  padding: 0 0 1rem 0;
+}
+.modal-default .back-cards .back-card .back-card__top {
+  display: flex;
+  align-items: center;
+}
+.modal-default .back-cards .back-card .back-card__top .circle {
+  margin: 0 0 0 10px;
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  border: 1px solid #c4c4c4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #3bb4ab;
+}
+.modal-default .back-cards .back-card .back-card__top .circle .circle-icon {
+  display: none;
+}
+.modal-default .back-cards .back-card .back-card__top .circle .circle-icon__enabled {
+  display: block;
+}
+.modal-default .back-cards .back-card .back-card__top .back-card__title {
+  font-weight: 700;
+  font-size: 15px;
+  padding: 0 0 0 1rem;
+  color: black;
+}
+.modal-default .back-cards .back-card .back-card__title {
+  color: #686868;
+  padding: 0 1rem;
+  line-height: 25px;
+}
+.modal-default .back-cards .back-card-ofert {
+  border: 2px solid #eee;
+  width: 90%;
+  margin: auto;
+  border-radius: 10px;
+  padding: 1rem 0 1rem 0;
+  position: relative;
+}
+.modal-default .back-cards .back-card-ofert .circle {
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1rem;
+  border: 1px solid #c4c4c4;
+  color: #3bb4ab;
+}
+.modal-default .back-cards .back-card-ofert .circle .circle-icon {
+  display: none;
+}
+.modal-default .back-cards .back-card-ofert .back-card__text__ofert {
+  display: flex;
+  align-items: center;
+}
+.modal-default .back-cards .back-card-ofert .back-card__text__ofert .back-card__title__ofert {
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.modal-default .back-cards .back-card-ofert .back-card__text__ofert .back-card__price {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  padding: 10px 0 0 0;
+  color: #3bb4ab;
+  font-weight: 500;
+}
+.modal-default .back-cards .back-card-ofert .back-card__text__ofert .back-card__price__number {
+  position: absolute;
+  bottom: -10px;
+  left: 1rem;
+}
+.modal-default .back-cards .back-card-ofert .back-card__title___ofert {
+  color: #686868;
+  font-weight: 500;
+  padding: 0 1rem;
+  line-height: 25px;
 }
 
 .card__title {
