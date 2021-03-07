@@ -682,4 +682,33 @@ body {
     padding-right: 1rem;
     line-height: 25px;
   }
+  .project .project__cards {
+    padding-right: 1rem;
+  }
+  .project .project__cards .proyect__card__head {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem 0 0;
+  }
+  .project .project__cards .proyect__card__head .proyect__card__title {
+    font-size: 20px;
+  }
+  .project .project__cards .proyect__card__head .proyect__card__price {
+    font-size: 20px;
+  }
+  .project .project__cards .proyect__card__description {
+    font-size: 20px;
+  }
+  .project .project__cards .proyect__card__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .project .project__cards .proyect__card__bottom .proyect__card__button {
+    width: 30%;
+    margin: 0 1rem 1rem 0;
+  }
+  .project .project__cards .proyect__card__bottom .proyect__card__number {
+    padding: 0 0 0 1rem;
+  }
 }
