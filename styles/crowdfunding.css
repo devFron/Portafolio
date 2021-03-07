@@ -599,6 +599,7 @@ body {
   .header {
     background-image: url(../resources/images/crowdfunding/image-hero-desktop.jpg);
     height: 55vh;
+    margin: 0 0 10rem 0;
   }
   .header .nav .menu__icon {
     display: none;
@@ -650,5 +651,23 @@ body {
     display: block;
     font-weight: 500;
     color: #7d7d7d;
+  }
+
+  .totals {
+    width: 70%;
+  }
+  .totals .total {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0;
+    width: 100%;
+  }
+  .totals .total #totals-item-two {
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+    border-bottom: none;
+  }
+  .totals .bar {
+    margin: 1rem 0 1rem 0;
   }
 }
