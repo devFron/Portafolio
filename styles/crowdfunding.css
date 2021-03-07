@@ -337,3 +337,123 @@ template {
 [hidden] {
   display: none;
 }
+
+body {
+  font-family: roboto;
+}
+
+.header {
+  background-image: url(../resources/images/crowdfunding/image-hero-mobile.jpg);
+  background-size: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  height: 35vh;
+  padding: 1rem;
+}
+.header .nav {
+  color: white;
+}
+.header .nav .menu__icon {
+  font-size: 25px;
+}
+.header .nav .menu {
+  display: none;
+  z-index: 999;
+  list-style: none;
+  color: white;
+  background-color: white;
+  padding: 0;
+  margin: 0;
+  font-weight: 700;
+  position: absolute;
+  top: 5rem;
+  left: 2rem;
+  right: 2rem;
+  border-radius: 5px;
+}
+.header .nav .menu .menu__item {
+  padding: 1rem 0 1rem 1rem;
+}
+.header .nav .menu .menu__link {
+  color: black;
+  text-decoration: none;
+}
+.header .nav .menu #menu-item-discover {
+  border: 1px solid #eee;
+}
+.header .nav .menu__active {
+  display: block;
+}
+.header .modal-color {
+  background-color: rgba(0, 0, 0, 0.377);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  z-index: 888;
+  display: none;
+}
+.header .modal-color__active {
+  display: block;
+}
+.header .mastercraft {
+  position: absolute;
+  background-color: white;
+  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.377);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 70%;
+  left: 1rem;
+  right: 1rem;
+}
+.header .mastercraft .mastercraft__title {
+  text-align: center;
+  font-size: 19px;
+  padding: 0 1rem;
+}
+.header .mastercraft .matercraft__description {
+  text-align: center;
+}
+.header .mastercraft .buttons {
+  display: flex;
+  align-items: center;
+}
+.header .mastercraft .buttons .button__porject {
+  background-color: #3bb4ab;
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  width: 160px;
+  text-align: center;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  font-size: 16px;
+  margin: 0 1rem 0 0;
+}
+.header .mastercraft .buttons .button__check__box {
+  display: flex;
+  align-items: center;
+}
+.header .mastercraft .buttons .button__check__box .button__check {
+  background-color: black;
+  width: 40px;
+  height: 40px;
+  color: white;
+  display: inline-block;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 2px 0 0;
+}
+.header .mastercraft .buttons .button__check__box .button__check__desctiption {
+  display: none;
+}
