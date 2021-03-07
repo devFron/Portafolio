@@ -360,10 +360,14 @@ body {
 }
 .header .nav .menu__icon {
   font-size: 25px;
+  z-index: 999;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
 }
 .header .nav .menu {
   display: none;
-  z-index: 999;
+  z-index: 800;
   list-style: none;
   color: white;
   background-color: white;
@@ -396,7 +400,7 @@ body {
   left: 0;
   right: 0;
   height: 100vh;
-  z-index: 888;
+  z-index: 700;
   display: none;
 }
 .header .modal-color__active {
