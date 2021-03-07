@@ -6,6 +6,8 @@ export const Menu = ( )=>{
         if(e.target === $menuIcon){
             $menu.classList.toggle('menu__active')
             $modalColor.classList.toggle('modal-color__active')
+            $menuIcon.classList.toggle('fa-times')
+            $menuIcon.classList.toggle('fa-bars')
         }
     })
 
