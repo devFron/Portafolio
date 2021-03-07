@@ -596,6 +596,10 @@ body {
 }
 
 @media screen and (min-width: 1000px) {
+  .header {
+    background-image: url(../resources/images/crowdfunding/image-hero-desktop.jpg);
+    height: 55vh;
+  }
   .header .nav .menu__icon {
     display: none;
   }
@@ -617,5 +621,34 @@ body {
   }
   .header .nav .menu #menu-item-discover {
     border: none;
+  }
+  .header .mastercraft {
+    width: 70%;
+    margin: auto;
+  }
+  .header .mastercraft .mastercraft__title {
+    font-size: 2rem;
+  }
+  .header .mastercraft .matercraft__description {
+    font-size: 18px;
+    color: #7d7d7d;
+    margin: 0 0 1rem 0;
+  }
+  .header .mastercraft .buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+  }
+  .header .mastercraft .buttons .button__porject {
+    width: 250px;
+    border-radius: 30px;
+    height: 55px;
+    font-size: 23px;
+    margin: 0;
+  }
+  .header .mastercraft .buttons .button__check__box .button__check__desctiption {
+    display: block;
+    font-weight: 500;
+    color: #7d7d7d;
   }
 }

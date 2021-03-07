@@ -260,6 +260,8 @@ body{
 }
 @media screen and (min-width:1000px){
     .header{
+        background-image: url(../resources/images/crowdfunding/image-hero-desktop.jpg);
+        height: 55vh;
         .nav{
             .menu__icon{
                 display:none;
@@ -283,7 +285,37 @@ body{
                     border:none;
                 }
             }
-           
+        }
+        .mastercraft{
+            width: 70%;
+            margin:auto;
+            .mastercraft__title{
+                font-size:2rem;
+            }
+            .matercraft__description{
+                font-size:18px;
+                color:#7d7d7d;
+                margin:0 0 1rem 0;
+            }
+            .buttons{
+                display: flex;
+                justify-content: space-between;
+                width: 80%;
+                .button__porject{
+                    width: 250px;
+                    border-radius:30px;
+                    height: 55px;
+                    font-size:23px;
+                    margin:0;
+                }
+                .button__check__box{
+                    .button__check__desctiption{
+                        display:block;
+                        font-weight: 500;
+                        color:#7d7d7d;
+                    }
+                }
+            }
         }
     }
 }
