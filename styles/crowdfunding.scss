@@ -258,3 +258,32 @@ body{
         }
     }
 }
+@media screen and (min-width:1000px){
+    .header{
+        .nav{
+            .menu__icon{
+                display:none;
+            }
+            .menu{
+                display: block;
+                top:0;
+                right:1rem;
+                left:auto;
+                width: auto;
+                display: flex;
+                background-color:transparent;
+                .menu__item{
+                    padding:1rem;
+                }
+                .menu__link{
+                    text-align: center;
+                    color:white;
+                }
+                #menu-item-discover{
+                    border:none;
+                }
+            }
+           
+        }
+    }
+}

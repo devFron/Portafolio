@@ -594,3 +594,28 @@ body {
 .project .project__cards #proyect-card-three {
   margin-bottom: 1rem;
 }
+
+@media screen and (min-width: 1000px) {
+  .header .nav .menu__icon {
+    display: none;
+  }
+  .header .nav .menu {
+    display: block;
+    top: 0;
+    right: 1rem;
+    left: auto;
+    width: auto;
+    display: flex;
+    background-color: transparent;
+  }
+  .header .nav .menu .menu__item {
+    padding: 1rem;
+  }
+  .header .nav .menu .menu__link {
+    text-align: center;
+    color: white;
+  }
+  .header .nav .menu #menu-item-discover {
+    border: none;
+  }
+}
