@@ -114,7 +114,11 @@ export const  menuDefaul = ()=>{
     
 
 
-
+    document.addEventListener('click',(e)=>{
+        if (e.target.matches('.moda-icon')) {
+            modalDefaul.classList.toggle('modal-default__disabled')
+        }
+    })
 
     
 }
