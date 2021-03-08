@@ -43,6 +43,7 @@ export const  menuDefaul = ()=>{
 
     let $circle = document.createElement('div')
     $circle.classList.add('circle')
+    $circle.setAttribute('id','cirlce-one')
 
     let $circleIcon = document.createElement('i')
     $circleIcon.classList.add('fas')
@@ -118,7 +119,7 @@ export const  menuDefaul = ()=>{
 
     let $circleTwo = document.createElement('div')
     $circleTwo.classList.add('circle')
-
+    $circleTwo.setAttribute('id','circle-two')
     let $circleIconTwo = document.createElement('i')
     $circleIconTwo.classList.add('fas')
     $circleIconTwo.classList.add('fa-check')
@@ -167,6 +168,7 @@ export const  menuDefaul = ()=>{
 
     let $circleThree = document.createElement('div')
     $circleThree.classList.add('circle')
+    $circleThree.setAttribute('id','circle-three')
 
     let $circleIconThree = document.createElement('i')
     $circleIconThree.classList.add('fas')
