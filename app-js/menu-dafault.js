@@ -49,6 +49,7 @@ export const  menuDefaul = ()=>{
     $circleIcon.classList.add('fas')
     $circleIcon.classList.add('fa-check')
     $circleIcon.classList.add('circle-icon')
+    $circleIcon.setAttribute('id','circle-icon-one')
     $circle.appendChild($circleIcon)
 
 
@@ -124,6 +125,7 @@ export const  menuDefaul = ()=>{
     $circleIconTwo.classList.add('fas')
     $circleIconTwo.classList.add('fa-check')
     $circleIconTwo.classList.add('circle-icon')
+    $circleIconTwo.setAttribute('id','circle-icon-two')
     $circleTwo.appendChild($circleIconTwo)
 
     let $backCardOfertTitleTwo = document.createElement('p')
@@ -174,6 +176,7 @@ export const  menuDefaul = ()=>{
     $circleIconThree.classList.add('fas')
     $circleIconThree.classList.add('fa-check')
     $circleIconThree.classList.add('circle-icon')
+    $circleIconThree.setAttribute('id','circle-icon-three')
     $circleThree.appendChild($circleIconThree)
 
     let $backCardOfertTitleThree = document.createElement('p')
@@ -214,11 +217,25 @@ export const  menuDefaul = ()=>{
     Fragment.appendChild(modalDefaul)
     $body.appendChild(Fragment)
     
-
-
+    let $circleOneNode = document.querySelector('#cirlce-one')
+    let $circleTwoNode = document.querySelector('#circle-two')
+    let $circleThreeNode = document.querySelector('#circle-three')
+    let $circleIconNode = document.querySelector('#circle-icon-one')
+    let $circleIconNodeTwo = document.querySelector('#circle-icon-two')
+    let $circleIconNodeTrhee = document.querySelector('#circle-icon-three')
+    
     document.addEventListener('click',(e)=>{
         if (e.target.matches('.moda-icon')) {
             modalDefaul.classList.toggle('modal-default__disabled')
+        }
+        if (e.target === $circleOneNode || e.target === $circleIconNode) {
+            $circleIconNode.classList.toggle('circle-icon__active')
+        }
+        if ( e.target === $circleTwoNode || e.target === $circleIconNodeTwo) {
+            $circleIconNodeTwo.classList.toggle('circle-icon__active')
+        }
+        if (e.target === $circleThreeNode || e.target == $circleIconNodeTrhee) {
+            $circleIconNodeTrhee.classList.toggle('circle-icon__active')
         }
     })
 

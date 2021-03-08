@@ -675,6 +675,9 @@ body {
 .modal-default .back-cards .back-card-ofert .circle .circle-icon {
   display: none;
 }
+.modal-default .back-cards .back-card-ofert .circle .circle-icon__active {
+  display: block;
+}
 .modal-default .back-cards .back-card-ofert .back-card__text__ofert {
   display: flex;
   align-items: center;

@@ -338,6 +338,9 @@ body{
                 .circle-icon{
                     display:none;
                 }
+                .circle-icon__active{
+                    display:block;
+                }
             }
             .back-card__text__ofert{
                 display:flex;
