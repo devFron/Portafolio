@@ -648,7 +648,7 @@ body {
   padding: 0 0 0 1rem;
   color: black;
 }
-.modal-default .back-cards .back-card .back-card__title {
+.modal-default .back-cards .back-card .back-card__description {
   color: #686868;
   padding: 0 1rem;
   line-height: 25px;
@@ -698,11 +698,15 @@ body {
   bottom: -10px;
   left: 1rem;
 }
-.modal-default .back-cards .back-card-ofert .back-card__title___ofert {
+.modal-default .back-cards .back-card-ofert .back-card__description___ofert {
   color: #686868;
   font-weight: 500;
   padding: 0 1rem;
-  line-height: 25px;
+  line-height: 25p;
+}
+
+.modal-default__disabled {
+  display: none;
 }
 
 .card__title {
