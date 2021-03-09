@@ -963,4 +963,10 @@ body {
     padding: 0;
     top: 0;
   }
+  .modal-default .back-cards .back-card-ofert .back-card__ofert__buy__enabled {
+    justify-content: space-between;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+  }
 }

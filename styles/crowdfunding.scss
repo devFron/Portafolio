@@ -593,7 +593,12 @@ body{
                         top:0;
                     }
                 }
-                // .back-card__description___ofert{}
+                .back-card__ofert__buy__enabled{
+                    justify-content: space-between;
+                    padding:0 1rem;
+                    display:flex;
+                    align-items: center;
+                }
             }
         }
     }
