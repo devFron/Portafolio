@@ -752,6 +752,9 @@ body {
   color: white;
   letter-spacing: 2px;
 }
+.modal-default .back-cards .back-card-ofert__focus {
+  border: 1px solid #3bb4ab;
+}
 
 .modal-default__disabled {
   display: none;

@@ -315,14 +315,17 @@ export const  menuDefaul = ()=>{
         if (e.target === $circleOneNode || e.target === $circleIconNode) {
             $circleIconNode.classList.toggle('circle-icon__active')
             $backCardOfertBuy.classList.toggle('back-card__ofert__buy__enabled')
+            $backCardOfert.classList.toggle('back-card-ofert__focus')
         }
         if ( e.target === $circleTwoNode || e.target === $circleIconNodeTwo) {
             $circleIconNodeTwo.classList.toggle('circle-icon__active')
             $backCardOfertBuyTwo.classList.toggle('back-card__ofert__buy__enabled')
+            $backCardOfertTwo.classList.toggle('back-card-ofert__focus')
         }
         if (e.target === $circleThreeNode || e.target == $circleIconNodeTrhee) {
             $circleIconNodeTrhee.classList.toggle('circle-icon__active')
             $backCardOfertBuyThree.classList.toggle('back-card__ofert__buy__enabled')
+            $backCardOfertThree.classList.toggle('back-card-ofert__focus')
         }
     })
 
