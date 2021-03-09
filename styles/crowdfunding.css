@@ -876,4 +876,46 @@ body {
   .card__button__disable {
     background-color: #c4c4c4;
   }
+
+  .modal-default {
+    width: 50%;
+    margin: auto;
+  }
+  .modal-default .modal__top .modal__top__title {
+    font-size: 25px;
+  }
+  .modal-default .modal__top .modal__top__description {
+    font-size: 17px;
+  }
+  .modal-default .back-cards .back-card .back-card__top .back-card__title {
+    font-size: 20px;
+    margin: 0;
+    padding: 1rem;
+  }
+  .modal-default .back-cards .back-card .back-card__description {
+    padding: 0 0 0 1rem;
+    margin: 0;
+  }
+  .modal-default .back-cards .back-card-ofert .back-card__text__ofert {
+    display: flex;
+    align-items: center;
+  }
+  .modal-default .back-cards .back-card-ofert .back-card__text__ofert .back-card__titles {
+    display: flex;
+    align-items: center;
+  }
+  .modal-default .back-cards .back-card-ofert .back-card__text__ofert .back-card__titles .back-card__title__ofert {
+    font-size: 18px;
+  }
+  .modal-default .back-cards .back-card-ofert .back-card__text__ofert .back-card__titles .back-card__price {
+    margin: 0;
+    padding: 0 0 0 1rem;
+  }
+  .modal-default .back-cards .back-card-ofert .back-card__text__ofert .back-card__price__number {
+    font-size: 20px;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    top: 0;
+  }
 }

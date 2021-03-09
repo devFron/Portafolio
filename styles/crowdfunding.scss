@@ -498,4 +498,57 @@ body{
         }
     }
     @include card-disable;
+    .modal-default{
+        width: 50%;
+        margin:auto;
+        .modal__top{
+            .modal__top__title{
+                font-size:25px;
+            }
+            .modal__top__description{
+                font-size:17px;
+            }
+        }
+        .back-cards{
+            .back-card{
+                .back-card__top{
+                    .back-card__title{
+                        font-size:20px;
+                        margin:0;
+                        padding:1rem;
+                    }
+                }
+                .back-card__description{
+                    padding:0 0 0 1rem;
+                    margin:0;
+                }
+            }
+            .back-card-ofert{
+                .back-card__text__ofert{
+                    display: flex;
+                    align-items: center;
+                    .back-card__titles{
+                        display:flex;
+                        align-items:center;
+                        .back-card__title__ofert{
+                            font-size:18px;
+                        }
+                        .back-card__price{
+                            margin:0;
+                            padding:0 0 0 1rem;
+
+                        }
+                    }
+                    .back-card__price__number{
+                        font-size:20px;
+                        position:relative;
+                        margin:0;
+                        padding:0;
+                        top:0;
+                    }
+                }
+                // .back-card__description___ofert{}
+            }
+        }
+    }
 }
