@@ -98,10 +98,39 @@ export const  menuDefaul = ()=>{
     let $backCardOfertDescription = document.createElement('p')
     $backCardOfertDescription.classList.add('back-card__description___ofert')
     $backCardOfertDescription.textContent = `You get an ergonomic stand made of natural bamboo.You've helped us launch our promotional campaign,and you'llbe added yo a special backer member list.`
+    
+    // -----
+    let $backCardOfertBuy = document.createElement('section')
+    $backCardOfertBuy.classList.add('back-card__ofert__buy')
+    
+    let $backCardOfertBuyTitle = document.createElement('p')
+    $backCardOfertBuyTitle.classList.add('back-card__ofert__buy__title')
+    $backCardOfertBuyTitle.textContent = 'Enter your pledge'
+    
+    let $backCardOfertBuyButtons = document.createElement('div')
+    $backCardOfertBuyButtons.classList.add('back-card__ofert__buy__buttons')
+    let $backCardOfertBuyButtonPrice = document.createElement('button')
+    $backCardOfertBuyButtonPrice.classList.add('back-card__ofert__buy__button__price')
+    $backCardOfertBuyButtonPrice.textContent = '$'
+    let $backCardOfertBuyButtonPriceSpan = document.createElement('span')
+    $backCardOfertBuyButtonPriceSpan.textContent = '25'
+    $backCardOfertBuyButtonPriceSpan.classList.add('back-card__ofert__buy__pice__number')
 
+    $backCardOfertBuyButtonPrice.appendChild($backCardOfertBuyButtonPriceSpan)
+
+    let $backCardOfertBuyButtonContinue = document.createElement('button')
+    $backCardOfertBuyButtonContinue.classList.add('back-card__ofert__buy__button__continue')
+    $backCardOfertBuyButtonContinue.textContent = 'Continue'
+
+    $backCardOfertBuy.appendChild($backCardOfertBuyTitle)
+    $backCardOfertBuyButtons.appendChild($backCardOfertBuyButtonPrice)
+    $backCardOfertBuyButtons.appendChild($backCardOfertBuyButtonContinue)
+    $backCardOfertBuy.appendChild($backCardOfertBuyButtons)
+    // -----
 
     $backCardOfert.appendChild($backCardOfertText)
     $backCardOfert.appendChild($backCardOfertDescription)
+    // $backCardOfert.appendChild($backCardOfertBuy)---------------------a ca esta la insercion  delos botones
     $backCardOfertText.appendChild($circle)
     $backCardOfertText.appendChild($backCardTitles)
     $backCardTitles.appendChild($backCardOfertTitle)

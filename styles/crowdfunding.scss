@@ -361,8 +361,10 @@ body{
                 }
                 .back-card__price__number{
                     position:absolute;
-                    bottom:-10px;
+                    bottom:3rem;
                     left:1rem;
+                    color:transparent;
+                    // arregñar esto ↑
                 }
             }
             .back-card__description___ofert{
@@ -370,6 +372,45 @@ body{
                 font-weight: 500;
                 padding:0 1rem;
                 line-height: 25p;
+            }
+            .back-card__ofert__buy{
+                height: auto;
+                margin:40px 0 0 0;
+                border-top:2px solid rgb(231, 231, 231);
+                .back-card__ofert__buy__title{
+                    color:#c4c4c4;
+                    text-align: center;
+                    font-weight: 500;
+                    font-size:20px;
+                }
+                .back-card__ofert__buy__buttons{
+                    display:flex;
+                    justify-content: center;
+                    .back-card__ofert__buy__button__price{
+                        background-color:white;
+                        border:1px solid #c4c4c4;
+                        width: 80px;
+                        height: 50px;
+                        border-radius:20px;
+                        color:#c4c4c4;
+                        margin:0 1rem 0 0 ;
+                        .back-card__ofert__buy__pice__number{
+                            color:black;
+                            padding:0 0 0 10px ;
+                            font-weight: 700;
+                        }
+                    }
+                    .back-card__ofert__buy__button__continue{
+                        background-color:#3bb4ab;
+                        width: 120px;
+                        height: 50px;
+                        border:none;
+                        border-radius:20px;
+                        font-weight: 500;
+                        color:white;
+                        letter-spacing: 2px;
+                    }
+                }
             }
         }
     }
