@@ -254,6 +254,7 @@ body{
     right:1rem;
     z-index: 850;
     box-shadow:0 0 300px rgb(0, 0, 0);
+    overflow: scroll;
     .moda-icon{
         position:absolute;
         right:1rem;
@@ -374,8 +375,12 @@ body{
                 line-height: 25p;
             }
             .back-card__ofert__buy{
+                display: none;
+            }
+            .back-card__ofert__buy__enabled{
                 height: auto;
                 margin:40px 0 0 0;
+                display:block;
                 border-top:2px solid rgb(231, 231, 231);
                 .back-card__ofert__buy__title{
                     color:#c4c4c4;

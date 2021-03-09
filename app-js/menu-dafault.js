@@ -130,7 +130,7 @@ export const  menuDefaul = ()=>{
 
     $backCardOfert.appendChild($backCardOfertText)
     $backCardOfert.appendChild($backCardOfertDescription)
-    // $backCardOfert.appendChild($backCardOfertBuy)---------------------a ca esta la insercion  delos botones
+   $backCardOfert.appendChild($backCardOfertBuy)//---------------------a ca esta la insercion  delos botones
     $backCardOfertText.appendChild($circle)
     $backCardOfertText.appendChild($backCardTitles)
     $backCardTitles.appendChild($backCardOfertTitle)
@@ -187,6 +187,34 @@ export const  menuDefaul = ()=>{
     $backCardTitlesTwo.appendChild($backCardOfertPriceTwo)
     $backCardOfertTextTwo.appendChild($backCardPriceTwo)
 
+    let $backCardOfertBuyTwo = document.createElement('section')
+    $backCardOfertBuyTwo.classList.add('back-card__ofert__buy')
+    
+    let $backCardOfertBuyTitleTwo = document.createElement('p')
+    $backCardOfertBuyTitleTwo.classList.add('back-card__ofert__buy__title')
+    $backCardOfertBuyTitleTwo.textContent = 'Enter your pledge'
+    
+    let $backCardOfertBuyButtonsTwo = document.createElement('div')
+    $backCardOfertBuyButtonsTwo.classList.add('back-card__ofert__buy__buttons')
+    let $backCardOfertBuyButtonPriceTwo = document.createElement('button')
+    $backCardOfertBuyButtonPriceTwo.classList.add('back-card__ofert__buy__button__price')
+    $backCardOfertBuyButtonPriceTwo.textContent = '$'
+    let $backCardOfertBuyButtonPriceSpanTwo = document.createElement('span')
+    $backCardOfertBuyButtonPriceSpanTwo.textContent = '25'
+    $backCardOfertBuyButtonPriceSpanTwo.classList.add('back-card__ofert__buy__pice__number')
+
+    $backCardOfertBuyButtonPriceTwo.appendChild($backCardOfertBuyButtonPriceSpanTwo)
+
+    let $backCardOfertBuyButtonContinueTwo = document.createElement('button')
+    $backCardOfertBuyButtonContinueTwo.classList.add('back-card__ofert__buy__button__continue')
+    $backCardOfertBuyButtonContinueTwo.textContent = 'Continue'
+
+    $backCardOfertBuyTwo.appendChild($backCardOfertBuyTitleTwo)
+    $backCardOfertBuyButtonsTwo.appendChild($backCardOfertBuyButtonPriceTwo)
+    $backCardOfertBuyButtonsTwo.appendChild($backCardOfertBuyButtonContinueTwo)
+    $backCardOfertBuyTwo.appendChild($backCardOfertBuyButtonsTwo)
+    $backCardOfertTwo.appendChild($backCardOfertBuyTwo)//---------------------a ca esta la insercion  delos botones
+
     // ------
     let $backCardOfertThree = document.createElement('article')
     $backCardOfertThree.classList.add('back-card-ofert')
@@ -238,6 +266,33 @@ export const  menuDefaul = ()=>{
     $backCardTitlesThree.appendChild($backCardOfertPriceThree)
     $backCardOfertTextThree.appendChild($backCardPriceThree)
 
+    let $backCardOfertBuyThree = document.createElement('section')
+    $backCardOfertBuyThree.classList.add('back-card__ofert__buy')
+    
+    let $backCardOfertBuyTitleThree = document.createElement('p')
+    $backCardOfertBuyTitleThree.classList.add('back-card__ofert__buy__title')
+    $backCardOfertBuyTitleThree.textContent = 'Enter your pledge'
+    
+    let $backCardOfertBuyButtonsThree = document.createElement('div')
+    $backCardOfertBuyButtonsThree.classList.add('back-card__ofert__buy__buttons')
+    let $backCardOfertBuyButtonPriceThree = document.createElement('button')
+    $backCardOfertBuyButtonPriceThree.classList.add('back-card__ofert__buy__button__price')
+    $backCardOfertBuyButtonPriceThree.textContent = '$'
+    let $backCardOfertBuyButtonPriceSpanThree = document.createElement('span')
+    $backCardOfertBuyButtonPriceSpanThree.textContent = '25'
+    $backCardOfertBuyButtonPriceSpanThree.classList.add('back-card__ofert__buy__pice__number')
+
+    $backCardOfertBuyButtonPriceThree.appendChild($backCardOfertBuyButtonPriceSpanThree)
+
+    let $backCardOfertBuyButtonContinueThree = document.createElement('button')
+    $backCardOfertBuyButtonContinueThree.classList.add('back-card__ofert__buy__button__continue')
+    $backCardOfertBuyButtonContinueThree.textContent = 'Continue'
+
+    $backCardOfertBuyThree.appendChild($backCardOfertBuyTitleThree)
+    $backCardOfertBuyButtonsThree.appendChild($backCardOfertBuyButtonPriceThree)
+    $backCardOfertBuyButtonsThree.appendChild($backCardOfertBuyButtonContinueThree)
+    $backCardOfertBuyThree.appendChild($backCardOfertBuyButtonsThree)
+    $backCardOfertThree.appendChild($backCardOfertBuyThree)
 
     $backCards.appendChild($backCard)
     $backCards.appendChild($backCardOfert)
@@ -259,12 +314,15 @@ export const  menuDefaul = ()=>{
         }
         if (e.target === $circleOneNode || e.target === $circleIconNode) {
             $circleIconNode.classList.toggle('circle-icon__active')
+            $backCardOfertBuy.classList.toggle('back-card__ofert__buy__enabled')
         }
         if ( e.target === $circleTwoNode || e.target === $circleIconNodeTwo) {
             $circleIconNodeTwo.classList.toggle('circle-icon__active')
+            $backCardOfertBuyTwo.classList.toggle('back-card__ofert__buy__enabled')
         }
         if (e.target === $circleThreeNode || e.target == $circleIconNodeTrhee) {
             $circleIconNodeTrhee.classList.toggle('circle-icon__active')
+            $backCardOfertBuyThree.classList.toggle('back-card__ofert__buy__enabled')
         }
     })
 
