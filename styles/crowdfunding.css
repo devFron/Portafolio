@@ -760,6 +760,44 @@ body {
   display: none;
 }
 
+.thanks {
+  background-color: white;
+  position: fixed;
+  top: 40%;
+  left: 2rem;
+  right: 2rem;
+  box-shadow: 0 0 500px black;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0;
+  margin: 0;
+}
+.thanks .thanks__icon {
+  background-color: #3bb4ab;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.thanks .thanks__title {
+  font-weight: 500;
+}
+.thanks .thanks__description {
+  padding: 0 1rem;
+}
+.thanks .thanks__button {
+  width: 100px;
+  background-color: #3bb4ab;
+  border: none;
+  height: 30px;
+  border-radius: 20px;
+}
+
 .card__title {
   color: #7d7d7d;
 }
