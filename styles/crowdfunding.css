@@ -760,7 +760,7 @@ body {
   display: none;
 }
 
-.thanks {
+.thanks__enabled {
   background-color: white;
   position: fixed;
   top: 40%;
@@ -773,8 +773,9 @@ body {
   align-items: center;
   padding: 1rem 0;
   margin: 0;
+  display: block;
 }
-.thanks .thanks__icon {
+.thanks__enabled .thanks__icon {
   background-color: #3bb4ab;
   width: 35px;
   height: 35px;
@@ -784,18 +785,22 @@ body {
   align-items: center;
   color: white;
 }
-.thanks .thanks__title {
+.thanks__enabled .thanks__title {
   font-weight: 500;
 }
-.thanks .thanks__description {
+.thanks__enabled .thanks__description {
   padding: 0 1rem;
 }
-.thanks .thanks__button {
+.thanks__enabled .thanks__button {
   width: 100px;
   background-color: #3bb4ab;
   border: none;
   height: 30px;
   border-radius: 20px;
+}
+
+.thanks {
+  display: none;
 }
 
 .card__title {

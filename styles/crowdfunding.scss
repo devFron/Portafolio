@@ -426,7 +426,7 @@ body{
 .modal-default__disabled{
     display: none
 }
-.thanks{
+.thanks__enabled{
     background-color:white;
     position:fixed;
     top:40%;
@@ -439,6 +439,7 @@ body{
     align-items:center;
     padding:1rem 0;
     margin:0;
+    display:block;
     .thanks__icon{
         background-color:#3bb4ab;
         width:35px;
@@ -462,6 +463,9 @@ body{
         height: 30px;
         border-radius:20px;
     }
+}
+.thanks{
+    display:none;
 }
 @include card-disable;
 @media screen and (min-width:1000px){
