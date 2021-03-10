@@ -120,6 +120,7 @@ export const  menuDefaul = ()=>{
 
     let $backCardOfertBuyButtonContinue = document.createElement('button')
     $backCardOfertBuyButtonContinue.classList.add('back-card__ofert__buy__button__continue')
+    $backCardOfertBuyButtonContinue.setAttribute('id','back-card-ofert-buy-button-continue-one')
     $backCardOfertBuyButtonContinue.textContent = 'Continue'
 
     $backCardOfertBuy.appendChild($backCardOfertBuyTitle)
@@ -207,6 +208,7 @@ export const  menuDefaul = ()=>{
 
     let $backCardOfertBuyButtonContinueTwo = document.createElement('button')
     $backCardOfertBuyButtonContinueTwo.classList.add('back-card__ofert__buy__button__continue')
+    $backCardOfertBuyButtonContinueTwo.setAttribute('id','back-card-ofert-buy-button-continue-two')
     $backCardOfertBuyButtonContinueTwo.textContent = 'Continue'
 
     $backCardOfertBuyTwo.appendChild($backCardOfertBuyTitleTwo)
@@ -286,6 +288,7 @@ export const  menuDefaul = ()=>{
 
     let $backCardOfertBuyButtonContinueThree = document.createElement('button')
     $backCardOfertBuyButtonContinueThree.classList.add('back-card__ofert__buy__button__continue')
+    $backCardOfertBuyButtonContinueThree.setAttribute('id','back-card-ofert-buy-button-continue-three')
     $backCardOfertBuyButtonContinueThree.textContent = 'Continue'
 
     $backCardOfertBuyThree.appendChild($backCardOfertBuyTitleThree)

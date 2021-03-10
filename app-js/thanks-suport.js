@@ -34,7 +34,10 @@ export const Thanks = ()=>{
     let $proyectCardButtonTwo = document.querySelector('#proyect-card-button-two')
     let $proyectCardButtonThree = document.querySelector('#proyect-card-button-three')
     let $thanksBox = document.querySelector('.thanks') 
-    
+    let $buttonBuyOne = document.querySelector('#back-card-ofert-buy-button-continue-one')
+    let $buttonBuyTwo = document.querySelector('#back-card-ofert-buy-button-continue-two')
+    let $buttonBuyThree = document.querySelector('#back-card-ofert-buy-button-continue-three')
+
     document.addEventListener('click',(e) =>{
 
         if (e.target === $proyectCardButtonOne || e.target === $proyectCardButtonTwo || e.target === $proyectCardButtonThree) {
@@ -44,6 +47,10 @@ export const Thanks = ()=>{
         if (e.target.matches('.thanks__button') ) {
             $thanksBox.classList.remove('thanks__enabled')
         } 
+        if(e.target === $buttonBuyOne || e.target === $buttonBuyTwo ||e.target === $buttonBuyThree ){
+            e.preventDefault()
+            $thanksBox.classList.add('thanks__enabled')
+        }
 
     })
 
