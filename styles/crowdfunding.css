@@ -760,8 +760,13 @@ body {
   display: none;
 }
 
+.thanks {
+  display: none;
+}
+
 .thanks__enabled {
   background-color: white;
+  display: block;
   position: fixed;
   top: 40%;
   left: 2rem;
@@ -773,7 +778,6 @@ body {
   align-items: center;
   padding: 1rem 0;
   margin: 0;
-  display: block;
 }
 .thanks__enabled .thanks__icon {
   background-color: #3bb4ab;
@@ -797,10 +801,6 @@ body {
   border: none;
   height: 30px;
   border-radius: 20px;
-}
-
-.thanks {
-  display: none;
 }
 
 .card__title {

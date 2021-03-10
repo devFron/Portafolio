@@ -30,4 +30,22 @@ export const Thanks = ()=>{
     let $body = document.querySelector('body')
     $body.appendChild(Fragment)
 
+    let $proyectCardButtonOne = document.querySelector('#proyect-card-button-one')
+    let $proyectCardButtonTwo = document.querySelector('#proyect-card-button-two')
+    let $proyectCardButtonThree = document.querySelector('#proyect-card-button-three')
+    let $thanksBox = document.querySelector('.thanks') 
+    
+    document.addEventListener('click',(e) =>{
+
+        if (e.target === $proyectCardButtonOne || e.target === $proyectCardButtonTwo || e.target === $proyectCardButtonThree) {
+            $thanksBox.classList.add('thanks__enabled')
+            e.preventDefault()
+        } 
+        if (e.target.matches('.thanks__button') ) {
+            $thanksBox.classList.remove('thanks__enabled')
+        } 
+
+    })
+
+
 }
