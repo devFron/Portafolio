@@ -354,7 +354,7 @@ body {
   width: 170px;
 }
 .header .nav {
-  position: fixed;
+  position: absolute;
   top: 2rem;
   right: 1rem;
   z-index: 800;
