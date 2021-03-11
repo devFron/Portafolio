@@ -429,3 +429,74 @@ body {
   line-height: 28px;
   font-weight: 500;
 }
+
+.creactions {
+  position: relative;
+  padding: 0 0 70px 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.creactions .creations__title {
+  font-weight: 400;
+  font-size: 25px;
+  text-align: center;
+}
+.creactions .creations__cards {
+  display: grid;
+  grid-template-rows: repeat(8, 120px);
+  grid-gap: 1rem;
+}
+.creactions .creations__cards .creations__card {
+  padding: 0 2rem 0 1rem;
+  display: flex;
+  align-items: center;
+  background-size: 100%;
+}
+.creactions .creations__cards .creations__card .creations__card__text {
+  font-size: 25px;
+  padding: 0 2rem 0 3px;
+  text-transform: uppercase;
+  color: white;
+}
+.creactions .creations__cards #crations-card-eart {
+  background-image: url(../resources/images/loopstudio/mobile/image-deep-earth.jpg);
+  width: 100%;
+}
+.creactions .creations__cards #crations-card-arcade {
+  background-image: url(../resources/images/loopstudio/mobile/image-night-arcade.jpg);
+  width: 100%;
+}
+.creactions .creations__cards #crations-card-soccer {
+  background-image: url(../resources/images/loopstudio/mobile/image-soccer-team.jpg);
+  width: 100%;
+}
+.creactions .creations__cards #crations-card-grid {
+  background-image: url(../resources/images/loopstudio/mobile/image-grid.jpg);
+  width: 100%;
+}
+.creactions .creations__cards #crations-card-above {
+  background-image: url(../resources/images/loopstudio/mobile/image-from-above.jpg);
+  width: 100%;
+}
+.creactions .creations__cards #crations-card-pocket {
+  background-image: url(../resources/images/loopstudio/mobile/image-pocket-borealis.jpg);
+  width: 100%;
+}
+.creactions .creations__cards #crations-card-curiosity {
+  background-image: url(../resources/images/loopstudio/mobile/image-curiosity.jpg);
+  width: 100%;
+}
+.creactions .creations__cards #crations-card-fisheye {
+  background-image: url(../resources/images/loopstudio/mobile/image-fisheye.jpg);
+  width: 100%;
+}
+.creactions .creation__button {
+  width: 150px;
+  position: absolute;
+  bottom: 1rem;
+  height: 30px;
+  border: 1px solid black;
+  background-color: transparent;
+  font-weight: 500;
+}
