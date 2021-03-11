@@ -1,1 +1,69 @@
 @import "../resources-sass/normalize";
+body{
+    font-family:roboto;
+}
+.header{
+    background-image:url(../resources/images/loopstudio/mobile/image-hero.jpg);
+    background-size:100% ;
+    color:white;
+    height: 92vh;
+    position:relative;
+    .header__logo{
+        margin:2rem 0 0 1rem;
+        width: 170px;
+    }
+    .nav{
+        position:fixed;
+        top:2rem;
+        right:1rem;
+        z-index:800;
+        .nav__icon{
+            cursor:pointer;
+        }
+        .menu{
+            display:none;
+            list-style:none;
+            background-color:black;
+            padding:0;
+            margin:0;
+            position: fixed;
+            top:0;
+            left:0;
+            right: 0;
+            bottom:0;
+            .menu__item{
+                padding:1rem 0 1rem 1rem;
+            }
+            .nav__close__icon{
+                position:absolute;
+                right:1rem;
+                top:1rem;
+            }
+            .logo__nav{
+                margin:1rem 0 0 1rem;
+                width: 150px;
+                padding:0;
+            }
+            .menu__link{
+                color:white;
+                text-decoration: none;
+                cursor:pointer;
+                font-weight: 400;
+                font-size:20px;
+            }
+        }
+    }
+    .header__title{
+        font-weight: 400;
+        color:white;
+        border:2px solid white;
+        position:absolute;
+        top:30%;
+        left:1rem;
+        right: 1rem;
+        line-height: 40px;
+        padding:1rem 18px;
+        margin:0;
+        // z-index: 500;
+    }
+}
