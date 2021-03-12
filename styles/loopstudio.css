@@ -736,4 +736,24 @@ body {
     background-image: url(../resources/images/loopstudio/desktop/image-fisheye.jpg);
     width: 100%;
   }
+
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer .footer__left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer .footer__left .footer__menu {
+    display: flex;
+    flex-direction: row;
+  }
+  .footer .footer__left .footer__menu .footer__menu__item {
+    padding: 1rem;
+  }
+  .footer .footer__right .footer__copyrith {
+    text-align: center;
+  }
 }
