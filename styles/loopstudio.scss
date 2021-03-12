@@ -276,3 +276,141 @@ body{
         }
     }
 }
+@media screen and (min-width:1000px){
+    .header{
+        background-image: url(../resources/images/loopstudio/desktop/image-hero.jpg);
+        background-size: 100%;
+        background-attachment: fixed;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding:0 0 0 3rem;
+        .header__logo{
+            margin-top:50px;
+        }
+        .nav{
+            position: relative;
+            .nav__icon{
+                display:none;
+            }
+            .menu{
+                display:block;
+                left: auto;
+                right: 1rem;
+                top:0;
+                bottom:auto;
+                display:flex;
+                position: absolute;
+                background-color: transparent;
+                .logo__nav{
+                    display:none;
+                }
+                .menu__item{
+                    margin:auto 15px;
+                }
+                .menu__link{
+                    position: relative;
+                    &:hover::before{
+                        content: " ";
+                        width: 30px;
+                        height: 3px;
+                        background-color:white;
+                        position: absolute;
+                        top:120%;
+                        left:20%;
+                        color:transparent;
+                    }
+                }
+                .nav__close__icon{
+                    display: none;
+                }
+            }
+        }
+        .header__title{
+            left:5%;
+            right:auto;
+            padding:1rem 0rem 0 0;
+            width: 550px;
+            line-height: 85px;
+            font-size:60px;
+        }
+    }
+    .leader{
+        padding:0 35px;
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        .leader__image{
+            width: auto;
+        }
+        .leader__title{
+            position: relative;
+            &::before{
+                content:  " ";
+                background-color: #c366ce;
+                position: absolute;
+                bottom:300%;
+                left:0px;
+                width: 70px;
+                height: 70px;
+            }
+        }
+       
+    }
+    .creactions{
+        position: relative;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        .creations__header{
+            width: 67%;
+            padding:0;
+            // background-color: red;
+            // .creations__title{
+
+            // }
+        }
+        .creations__cards{
+            display:flex;
+            justify-content: center;
+            display:grid;
+            grid-template-columns: repeat(4,200px);
+            grid-template-rows: 300px 300px;
+            grid-gap:2rem;
+            .creations__card{
+                background-size: 100%;
+            }
+            #crations-card-eart{
+                background-image:url(../resources/images/loopstudio/desktop/image-deep-earth.jpg);
+                width:100%;
+            }
+            #crations-card-arcade{
+                background-image:url(../resources/images/loopstudio/desktop/image-night-arcade.jpg);
+                width:100%;
+            }
+            #crations-card-soccer{
+                background-image:url(../resources/images/loopstudio/desktop/image-soccer-team.jpg);
+                width:100%;
+            }
+            #crations-card-grid{
+                background-image:url(../resources/images/loopstudio/desktop/image-grid.jpg);
+                width:100%;
+            }
+            #crations-card-above{
+                background-image:url(../resources/images/loopstudio/desktop/image-from-above.jpg);
+                width:100%;
+            }
+            #crations-card-pocket{
+                background-image:url(../resources/images/loopstudio/desktop/image-pocket-borealis.jpg);
+                width:100%;
+            }
+            #crations-card-curiosity{
+                background-image:url(../resources/images/loopstudio/desktop/image-curiosity.jpg);
+                width:100%;
+            }
+            #crations-card-fisheye{
+                background-image:url(../resources/images/loopstudio/desktop/image-fisheye.jpg);
+                width:100%;
+            }
+        }
+    }
+}

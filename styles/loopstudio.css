@@ -602,3 +602,138 @@ body {
     grid-template-rows: repeat(8, 200px);
   }
 }
+@media screen and (min-width: 1000px) {
+  .header {
+    background-image: url(../resources/images/loopstudio/desktop/image-hero.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 0 0 3rem;
+  }
+  .header .header__logo {
+    margin-top: 50px;
+  }
+  .header .nav {
+    position: relative;
+  }
+  .header .nav .nav__icon {
+    display: none;
+  }
+  .header .nav .menu {
+    display: block;
+    left: auto;
+    right: 1rem;
+    top: 0;
+    bottom: auto;
+    display: flex;
+    position: absolute;
+    background-color: transparent;
+  }
+  .header .nav .menu .logo__nav {
+    display: none;
+  }
+  .header .nav .menu .menu__item {
+    margin: auto 15px;
+  }
+  .header .nav .menu .menu__link {
+    position: relative;
+  }
+  .header .nav .menu .menu__link:hover::before {
+    content: " ";
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    top: 120%;
+    left: 20%;
+    color: transparent;
+  }
+  .header .nav .menu .nav__close__icon {
+    display: none;
+  }
+  .header .header__title {
+    left: 5%;
+    right: auto;
+    padding: 1rem 0rem 0 0;
+    width: 550px;
+    line-height: 85px;
+    font-size: 60px;
+  }
+
+  .leader {
+    padding: 0 35px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .leader .leader__image {
+    width: auto;
+  }
+  .leader .leader__title {
+    position: relative;
+  }
+  .leader .leader__title::before {
+    content: " ";
+    background-color: #c366ce;
+    position: absolute;
+    bottom: 300%;
+    left: 0px;
+    width: 70px;
+    height: 70px;
+  }
+
+  .creactions {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .creactions .creations__header {
+    width: 67%;
+    padding: 0;
+  }
+  .creactions .creations__cards {
+    display: flex;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    grid-template-rows: 300px 300px;
+    grid-gap: 2rem;
+  }
+  .creactions .creations__cards .creations__card {
+    background-size: 100%;
+  }
+  .creactions .creations__cards #crations-card-eart {
+    background-image: url(../resources/images/loopstudio/desktop/image-deep-earth.jpg);
+    width: 100%;
+  }
+  .creactions .creations__cards #crations-card-arcade {
+    background-image: url(../resources/images/loopstudio/desktop/image-night-arcade.jpg);
+    width: 100%;
+  }
+  .creactions .creations__cards #crations-card-soccer {
+    background-image: url(../resources/images/loopstudio/desktop/image-soccer-team.jpg);
+    width: 100%;
+  }
+  .creactions .creations__cards #crations-card-grid {
+    background-image: url(../resources/images/loopstudio/desktop/image-grid.jpg);
+    width: 100%;
+  }
+  .creactions .creations__cards #crations-card-above {
+    background-image: url(../resources/images/loopstudio/desktop/image-from-above.jpg);
+    width: 100%;
+  }
+  .creactions .creations__cards #crations-card-pocket {
+    background-image: url(../resources/images/loopstudio/desktop/image-pocket-borealis.jpg);
+    width: 100%;
+  }
+  .creactions .creations__cards #crations-card-curiosity {
+    background-image: url(../resources/images/loopstudio/desktop/image-curiosity.jpg);
+    width: 100%;
+  }
+  .creactions .creations__cards #crations-card-fisheye {
+    background-image: url(../resources/images/loopstudio/desktop/image-fisheye.jpg);
+    width: 100%;
+  }
+}
