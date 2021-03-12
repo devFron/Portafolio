@@ -213,3 +213,66 @@ body{
         }
     }
 }
+@media screen and (min-width:744px){
+
+    .header{
+        .header__title{
+            font-size:40px;
+            left:5rem;
+            right: 5rem;
+            line-height:3rem;
+            letter-spacing: 5px;
+        }
+        .nav{
+            .nav__icon{
+                font-size:2rem;
+            }
+            .menu__enabled{
+                display:flex;
+                flex-direction:column;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+    .leader{
+        .leader__image{
+            width: 350px;
+        }
+        .leader__text{
+            .leader__title{
+                font-size:28px;
+            }
+            .leader__description{
+                font-size:20px;
+                font-weight: 400;
+                padding:0 1rem;
+            }
+        }
+    }
+    .creactions{
+        // background-color: red;
+        width: 100%;
+        .creations__header{
+            display:flex;
+            align-items: center;
+            justify-content: space-between;
+            padding:0 2rem;
+            .creations__title{
+                font-weight: 700;
+            }
+            .creation__button{
+                position: relative;
+                top:auto;
+                left: auto;
+                right: auto;
+                bottom:auto;
+            }
+        }
+        .creations__cards{
+            grid-template-rows: repeat(8,200px);
+            // .creations__card{
+            // }
+        }
+    }
+}
