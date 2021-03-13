@@ -467,3 +467,29 @@ body {
   color: #c4c4c4;
   line-height: 23px;
 }
+
+@media screen and (min-width: 840px) {
+  .header .nav__enabled .menu .x-icon {
+    margin: 0 15rem 0 0;
+    font-size: 20px;
+  }
+  .header .nav__enabled .menu .menu__item {
+    padding: 20px;
+  }
+  .header .nav__enabled .menu .menu__link {
+    font-size: 20px;
+  }
+  .header .discover .discover__title {
+    font-size: 30px;
+  }
+  .header .discover .discover__description {
+    font-size: 20px;
+  }
+
+  .main .main__text .main__title {
+    font-size: 25px;
+  }
+  .main .main__text .main__text__description {
+    font-size: 20px;
+  }
+}
