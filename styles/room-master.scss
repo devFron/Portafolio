@@ -114,6 +114,9 @@ body{
 }
 .main{
     padding:18px 0 0 0;
+    .main__image{
+        width: 100%;
+    }
     .main__text{
         .main__title{
             font-weight: 700;
