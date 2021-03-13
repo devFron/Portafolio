@@ -305,6 +305,7 @@ body{
                 display:flex;
                 position: absolute;
                 background-color: transparent;
+                list-style:none;
                 .logo__nav{
                     display:none;
                 }
@@ -313,6 +314,10 @@ body{
                 }
                 .menu__link{
                     position: relative;
+                    text-decoration:none;
+                    color:white;
+                    font-weight: 500;
+                    font-size:20px;
                     &:hover::before{
                         content: " ";
                         width: 30px;
@@ -322,6 +327,7 @@ body{
                         top:120%;
                         left:20%;
                         color:transparent;
+
                     }
                 }
                 .nav__close__icon{

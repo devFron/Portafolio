@@ -633,6 +633,7 @@ body {
     display: flex;
     position: absolute;
     background-color: transparent;
+    list-style: none;
   }
   .header .nav .menu .logo__nav {
     display: none;
@@ -642,6 +643,10 @@ body {
   }
   .header .nav .menu .menu__link {
     position: relative;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
   }
   .header .nav .menu .menu__link:hover::before {
     content: " ";
