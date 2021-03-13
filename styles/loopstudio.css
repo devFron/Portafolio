@@ -364,6 +364,9 @@ body {
 }
 .header .nav .menu {
   display: none;
+}
+.header .nav .menu__enabled {
+  display: block;
   list-style: none;
   background-color: black;
   padding: 0;
@@ -374,20 +377,20 @@ body {
   right: 0;
   bottom: 0;
 }
-.header .nav .menu .menu__item {
+.header .nav .menu__enabled .menu__item {
   padding: 1rem 0 1rem 1rem;
 }
-.header .nav .menu .nav__close__icon {
+.header .nav .menu__enabled .nav__close__icon {
   position: absolute;
   right: 1rem;
   top: 1rem;
 }
-.header .nav .menu .logo__nav {
+.header .nav .menu__enabled .logo__nav {
   margin: 1rem 0 0 1rem;
   width: 150px;
   padding: 0;
 }
-.header .nav .menu .menu__link {
+.header .nav .menu__enabled .menu__link {
   color: white;
   text-decoration: none;
   cursor: pointer;

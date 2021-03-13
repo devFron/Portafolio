@@ -22,6 +22,9 @@ body{
         }
         .menu{
             display:none;
+        }
+        .menu__enabled{
+            display:block;
             list-style:none;
             background-color:black;
             padding:0;
