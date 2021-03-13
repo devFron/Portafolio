@@ -450,6 +450,9 @@ body {
   padding: 0 0 0 1rem;
 }
 
+.main {
+  padding: 18px 0 0 0;
+}
 .main .main__text .main__title {
   font-weight: 700;
   letter-spacing: 4px;
