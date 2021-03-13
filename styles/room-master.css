@@ -449,3 +449,15 @@ body {
   text-transform: uppercase;
   padding: 0 0 0 1rem;
 }
+
+.main .main__text .main__title {
+  font-weight: 700;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  padding: 0 0 0 1rem;
+}
+.main .main__text .main__text__description {
+  padding: 0 1rem 0 1rem;
+  color: #c4c4c4;
+  line-height: 23px;
+}
