@@ -1,4 +1,4 @@
-const Slider = ( )=>{
+export const Slider = ( )=>{
 
     let $buttonLeft = document.querySelector('#slider-buttons-button-left')
     let $buttonRight = document.querySelector('#slider-buttons-button-right')
@@ -31,9 +31,8 @@ const Slider = ( )=>{
         }
     })
 }
-Slider()
 
-const SliderResponsive = ()=>{
+export const SliderResponsive = ()=>{
     let $sliderImages = document.querySelectorAll('.slider__slider__image')
     
     window.addEventListener('resize',(e)=>{
@@ -49,4 +48,3 @@ const SliderResponsive = ()=>{
         }
     })
 }
-SliderResponsive()
