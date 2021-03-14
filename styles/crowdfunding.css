@@ -543,6 +543,9 @@ body {
   margin: 0;
   padding: 1rem 0 0 1rem;
 }
+.project .project__cards .project__card .card__price__disable {
+  color: #3bb4ac44;
+}
 .project .project__cards .project__card .proyect__card__description {
   color: #7d7d7d;
   font-weight: 500;
@@ -576,6 +579,9 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0 0 1rem 1rem;
+}
+.project .project__cards .project__card .card__button__disable {
+  background-color: #c4c4c4;
 }
 .project .project__cards #proyect-card-three {
   margin-bottom: 1rem;
@@ -808,10 +814,6 @@ body {
   color: #7d7d7d;
 }
 
-.card__price__disable {
-  color: #3bb4ac44;
-}
-
 .card__description {
   color: #7d7d7d65;
 }
@@ -822,10 +824,6 @@ body {
 
 .number-direction__desable {
   color: #7d7d7d5e;
-}
-
-.card__button__disable {
-  background-color: #c4c4c4;
 }
 
 @media screen and (min-width: 1000px) {
@@ -949,10 +947,6 @@ body {
     color: #7d7d7d;
   }
 
-  .card__price__disable {
-    color: #3bb4ac44;
-  }
-
   .card__description {
     color: #7d7d7d65;
   }
@@ -963,10 +957,6 @@ body {
 
   .number-direction__desable {
     color: #7d7d7d5e;
-  }
-
-  .card__button__disable {
-    background-color: #c4c4c4;
   }
 
   .modal-default {

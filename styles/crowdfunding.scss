@@ -205,6 +205,9 @@ body{
                 padding:1rem 0 0  1rem;
                 
             }
+            .card__price__disable {
+                color:#3bb4ac44;
+            }
             .proyect__card__description{
                 color: #7d7d7d;
                 font-weight: 500;
@@ -238,6 +241,9 @@ body{
                 justify-content: center;
                 align-items:center;
                 margin:0 0 1rem  1rem;
+            }
+            .card__button__disable{
+                background-color: #c4c4c4;
             }
         }
         #proyect-card-three{
