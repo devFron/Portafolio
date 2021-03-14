@@ -147,7 +147,19 @@ body{
                 }
             }
         }
+        .slider{
+            .slider__slides{
+                background-color: green;
+                .slider__slide{
+                    right: 0;
+                    left:0;
+                    top:0;
+                    bottom:0;
+                }
+            }
+        }
         .discover{
+            
             .discover__title{
                 font-size:30px;
             }
@@ -168,3 +180,6 @@ body{
         }
     }
 }
+// @media screen and (min-width:1000px){
+
+// }

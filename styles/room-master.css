@@ -479,6 +479,15 @@ body {
   .header .nav__enabled .menu .menu__link {
     font-size: 20px;
   }
+  .header .slider .slider__slides {
+    background-color: green;
+  }
+  .header .slider .slider__slides .slider__slide {
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+  }
   .header .discover .discover__title {
     font-size: 30px;
   }
