@@ -32,3 +32,21 @@ const Slider = ( )=>{
     })
 }
 Slider()
+
+const SliderResponsive = ()=>{
+    let $sliderImages = document.querySelectorAll('.slider__slider__image')
+    
+    window.addEventListener('resize',(e)=>{
+
+        if (window.innerWidth <= 374)    {
+            $sliderImages[0].setAttribute('src','../resources/images/room-master/mobile-image-hero-1.jpg')
+            $sliderImages[1].setAttribute('src','../resources/images/room-master/mobile-image-hero-2.jpg')
+            $sliderImages[2].setAttribute('src','../resources/images/room-master/mobile-image-hero-3.jpg')
+        }else{
+            $sliderImages[0].setAttribute('src','../resources/images/room-master/desktop-image-hero-1.jpg')
+            $sliderImages[1].setAttribute('src','../resources/images/room-master/desktop-image-hero-2.jpg')
+            $sliderImages[2].setAttribute('src','../resources/images/room-master/desktop-image-hero-3.jpg')
+        }
+    })
+}
+SliderResponsive()
