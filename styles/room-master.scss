@@ -180,6 +180,70 @@ body{
         }
     }
 }
-// @media screen and (min-width:1000px){
-
-// }
+@media screen and (min-width:1000px){
+    .header{
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        position: relative;
+        height: 52vh;
+        .icon-hamburguer{
+            display:none;
+        }
+        .nav{
+            display:block;
+            position: absolute;
+            top:1rem;
+            left:10rem;
+            z-index:999;
+            .menu{
+                margin:0;
+                padding:0;
+                list-style: none;
+                display:flex;
+                align-items: center;
+                padding:0 0 0 1rem;
+                .x-icon{
+                    display:none;
+                }
+                .menu__item{
+                    padding:10px;
+                }
+                .menu__link{
+                    text-decoration: none;
+                    font-weight: 400;
+                    color:white;
+                    font-size:20px;
+                }
+            }
+        }        
+        .discover{
+            .discover__title{
+                padding: 0 125px;
+                font-size:40px;
+            }
+            .discover__description{
+                font-size:20px;
+                padding:0 100px ;
+            }
+            .discover__link{
+                margin:0 0 0 90px;
+            }
+        }
+        .slider{
+            height: 100%;
+            .slider__buttons{
+                left: 100%;
+                width: 75px;
+            }
+        }
+    }
+    .main{
+        padding: 0;
+        display:grid;
+        grid-template-columns: repeat(3,1fr);
+        height: 48vh;
+        .main__image{
+            height: 100%;
+        }
+    }
+}
