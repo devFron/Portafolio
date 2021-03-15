@@ -337,3 +337,10 @@ template {
 [hidden] {
   display: none;
 }
+
+:root {
+  --color-one:#24242c;
+  --color-two:#3a3d5c;
+  --color-three:#2a4860;
+  --color-four:#ff4b5a;
+}
