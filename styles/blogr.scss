@@ -31,9 +31,6 @@ body{
         color:white;
         font-size:25px;
     }
-    .nav__enabled{
-        display:block;
-    }
     .nav{
         overflow: scroll;
         background-color:white;
@@ -44,6 +41,7 @@ body{
         right: 1rem;
         box-shadow: 0 2rem 1rem rgba(0, 0, 0, 0.5);
         display:none;
+        z-index:999;
         .menu{
             padding:0 0 2rem 0;
             margin:0;
@@ -123,6 +121,9 @@ body{
                 margin:0 0 2rem 0;
             }
         }
+    }
+    .nav__enabled{
+        display:block;
     }
     .header__title{
         color:white;

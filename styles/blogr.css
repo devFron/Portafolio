@@ -372,9 +372,6 @@ body {
   color: white;
   font-size: 25px;
 }
-.header .nav__enabled {
-  display: block;
-}
 .header .nav {
   overflow: scroll;
   background-color: white;
@@ -385,6 +382,7 @@ body {
   right: 1rem;
   box-shadow: 0 2rem 1rem rgba(0, 0, 0, 0.5);
   display: none;
+  z-index: 999;
 }
 .header .nav .menu {
   padding: 0 0 2rem 0;
@@ -462,6 +460,9 @@ body {
   background: linear-gradient(to right, #fc6767, #f05053);
   color: white;
   margin: 0 0 2rem 0;
+}
+.header .nav__enabled {
+  display: block;
 }
 .header .header__title {
   color: white;
