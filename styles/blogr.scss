@@ -193,8 +193,10 @@ body{
     margin:7rem 0 2rem 0 ;
     border-top-right-radius:50px;
     border-bottom-left-radius:50px;
+    display:flex;
+    justify-content: center;
     .state__image{
-        width: 100%;
+        width: 270px;
         background:url(../resources/images/blogr/bg-pattern-circles.svg);
         background-size: 100%;
         top:-17%;
