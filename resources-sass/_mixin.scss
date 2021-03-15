@@ -12,3 +12,24 @@
         color: #7d7d7d5e;
     }
 }
+@mixin items-footer-blogr {
+    &{
+        list-style: none;
+        margin:0;
+        padding:1rem 0;
+        .menu__footer__item{
+            display:flex;
+            justify-content: center;
+            color:white;
+            padding:8px 0;
+        }
+        .menu__footer__link{
+            color:#c4c4c4;
+            text-decoration: none;
+            &:hover{
+                color:white;
+                text-decoration: underline;
+            }
+        }
+    }
+}

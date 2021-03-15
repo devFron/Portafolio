@@ -1,4 +1,5 @@
 @import "../resources-sass/normalize";
+@import "../resources-sass/mixin";
 :root{
     --color-one:#24242c;
     --color-two:#3a3d5c;
@@ -231,5 +232,23 @@ body{
                 padding:0 10px ;
             }
         }
+    }
+}
+.footer{
+    background-color:var(--color-one);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:1rem 0 0 0;
+    border-top-right-radius: 50px;
+    .menu__product{
+       @include items-footer-blogr;
+    }
+    .menu__company{
+       @include items-footer-blogr;
+    }
+    .menu__connect{
+       @include items-footer-blogr;
     }
 }
