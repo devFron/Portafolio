@@ -552,3 +552,16 @@ body {
 .laptop .laptop__image {
   width: 100%;
 }
+.laptop .laptop__text .laptop__text__card .laptop__text__title {
+  color: var(--color-three);
+  font-weight: 500;
+  font-size: 25px;
+  text-align: center;
+}
+.laptop .laptop__text .laptop__text__card .laptop__text__description {
+  color: #c4c4c4;
+  font-weight: 400;
+  font-size: 1rem;
+  text-align: center;
+  padding: 0 10px;
+}
