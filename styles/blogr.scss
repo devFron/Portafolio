@@ -160,8 +160,27 @@ body{
     }
 }
 .main{
-    .designed__image{
-        width: 100%;
+    .main__title{
+        color:var(--color-three);
+        text-align: center;
+    }
+    .designed{
+        .designed__image{
+            width: 100%;
+        }
+        .designed__text__card__title{
+            color:var(--color-three);
+            font-weight: 500;
+            font-size:25px;
+            text-align: center;
+        }
+        .design__text__card__description{
+            color:#c4c4c4;
+            font-weight: 400;
+            font-size:1rem;
+            text-align: center;
+            padding:0 10px ;
+        }
     }
 }
 .state{
