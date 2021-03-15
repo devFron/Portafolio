@@ -323,5 +323,18 @@ body{
                 }
             }
         } 
+        .header__title{
+            font-size:3rem;
+        }
+        .header__description{
+            font-size:20px;
+            margin:0 0 1rem 0;
+        }
+        .buttons{
+            justify-content: center;
+            #buttons-button-start-free{
+                margin:0 1rem 0 0;
+            }
+        }
     }
 }

@@ -707,4 +707,17 @@ body {
   .header .nav .buttons__session #button-session-login {
     margin: 0;
   }
+  .header .header__title {
+    font-size: 3rem;
+  }
+  .header .header__description {
+    font-size: 20px;
+    margin: 0 0 1rem 0;
+  }
+  .header .buttons {
+    justify-content: center;
+  }
+  .header .buttons #buttons-button-start-free {
+    margin: 0 1rem 0 0;
+  }
 }
