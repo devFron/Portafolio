@@ -4,7 +4,7 @@ export const Menu = ()=>{
     let $menuContact = document.querySelectorAll('.menu__contact')
     let $menuIconArrow = document.querySelectorAll('.menu__icon')
     let $menuLink = document.querySelectorAll('.menu__link')
-    console.log($menuLink);
+    console.log($menuIconArrow);
     document.addEventListener('click',(e)=>{
 
         if (e.target === $hamburguerIcon) {
@@ -18,24 +18,24 @@ export const Menu = ()=>{
             $hamburguerIcon.classList.remove('fa-times')
             
         }
+
         switch (e.target) {
 
-            case $menuIconArrow[0]:
-                $menuContact[0].classList.toggle('menu__contact__enabled')
-                e.preventDefault()
-            break;
-                
-            case $menuIconArrow[1]:
-                $menuContact[1].classList.toggle('menu__contact__enabled')
-                e.preventDefault()
-            break;
-                
             case $menuIconArrow[2]:
-                $menuContact[2].classList.toggle('menu__contact__enabled') 
+                $menuContact[2].classList.toggle('menu__contact__enabled')
                 e.preventDefault()
             break;
-        
+
+            case $menuIconArrow[1]:
+                e.preventDefault()
+            break;
+            
+            case $menuIconArrow[0]:
+                e.preventDefault()
+            break;
+
             default:
+
             break;
         }
 
