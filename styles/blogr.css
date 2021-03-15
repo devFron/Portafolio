@@ -480,6 +480,7 @@ body {
 .header .buttons {
   display: flex;
   justify-content: space-around;
+  width: 100%;
 }
 .header .buttons .buttons__button {
   width: 125px;

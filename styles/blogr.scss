@@ -141,6 +141,7 @@ body{
     .buttons{
         display:flex;
         justify-content: space-around;
+        width: 100%;
         .buttons__button{
             width: 125px;
             border:none;
