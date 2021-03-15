@@ -520,8 +520,33 @@ body {
   padding: 0 10px;
 }
 
+.state {
+  background-color: var(--color-two);
+  position: relative;
+  padding: 11rem 0 30px 0;
+  margin: 7rem 0;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
 .state .state__image {
   width: 100%;
+  background: url(../resources/images/blogr/bg-pattern-circles.svg);
+  background-size: 100%;
+  top: -17%;
+  position: absolute;
+}
+.state .state__text__title {
+  color: white;
+  font-size: 27px;
+  text-align: center;
+  font-weight: 500;
+}
+.state .state__text__description {
+  color: #c4c4c4;
+  font-size: 1rem;
+  text-align: center;
+  font-weight: 400;
+  padding: 0 1rem;
 }
 
 .laptop .laptop__image {
