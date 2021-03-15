@@ -11,7 +11,25 @@ body{
 .header{
     background:url(../resources/images/blogr/bg-pattern-intro.svg),var(--color-four);
     background-size:100% ;
-    
+    position: relative;
+    height: 80vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius:100px;
+    .header__logo{
+        position: absolute;
+        top:1rem;
+        left:1rem;
+    }
+    .hambuguer-icon{
+        position: absolute;
+        right: 1rem;
+        top:1rem;
+        color:white;
+        font-size:25px;
+    }
     .nav__enabled{
         display:block;
     }
@@ -104,5 +122,55 @@ body{
                 margin:0 0 2rem 0;
             }
         }
+    }
+    .header__title{
+        color:white;
+        text-align: center;
+        font-size:27px;
+        font-weight: 500;
+        padding:0 1rem;
+    }
+    .header__description{
+        color:white;
+        text-align: center;
+        font-size:1rem;
+        font-weight: 400;
+        padding:0 1rem;
+    }
+    .buttons{
+        display:flex;
+        justify-content: space-around;
+        .buttons__button{
+            width: 125px;
+            border:none;
+            border-radius:25px;
+            height: 45px;
+        }
+        #buttons-button-start-free{
+            background-color:white;
+            color:var(--color-four);
+            font-weight: 700;
+        }
+        #buttons-button-learn{
+            background-color:transparent;
+            color:white;
+            font-weight: 700;
+            border: 2px solid white;
+        }
+    }
+}
+.main{
+    .designed__image{
+        width: 100%;
+    }
+}
+.state{
+    .state__image{
+        width: 100%;
+    }
+}
+.laptop{
+    .laptop__image{
+        width: 100%;
     }
 }
