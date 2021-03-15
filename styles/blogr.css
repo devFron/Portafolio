@@ -344,3 +344,103 @@ template {
   --color-three:#2a4860;
   --color-four:#ff4b5a;
 }
+
+body {
+  font-family: roboto;
+}
+
+.header {
+  background: url(../resources/images/blogr/bg-pattern-intro.svg), var(--color-four);
+  background-size: 100%;
+}
+.header .nav__enabled {
+  display: block;
+}
+.header .nav {
+  overflow: scroll;
+  background-color: white;
+  padding: 0 1rem;
+  position: fixed;
+  top: 5rem;
+  left: 1rem;
+  right: 1rem;
+  box-shadow: 0 2rem 1rem rgba(0, 0, 0, 0.5);
+  display: none;
+}
+.header .nav .menu {
+  padding: 0 0 2rem 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 2px solid #eee;
+}
+.header .nav .menu .menu__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  padding: 20px 0 0 0;
+}
+.header .nav .menu .menu__icon {
+  color: var(--color-four);
+  font-size: 18px;
+  margin: 0 1rem;
+}
+.header .nav .menu .menu__link {
+  text-decoration: none;
+  color: var(--color-three);
+  font-weight: 500;
+}
+.header .nav .menu .menu__link:hover {
+  text-decoration: underline;
+}
+.header .nav .menu .menu__contact {
+  display: none;
+}
+.header .nav .menu .menu__contact__enabled {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 1rem 0;
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+  background-color: #eee;
+}
+.header .nav .menu .menu__contact__enabled .sub__menu__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  padding: 1rem 0;
+}
+.header .nav .menu .menu__contact__enabled .sub__menu__link {
+  text-decoration: none;
+  color: var(--color-three);
+}
+.header .nav .buttons__session {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header .nav .buttons__session .button__session {
+  width: 150px;
+  height: 45px;
+  border-radius: 25px;
+  border: none;
+  margin: 0px 0;
+  font-weight: 500;
+}
+.header .nav .buttons__session #button-session-login {
+  background-color: transparent;
+  color: var(--color-three);
+  margin-top: 1rem;
+}
+.header .nav .buttons__session #button-session-sign {
+  background: linear-gradient(to right, #fc6767, #f05053);
+  color: white;
+  margin: 0 0 2rem 0;
+}
