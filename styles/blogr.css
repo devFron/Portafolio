@@ -720,4 +720,27 @@ body {
   .header .buttons #buttons-button-start-free {
     margin: 0 1rem 0 0;
   }
+
+  .main .main__title {
+    font-size: 2rem;
+  }
+  .main .designed {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .main .designed .designed__image {
+    grid-column: 2/3;
+    width: 100%;
+  }
+  .main .designed .designed__text {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .main .designed .designed__text .designed__text__card .designed__text__card__title {
+    font-size: 30px;
+  }
+  .main .designed .designed__text .designed__text__card .design__text__card__description {
+    text-align: start;
+    padding: 0 3rem;
+  }
 }

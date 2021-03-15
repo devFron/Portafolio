@@ -337,4 +337,31 @@ body{
             }
         }
     }
+    .main{
+        // background-color:red;
+        .main__title{
+            font-size:2rem;
+        }
+        .designed{
+            display:grid;
+            grid-template-columns:repeat(2,1fr);
+            .designed__image{
+                grid-column: 2/3;
+                width: 100%;
+            }
+            .designed__text{
+                grid-column: 1/2;
+                grid-row: 1/2;
+                .designed__text__card{
+                    .designed__text__card__title{
+                        font-size:30px;
+                    }
+                    .design__text__card__description{
+                        text-align: start;
+                        padding: 0 3rem;
+                    }
+                }
+            }
+        }
+    }
 }
