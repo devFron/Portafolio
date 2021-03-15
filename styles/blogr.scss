@@ -263,3 +263,65 @@ body{
        @include items-footer-blogr;
     }
 }
+@media screen and (min-width:1000px){
+    .header{
+        .hambuguer-icon{
+            display:none;
+        }
+        .nav{
+            display:block;
+            top:1rem;
+            left:10rem;
+            height: 34vh;
+            display: flex;
+            justify-content:space-between;
+            align-items: flex-start;
+            box-shadow: none;
+            bottom:auto;
+            overflow: auto;
+            background-color:transparent;
+            position: absolute;
+            top:1rem;
+            .menu{
+                margin:1rem 0 0 0 ;
+                border:none;
+                display:flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                width: 50%;
+                padding:0;
+                .menu__item{
+                    padding:0;
+                    margin:0;
+                    position:relative;
+                }
+                .menu__link{
+                    color:white;
+                }
+                .menu__icon{
+                    color:white;
+                }
+            }
+            .menu__contact{
+                position: absolute;
+                top:100%;
+            }
+            .buttons__session{
+                display:flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                .button__session{
+                    margin:0;
+                }
+                #button-session-sign{
+                    margin:0;
+                }
+                #button-session-login{
+                    margin:0;
+                }
+            }
+        } 
+    }
+}
