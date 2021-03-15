@@ -168,8 +168,11 @@ body{
         text-align: center;
     }
     .designed{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
         .designed__image{
-            width: 100%;
+            width: 270px;
         }
         .designed__text__card__title{
             color:var(--color-three);
@@ -217,8 +220,12 @@ body{
     }
 }
 .laptop{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     .laptop__image{
-        width: 100%;
+        width: 250px;
     }
     .laptop__text{
         .laptop__text__card{

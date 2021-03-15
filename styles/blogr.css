@@ -505,8 +505,13 @@ body {
   color: var(--color-three);
   text-align: center;
 }
+.main .designed {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .main .designed .designed__image {
-  width: 100%;
+  width: 270px;
 }
 .main .designed .designed__text__card__title {
   color: var(--color-three);
@@ -553,8 +558,14 @@ body {
   padding: 0 1rem;
 }
 
+.laptop {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
 .laptop .laptop__image {
-  width: 100%;
+  width: 250px;
 }
 .laptop .laptop__text .laptop__text__card .laptop__text__title {
   color: var(--color-three);
