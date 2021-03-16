@@ -609,6 +609,38 @@ body {
   color: white;
   text-decoration: underline;
 }
+@media screen and (min-width: 1000px) {
+  .footer .menu__product {
+    list-style: none;
+    margin: 0;
+    padding: 1rem 0;
+  }
+  .footer .menu__product .menu__footer__item {
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 8px 0;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .footer .menu__product #menu-company-item-title {
+    padding: 0 0 35px 0;
+  }
+  .footer .menu__product #menu-connect-item-title {
+    padding: 0 0 58px 0;
+  }
+  .footer .menu__product .menu__footer__link {
+    color: #c4c4c4;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .footer .menu__product .menu__footer__link:hover {
+    color: white;
+    text-decoration: underline;
+  }
+}
 .footer .menu__company {
   list-style: none;
   margin: 0;
@@ -628,6 +660,38 @@ body {
   color: white;
   text-decoration: underline;
 }
+@media screen and (min-width: 1000px) {
+  .footer .menu__company {
+    list-style: none;
+    margin: 0;
+    padding: 1rem 0;
+  }
+  .footer .menu__company .menu__footer__item {
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 8px 0;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .footer .menu__company #menu-company-item-title {
+    padding: 0 0 35px 0;
+  }
+  .footer .menu__company #menu-connect-item-title {
+    padding: 0 0 58px 0;
+  }
+  .footer .menu__company .menu__footer__link {
+    color: #c4c4c4;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .footer .menu__company .menu__footer__link:hover {
+    color: white;
+    text-decoration: underline;
+  }
+}
 .footer .menu__connect {
   list-style: none;
   margin: 0;
@@ -646,6 +710,38 @@ body {
 .footer .menu__connect .menu__footer__link:hover {
   color: white;
   text-decoration: underline;
+}
+@media screen and (min-width: 1000px) {
+  .footer .menu__connect {
+    list-style: none;
+    margin: 0;
+    padding: 1rem 0;
+  }
+  .footer .menu__connect .menu__footer__item {
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 8px 0;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .footer .menu__connect #menu-company-item-title {
+    padding: 0 0 35px 0;
+  }
+  .footer .menu__connect #menu-connect-item-title {
+    padding: 0 0 58px 0;
+  }
+  .footer .menu__connect .menu__footer__link {
+    color: #c4c4c4;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .footer .menu__connect .menu__footer__link:hover {
+    color: white;
+    text-decoration: underline;
+  }
 }
 
 @media screen and (min-width: 1000px) {
@@ -787,5 +883,14 @@ body {
   .laptop .laptop__text .laptop__text__card .laptop__text__description {
     font-size: 25px;
     text-align: start;
+  }
+
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0;
+  }
+  .footer .footer__image {
+    width: 70%;
   }
 }
