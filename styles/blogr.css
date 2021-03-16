@@ -742,5 +742,34 @@ body {
   .main .designed .designed__text .designed__text__card .design__text__card__description {
     text-align: start;
     padding: 0 3rem;
+    font-size: 22px;
+  }
+
+  .state {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 10rem;
+    height: 45vh;
+  }
+  .state .state__image {
+    width: 30%;
+    top: -20%;
+    left: 10%;
+  }
+  .state .state__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-column: 2/3;
+  }
+  .state .state__text .state__text__title {
+    color: white;
+    font-size: 3rem;
+    margin: 0 0 0 0;
+  }
+  .state .state__text .state__text__description {
+    font-size: 20px;
+    text-align: start;
+    line-height: 25px;
   }
 }
