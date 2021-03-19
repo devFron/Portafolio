@@ -144,3 +144,6 @@ export const assistant = ( )=>{
 
     $sliderButtonsActive[0].classList.add('slider__button__enabled')
 }
+export const assistantSlider =( )=>{
+
+}
