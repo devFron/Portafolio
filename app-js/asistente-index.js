@@ -147,8 +147,36 @@ export const assistant = ( )=>{
 export const assistantSlider =( )=>{
     let $sliderSlide = document.querySelectorAll('.assistant__slider__slide')
     let $sliderButtonLeft = document.querySelectorAll('#button-left')
+    let $sliderButtontIconLeft = document.querySelector('#icon-left')
     let $sliderButtontRight = document.querySelectorAll('#button-rigth')
+    let $sliderButtontIconRight = document.querySelector('#icon-right')
     let $buttonsSliders = document.querySelectorAll('.assistant__buttons__slider__active')
-    
+
+    let i = 0
+
+    document.addEventListener('click',(e)=>{
+
+        if (e.target === $sliderButtonLeft || e.target === $sliderButtontIconLeft) {
+            $sliderSlide[i].classList.remove('slide-active')
+            $buttonsSliders[i].classList.remove('slider__button__enabled')
+            i--
+            if (i < 0) {
+                i = $sliderSlide.length - 1
+            }
+            $sliderSlide[i].classList.add('slide-active')
+            $buttonsSliders[i].classList.add('slider__button__enabled')
+        }
+        if (e.target === $sliderButtontRight || e.target === $sliderButtontIconRight) {
+            $sliderSlide[i].classList.remove('slide-active')
+            $buttonsSliders[i].classList.remove('slider__button__enabled')
+            
+            i++
+            if (i >= $sliderSlide.length ) {
+                i = 0
+            }
+            $sliderSlide[i].classList.add('slide-active')
+            $buttonsSliders[i].classList.add('slider__button__enabled')
+        }
+    })
 
 }
