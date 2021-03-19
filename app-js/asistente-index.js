@@ -64,13 +64,14 @@ export const assistant = ( )=>{
     $assistantSliderSlideImageThree.classList.add('assistan__slider__image')
     // slider-slide-text-Three
     let $assistantSliderSlideTextThree = document.createElement('p')
-    $assistantSliderSlideTextThree.textContent = 'Estos proyectos o paginas web no son d emi propiedad perteneces a '
+    $assistantSliderSlideTextThree.textContent = 'Estos proyectos o landing page  no son de mi propiedad pertenecen a '
     $assistantSliderSlideTextThree.classList.add('assistant__slider__text')
 
     let $assistantSliderSlideTextLinkThree = document.createElement('a')
     $assistantSliderSlideTextLinkThree.classList.add('front-met')
     $assistantSliderSlideTextLinkThree.setAttribute('href','https://www.frontendmentor.io/solutions')
     $assistantSliderSlideTextLinkThree.setAttribute('target','_blank')
+    $assistantSliderSlideTextLinkThree.textContent = 'frontend Mentor'
 
     // inyecciones-Three
     $assistantSliderSlideThree.appendChild($assistantSliderSlideImageThree)
