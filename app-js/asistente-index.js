@@ -153,7 +153,7 @@ export const assistantSlider =( )=>{
     let $sliderButtontRight = document.querySelectorAll('#button-rigth')
     let $sliderButtontIconRight = document.querySelector('#icon-right')
     let $buttonsSliders = document.querySelectorAll('.assistant__buttons__slider__active')
-
+    let $assistant = document.querySelector('.assistant')
     let i = 0
 
     document.addEventListener('click',(e)=>{
@@ -178,6 +178,9 @@ export const assistantSlider =( )=>{
             }
             $sliderSlide[i].classList.add('slide-active')
             $buttonsSliders[i].classList.add('slider__button__enabled')
+        }
+        if (e.target.matches('.close__icon')) {
+            $assistant.classList.add('assistant__disabled')
         }
     })
 

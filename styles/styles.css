@@ -430,6 +430,7 @@ body {
   right: 1rem;
   top: 1rem;
   font-size: 20px;
+  z-index: 999;
 }
 .assistant .assistant__body .assistant__slider {
   height: 45vh;
@@ -505,6 +506,10 @@ body {
 }
 .assistant .assistant__body .assistant__buttons__slider .slider__button__enabled {
   background-color: black;
+}
+
+.assistant__disabled {
+  display: none;
 }
 
 @media screen and (min-width: 552px) {

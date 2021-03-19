@@ -72,6 +72,7 @@ body{
         }
     }
 }
+
 .assistant{
     background-color:rgba(0, 0, 0, 0.541);
     position: fixed;
@@ -92,6 +93,7 @@ body{
             right:1rem;
             top:1rem;
             font-size:20px;
+            z-index:999;
         }
         .assistant__slider{
             height: 45vh;
@@ -171,7 +173,9 @@ body{
         }
     }
 }
-
+.assistant__disabled{
+    display:none;
+}
 @media screen and (min-width:552px){
     .main{
         .proyects{
