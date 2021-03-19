@@ -148,9 +148,9 @@ export const assistant = ( )=>{
 }
 export const assistantSlider =( )=>{
     let $sliderSlide = document.querySelectorAll('.assistant__slider__slide')
-    let $sliderButtonLeft = document.querySelectorAll('#button-left')
+    let $sliderButtonLeft = document.querySelector('#button-left')
     let $sliderButtontIconLeft = document.querySelector('#icon-left')
-    let $sliderButtontRight = document.querySelectorAll('#button-rigth')
+    let $sliderButtontRight = document.querySelector('#button-rigth')
     let $sliderButtontIconRight = document.querySelector('#icon-right')
     let $buttonsSliders = document.querySelectorAll('.assistant__buttons__slider__active')
     let $assistant = document.querySelector('.assistant')
