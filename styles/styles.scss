@@ -72,6 +72,106 @@ body{
         }
     }
 }
+.assistant{
+    background-color:rgba(0, 0, 0, 0.541);
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    .assistant__body{
+        background-color: white;
+        width: 100%;
+        height:320px ;
+        position: absolute;
+        .close__icon{
+            position: absolute;
+            right:1rem;
+            top:1rem;
+            font-size:20px;
+        }
+        .assistant__slider{
+            height: 45vh;
+            position: relative;
+            margin:0;
+            .assistant__slider__slides{
+                height: 100%;
+                width: 100%;
+                .assistant__slider__slide{
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    display:flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    margin:0;
+                    padding:0;
+                    display: none;
+                    .assistan__slider__image{
+                        width: 163px;
+                        height: 139px;
+                    }
+                    .assistant__slider__text{
+                        text-align: center;
+                        padding: 0 1rem ;
+                        line-height: 25px;
+                        margin:0;
+                        .my-name{
+                            
+                            font-weight: 700;
+                        }
+                        .front-met{
+                            text-decoration:none;
+                            color:black;
+                            font-weight: 700;
+                        }
+                    }
+                }
+                .slide-active{
+                    display: flex;
+                }
+            }
+        }
+        .assistant__buttons{
+            background-color:white;
+            display:flex;
+            justify-content: space-between;
+            padding:0 3rem;
+            .assistant__buttons__button{
+                background-color:black;
+                width: 28px;
+                height:28px;
+                border-radius:100%;
+                color:white;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        .assistant__buttons__slider{
+            display:flex;
+            justify-content:center;
+            background-color:white;
+            padding: 1rem 0 ;
+            .assistant__buttons__slider__active{
+                background-color:#c4c4c4;
+                width:18px ;
+                height: 18px;
+                border-radius:100%;
+                margin:0 7px;
+                padding:0;
+            }
+            .slider__button__enabled{
+                background-color:black;
+            }
+        }
+    }
+}
+
 @media screen and (min-width:552px){
     .main{
         .proyects{
