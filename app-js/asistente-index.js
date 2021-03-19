@@ -145,5 +145,10 @@ export const assistant = ( )=>{
     $sliderButtonsActive[0].classList.add('slider__button__enabled')
 }
 export const assistantSlider =( )=>{
+    let $sliderSlide = document.querySelectorAll('.assistant__slider__slide')
+    let $sliderButtonLeft = document.querySelectorAll('#button-left')
+    let $sliderButtontRight = document.querySelectorAll('#button-rigth')
+    let $buttonsSliders = document.querySelectorAll('.assistant__buttons__slider__active')
+    
 
 }
