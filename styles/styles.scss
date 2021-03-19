@@ -270,4 +270,37 @@ body{
             }
         }
     }
+    .assistant{
+        .assistant__body{
+            width: 400px;
+            height: 518px;
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            .assistant__slider{
+                // background-color:red;
+                margin:0 0 1rem 0;
+                .assistant__slider__slides{
+                    .assistant__slider__slide{
+                        .assistan__slider__image{
+                            width:234px ;
+                            height: 193px;
+                        }
+                        .assistant__slider__text{
+                            font-size:20px;
+                            padding:10px 0 0 0 ;
+                        }
+                    }
+                }
+            }
+            .assistant__buttons{
+                padding:1rem 8rem ;
+                .assistant__buttons__button{
+                    width: 40px;
+                    height: 40px;
+                    font-size:25px;
+                }
+            }
+        }
+    }
 }
