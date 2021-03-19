@@ -97,6 +97,7 @@ export const assistant = ( )=>{
     $assistantSliderSlides.appendChild($assistantSliderSlideOne)
     $assistantSliderSlides.appendChild($assistantSliderSlideTwo)
     $assistantSliderSlides.appendChild($assistantSliderSlideThree)
+    $assistantSliderSlides.appendChild($assistantSliderSlideFour)
     // buttons
     let $assistantButtons = document.createElement('article')
     $assistantButtons.classList.add('assistant__buttons')
