@@ -1,0 +1,100 @@
+@mixin card-disable {
+    .card__title{
+        color:#7d7d7d;
+    }
+    .card__description{
+        color: #7d7d7d65;
+    }
+    .card-number{
+        color: #7d7d7d5e;
+    }
+    .number-direction__desable{
+        color: #7d7d7d5e;
+    }
+}
+@mixin items-footer-blogr {
+    &{
+        list-style: none;
+        margin:0;
+        padding:1rem 0;
+        .menu__footer__item{
+            display:flex;
+            justify-content: center;
+            color:white;
+            padding:8px 0;
+        }
+        .menu__footer__link{
+            color:#c4c4c4;
+            text-decoration: none;
+            &:hover{
+                color:white;
+                text-decoration: underline;
+            }
+        }
+    }
+    @media screen and (min-width:1000px) {
+        &{
+            list-style: none;
+            margin:0;
+            padding:1rem 0;
+            .menu__footer__item{
+                display:flex;
+                justify-content: center;
+                color:white;
+                padding:8px 0;
+                font-size:20px;
+                font-weight: 700;
+            }
+            #menu-company-item-title{
+                padding:0 0 35px 0;
+            }
+            #menu-connect-item-title{
+                padding:0 0 58px 0;
+            }
+            .menu__footer__link{
+                color:#c4c4c4;
+                text-decoration: none;
+                color:white;
+                font-size:20px;
+                font-weight: 400;
+                &:hover{
+                    color:white;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+@mixin phoenix {
+    .circle{
+        position:fixed;
+        bottom:0;
+        left:0;
+        width: 50px;
+        height: 50px;
+        background-color:black;
+        border-radius: 50%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        z-index:999;
+        .phoenix__image{
+            width: 35px;
+        }
+        
+
+    }
+    @media screen and (min-width:1000px) {
+        .circle{
+            position: fixed;
+            bottom:1rem;
+            top:auto;
+            left:1rem;
+            width: 70px;
+            height: 70px;
+            .phoenix__image{
+                width: 65%;
+            }
+        }
+    }
+}
