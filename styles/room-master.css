@@ -468,6 +468,36 @@ body {
   line-height: 23px;
 }
 
+.circle {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+.circle .phoenix__image {
+  width: 35px;
+}
+
+@media screen and (min-width: 1000px) {
+  .circle {
+    position: fixed;
+    bottom: 1rem;
+    top: auto;
+    left: 1rem;
+    width: 70px;
+    height: 70px;
+  }
+  .circle .phoenix__image {
+    width: 65%;
+  }
+}
 @media screen and (min-width: 840px) {
   .header .nav__enabled .menu .x-icon {
     margin: 0 15rem 0 0;
