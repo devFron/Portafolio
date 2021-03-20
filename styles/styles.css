@@ -551,6 +551,8 @@ body {
   .header .nav {
     position: relative;
     display: block;
+    height: auto;
+    background-color: transparent;
   }
   .header .nav .menu {
     box-shadow: none;
@@ -570,6 +572,17 @@ body {
     text-decoration: none;
     color: black;
     font-weight: 500;
+  }
+  .header .nav .circle {
+    position: fixed;
+    bottom: 1rem;
+    top: auto;
+    left: 1rem;
+    width: 70px;
+    height: 70px;
+  }
+  .header .nav .circle .phoenix .phoenix__image {
+    width: 70%;
   }
 
   .main .main__title {

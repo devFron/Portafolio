@@ -226,6 +226,8 @@ body{
         .nav{
             position: relative;
             display:block;
+            height: auto;
+            background-color:transparent;
             .menu{
                 box-shadow:none;
                 background: none;
@@ -243,6 +245,19 @@ body{
                     text-decoration: none;
                     color:black;
                     font-weight: 500;
+                }
+            }
+            .circle{
+                position: fixed;
+                bottom:1rem;
+                top:auto;
+                left:1rem;
+                width: 70px;
+                height: 70px;
+                .phoenix{
+                    .phoenix__image{
+                        width: 70%;
+                    }
                 }
             }
         }
