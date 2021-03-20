@@ -1,4 +1,5 @@
 @import "../resources-sass/normalize";
+@import "../resources-sass/mixin";
 body{
     font-family: roboto;
 }
@@ -131,6 +132,7 @@ body{
         }
     }
 }
+@include phoenix;
 @media screen and (min-width:840px){
     .header{
         .nav__enabled{
