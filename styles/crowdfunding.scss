@@ -475,7 +475,7 @@ body{
     }
 }
 @include card-disable;
-@include phoenix;
+@include phoenixTwo;
 @media screen and (min-width:1000px){
     .header{
         background-image: url(../resources/images/crowdfunding/image-hero-desktop.jpg);
