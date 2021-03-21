@@ -216,3 +216,39 @@ body{
         }
     }
 }
+@media screen and (min-width:500px){
+    .header{
+        display:flex;
+        justify-content: space-between;
+        padding:1rem 2rem;
+        .titles{
+            border:none;
+            .header__title{
+                font-size:30px;
+            }
+            .header__followers{
+                font-size:20px;
+            }
+        }
+        .buttons{
+            .buttons__title{
+                padding: 0 1rem;
+            }
+        }
+    }
+    .main{
+        .social-media__followers{
+            display:grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-gap:2rem;
+            padding:0 2rem;
+        }
+    }
+    .overview{
+        padding:0 2rem;
+        .overview__cards{
+            grid-template-columns: repeat(2,1fr);
+            grid-gap:1rem;
+        }
+    }
+}
