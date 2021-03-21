@@ -461,3 +461,81 @@ body {
 .main .social-media__followers #social-media-card-four .social-media__card__followers__plus {
   color: #c4032b;
 }
+
+.overview {
+  padding: 0 1rem;
+}
+.overview .overview__title {
+  font-weight: 700;
+  color: var(--color-light-three);
+  font-size: 20px;
+}
+.overview .overview__cards {
+  display: grid;
+  row-gap: 1rem;
+}
+.overview .overview__cards .overview__cards__card {
+  display: grid;
+  row-gap: 1rem;
+}
+.overview .overview__cards .overview__cards__card .overview__cards__card__data {
+  background-color: var(--color-light-two);
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  height: 15vh;
+}
+.overview .overview__cards .overview__cards__card .overview__cards__card__data .overview__cards__card__data__views {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.overview .overview__cards .overview__cards__card .overview__cards__card__data .overview__cards__card__data__views .overview__cards__card__data__views__title {
+  color: var(--color-light-three);
+  font-weight: 700;
+  margin: 0;
+}
+.overview .overview__cards .overview__cards__card .overview__cards__card__data .overview__cards__card__data__views .overview__cards__card__data__views__number {
+  font-weight: 700;
+  font-size: 25px;
+  margin: 0;
+  padding: 0;
+}
+.overview .overview__cards .overview__cards__card .overview__cards__card__data .overview__cards__card__social-media__counter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.overview .overview__cards .overview__cards__card .overview__cards__card__data .overview__cards__card__social-media__counter .overview__cards__card__social-media__counter__number {
+  color: var(--color-number);
+  display: flex;
+  align-items: center;
+  margin: 0;
+  justify-content: center;
+}
+.overview .overview__cards .overview__cards__card .overview__cards__card__data .overview__cards__card__social-media__counter .overview__cards__card__social-media__counter__number .overview__cards__card__social-media__counter__number__porcent {
+  margin: 0;
+  padding: 0;
+}
+.overview .overview__cards .overview__cards__card .overview__cards__card__data .overview__cards__card__social-media__counter .overview__cards__card__social-media__counter__number .overview__cars__card__social-media__counter__number__icon {
+  padding: 0 5px;
+}
+.overview .overview__cards .overview__cards__card .overview__cards__card__data .overview__cards__card__social-media__counter .counter-down {
+  color: #c4032b;
+}
+.overview .overview__cards .overview__cards__card .overview__cards__card__data .overview__cards__card__data__likes {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.overview .overview__cards .overview__cards__card .overview__cards__card__data .overview__cards__card__data__likes .overview__cards__card__data__likes__title {
+  color: var(--color-light-three);
+  font-weight: 700;
+  margin: 0;
+}
+.overview .overview__cards .overview__cards__card .overview__cards__card__data .overview__cards__card__data__likes .overview__cards__card__data__likes__number {
+  font-weight: 700;
+  font-size: 25px;
+  margin: 0;
+}
