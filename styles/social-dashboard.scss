@@ -232,6 +232,9 @@ body{
             .social-media__card__dark{
                 background-color:var(--color-dark-two);
                 color:white;
+                &:hover{
+                    background-color:#333a56;
+                }
                 .social-media__card__followers__plus__description__dark{
                     color:white;
                 }

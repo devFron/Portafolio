@@ -563,6 +563,9 @@ body {
   background-color: var(--color-dark-two);
   color: white;
 }
+.main .social-media__followers .social-media__card__dark:hover {
+  background-color: #333a56;
+}
 .main .social-media__followers .social-media__card__dark .social-media__card__followers__plus__description__dark {
   color: white;
 }
@@ -639,6 +642,9 @@ body {
   .main .social-media__followers .social-media__card__dark {
     background-color: var(--color-dark-two);
     color: white;
+  }
+  .main .social-media__followers .social-media__card__dark:hover {
+    background-color: #333a56;
   }
   .main .social-media__followers .social-media__card__dark .social-media__card__followers__plus__description__dark {
     color: white;
@@ -717,6 +723,9 @@ body {
   .main .social-media__followers .social-media__card__dark {
     background-color: var(--color-dark-two);
     color: white;
+  }
+  .main .social-media__followers .social-media__card__dark:hover {
+    background-color: #333a56;
   }
   .main .social-media__followers .social-media__card__dark .social-media__card__followers__plus__description__dark {
     color: white;
