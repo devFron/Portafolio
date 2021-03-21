@@ -1,8 +1,8 @@
 @import "../resources-sass/normalize";
 @import "../resources-sass/mixin";
 :root{
-    --color-light-one:#f0f3fa;
-    --color-light-two:#e1e3f0;
+    --color-light-one:#f8f9fe;
+    --color-light-two:#f0f3fa;
     --color-light-three:#6b6d82;
     --color-dark-one:#1d2029;
     --color-dark-two:#252b43;
@@ -216,7 +216,7 @@ body{
         }
     }
 }
-@media screen and (min-width:500px){
+@media screen and (min-width:1000px){
     .header{
         display:flex;
         justify-content: space-between;
@@ -242,10 +242,16 @@ body{
             grid-template-columns: repeat(4,1fr);
             grid-gap:2rem;
             padding:0 2rem;
+            .social-media__card{
+                &:hover{
+                    background-color:#e1e3f0;
+                    cursor: pointer;
+                }
+            }
         }
     }
     .overview{
-        padding:0 2rem;
+        padding:0 2rem 1rem 2rem;
         .overview__cards{
             grid-template-columns: repeat(2,1fr);
             grid-gap:1rem;
