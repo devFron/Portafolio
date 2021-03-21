@@ -540,11 +540,91 @@ body {
   margin: 0;
 }
 
+.body__dark {
+  background-color: var(--color-dark-one);
+}
+
+.header .titles__dark {
+  color: white;
+}
+.header .titles__dark .header__followers__dark {
+  color: var(--color-light-three);
+}
+.header .buttons .button__dark {
+  background: var(--color-gradient-two);
+}
+.header .buttons .button__dark .button__circle__dark {
+  background: var(--color-dark-three);
+  left: 5px;
+  right: auto;
+}
+
+.main .social-media__followers .social-media__card__dark {
+  background-color: var(--color-dark-two);
+  color: white;
+}
+.main .social-media__followers .social-media__card__dark .social-media__card__followers__plus__description__dark {
+  color: white;
+}
+
+.overview .overview__title__dark {
+  color: white;
+}
+.overview .overview__cards .overview__cards__card .overview__cards__card__data__dark {
+  background-color: #252b43;
+}
+.overview .overview__cards .overview__cards__card .overview__cards__card__data__dark .overview__cards__card__data__views .overview__cards__card__data__views__number__dark {
+  color: white;
+}
+.overview .overview__cards .overview__cards__card .overview__cards__card__data__dark .overview__cards__card__data__likes .overview__cards__card__data__likes__number__dark {
+  color: white;
+}
+
 @media screen and (min-width: 500px) {
   .overview .overview__cards .overview__cards__card {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1rem;
+  }
+
+  .body__dark {
+    background-color: var(--color-dark-one);
+  }
+
+  .header .titles__dark {
+    color: white;
+  }
+  .header .titles__dark .header__followers__dark {
+    color: var(--color-light-three);
+  }
+  .header .buttons .button__dark {
+    background: var(--color-gradient-two);
+  }
+  .header .buttons .button__dark .button__circle__dark {
+    background: var(--color-dark-three);
+    left: 5px;
+    right: auto;
+  }
+
+  .main .social-media__followers .social-media__card__dark {
+    background-color: var(--color-dark-two);
+    color: white;
+  }
+  .main .social-media__followers .social-media__card__dark .social-media__card__followers__plus__description__dark {
+    color: white;
+  }
+
+  .overview .overview__title__dark {
+    color: white;
+  }
+  .overview .overview__cards .overview__cards__card .overview__cards__card__data__dark {
+    background-color: #252b43;
+  }
+  .overview .overview__cards .overview__cards__card .overview__cards__card__data__dark .overview__cards__card__data__views .overview__cards__card__data__views__number__dark {
+    color: white;
+  }
+  .overview .overview__cards .overview__cards__card .overview__cards__card__data__dark .overview__cards__card__data__likes .overview__cards__card__data__likes__number__dark {
+    color: white;
   }
 }
 @media screen and (min-width: 1000px) {
@@ -583,5 +663,45 @@ body {
   .overview .overview__cards {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1rem;
+  }
+
+  .body__dark {
+    background-color: var(--color-dark-one);
+  }
+
+  .header .titles__dark {
+    color: white;
+  }
+  .header .titles__dark .header__followers__dark {
+    color: var(--color-light-three);
+  }
+  .header .buttons .button__dark {
+    background: var(--color-gradient-two);
+  }
+  .header .buttons .button__dark .button__circle__dark {
+    background: var(--color-dark-three);
+    left: 5px;
+    right: auto;
+  }
+
+  .main .social-media__followers .social-media__card__dark {
+    background-color: var(--color-dark-two);
+    color: white;
+  }
+  .main .social-media__followers .social-media__card__dark .social-media__card__followers__plus__description__dark {
+    color: white;
+  }
+
+  .overview .overview__title__dark {
+    color: white;
+  }
+  .overview .overview__cards .overview__cards__card .overview__cards__card__data__dark {
+    background-color: #252b43;
+  }
+  .overview .overview__cards .overview__cards__card .overview__cards__card__data__dark .overview__cards__card__data__views .overview__cards__card__data__views__number__dark {
+    color: white;
+  }
+  .overview .overview__cards .overview__cards__card .overview__cards__card__data__dark .overview__cards__card__data__likes .overview__cards__card__data__likes__number__dark {
+    color: white;
   }
 }

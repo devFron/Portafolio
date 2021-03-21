@@ -205,6 +205,65 @@ body{
         }
     }
 }
+@mixin dark-mode {
+    .body__dark{
+        background-color:var(--color-dark-one);
+    }
+    .header{
+        .titles__dark{
+            color:white;
+            .header__followers__dark{
+                color:var(--color-light-three);
+            }
+        }
+        .buttons{
+            .button__dark{
+                background:var(--color-gradient-two);
+                .button__circle__dark{
+                    background: var(--color-dark-three);
+                    left:5px;
+                    right: auto;
+                }
+            }
+        }
+    }
+    .main{
+        .social-media__followers{
+            .social-media__card__dark{
+                background-color:var(--color-dark-two);
+                color:white;
+                .social-media__card__followers__plus__description__dark{
+                    color:white;
+                }
+            }
+        }
+    }
+    .overview{
+        .overview__title__dark{
+            color:white;
+        }
+        .overview__cards{
+            .overview__cards__card{
+                .overview__cards__card__data__dark{
+                    background-color: #252b43;
+                    .overview__cards__card__data__views{
+                        .overview__cards__card__data__views__number__dark{
+                            color:white;
+                        }
+                    }
+                    .overview__cards__card__data__likes{
+                        .overview__cards__card__data__likes__number__dark{
+                            color:white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include dark-mode;
+
 @media screen and (min-width:500px){
     .overview{
         .overview__cards{
@@ -215,6 +274,7 @@ body{
             }
         }
     }
+    @include dark-mode;
 }
 @media screen and (min-width:1000px){
     .header{
@@ -257,4 +317,5 @@ body{
             grid-gap:1rem;
         }
     }
+    @include dark-mode;
 }
