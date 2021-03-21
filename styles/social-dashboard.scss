@@ -205,3 +205,14 @@ body{
         }
     }
 }
+@media screen and (min-width:500px){
+    .overview{
+        .overview__cards{
+            .overview__cards__card{
+                display:grid;
+                grid-template-columns:repeat(2,1fr);
+                grid-gap:1rem;
+            }
+        }
+    }
+}
