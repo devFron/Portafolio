@@ -7,6 +7,30 @@ export const DarkMode = () =>{
     let assistantBody = document.querySelector('.assistant__body')
     let $frontMentorLink = document.querySelector('.front-met')
     let $sliderButtons = document.querySelectorAll('.assistant__buttons__button')
+    let $sliderButtonsBox = document.querySelector('.assistant__buttons')
+    let $sliderButtonsActiveBox = document.querySelector('.assistant__buttons__slider')
     let $sliderButtonsActive = document.querySelectorAll('.assistant__buttons__slider__active')
 
+    document.addEventListener('click',(e)=>{
+        if (e.target === $circle || e.target.matches('.phoenix__image') ) {
+            $body.classList.toggle('body__dark')
+            $header.classList.add('header__dark')
+            $menuLink[0].classList.add('menu__link__dark')
+            $menuLink[1].classList.add('menu__link__dark')
+            $menuLink[2].classList.add('menu__link__dark')
+            $menuLink[3].classList.add('menu__link__dark')
+            $circle.classList.toggle('circle__dark')
+            $main.classList.toggle('main__dark')
+            assistantBody.classList.toggle('assistant__body__dark')
+            $frontMentorLink.classList.toggle('front-met__dark')
+            $sliderButtons[0].classList.toggle('assistant__buttons__button__dark')
+            $sliderButtons[1].classList.toggle('assistant__buttons__button__dark')
+            $sliderButtonsActive[0].classList.toggle('assistant__buttons__slider__active__dark')
+            $sliderButtonsActive[1].classList.toggle('assistant__buttons__slider__active__dark')
+            $sliderButtonsActive[2].classList.toggle('assistant__buttons__slider__active__dark')
+            $sliderButtonsActive[3].classList.toggle('assistant__buttons__slider__active__dark')
+            $sliderButtonsBox.classList.toggle('assistant__buttons__dakr')
+            $sliderButtonsActiveBox.classList.toggle('assistant__buttons__slider__dark')
+        }
+    })
 }

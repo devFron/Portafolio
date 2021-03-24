@@ -440,7 +440,7 @@ body {
 .header__dark .nav .menu .menu__link__dark {
   color: white;
 }
-.header__dark .nav .circle {
+.header__dark .nav .circle__dark {
   background-color: #131419;
 }
 
@@ -597,7 +597,7 @@ body {
   .header__dark .nav .menu .menu__link__dark {
     color: white;
   }
-  .header__dark .nav .circle {
+  .header__dark .nav .circle__dark {
     background-color: #131419;
   }
 
@@ -761,7 +761,7 @@ body {
   .header__dark .nav .menu .menu__link__dark {
     color: white;
   }
-  .header__dark .nav .circle {
+  .header__dark .nav .circle__dark {
     background-color: #131419;
   }
 
