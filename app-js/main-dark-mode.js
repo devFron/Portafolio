@@ -14,11 +14,11 @@ export const DarkMode = () =>{
     document.addEventListener('click',(e)=>{
         if (e.target === $circle || e.target.matches('.phoenix__image') ) {
             $body.classList.toggle('body__dark')
-            $header.classList.add('header__dark')
+            $header.classList.toggle('header__dark')
             $menuLink[0].classList.add('menu__link__dark')
             $menuLink[1].classList.add('menu__link__dark')
-            $menuLink[2].classList.add('menu__link__dark')
-            $menuLink[3].classList.add('menu__link__dark')
+            $menuLink[2].classList.toggle('menu__link__dark')
+            $menuLink[3].classList.toggle('menu__link__dark')
             $circle.classList.toggle('circle__dark')
             $main.classList.toggle('main__dark')
             assistantBody.classList.toggle('assistant__body__dark')
@@ -31,6 +31,51 @@ export const DarkMode = () =>{
             $sliderButtonsActive[3].classList.toggle('assistant__buttons__slider__active__dark')
             $sliderButtonsBox.classList.toggle('assistant__buttons__dakr')
             $sliderButtonsActiveBox.classList.toggle('assistant__buttons__slider__dark')
+
+        }
+        if ($body.classList.contains('body__dark')) {
+            localStorage.setItem('dark-mode-index','true')
+        }else{
+            localStorage.setItem('dark-mode-index','false')
         }
     })
+    if (localStorage.getItem('dark-mode-index') === 'true') {
+            $body.classList.add('body__dark')
+            $header.classList.add('header__dark')
+            $menuLink[0].classList.add('menu__link__dark')
+            $menuLink[1].classList.add('menu__link__dark')
+            $menuLink[2].classList.add('menu__link__dark')
+            $menuLink[3].classList.add('menu__link__dark')
+            $circle.classList.add('circle__dark')
+            $main.classList.add('main__dark')
+            assistantBody.classList.add('assistant__body__dark')
+            $frontMentorLink.classList.add('front-met__dark')
+            $sliderButtons[0].classList.add('assistant__buttons__button__dark')
+            $sliderButtons[1].classList.add('assistant__buttons__button__dark')
+            $sliderButtonsActive[0].classList.add('assistant__buttons__slider__active__dark')
+            $sliderButtonsActive[1].classList.add('assistant__buttons__slider__active__dark')
+            $sliderButtonsActive[2].classList.add('assistant__buttons__slider__active__dark')
+            $sliderButtonsActive[3].classList.add('assistant__buttons__slider__active__dark')
+            $sliderButtonsBox.classList.add('assistant__buttons__dakr')
+            $sliderButtonsActiveBox.classList.add('assistant__buttons__slider__dark')
+    } else {
+        $body.classList.remove('body__dark')
+            $header.classList.remove('header__dark')
+            $menuLink[0].classList.remove('menu__link__dark')
+            $menuLink[1].classList.remove('menu__link__dark')
+            $menuLink[2].classList.remove('menu__link__dark')
+            $menuLink[3].classList.remove('menu__link__dark')
+            $circle.classList.remove('circle__dark')
+            $main.classList.remove('main__dark')
+            assistantBody.classList.remove('assistant__body__dark')
+            $frontMentorLink.classList.remove('front-met__dark')
+            $sliderButtons[0].classList.remove('assistant__buttons__button__dark')
+            $sliderButtons[1].classList.remove('assistant__buttons__button__dark')
+            $sliderButtonsActive[0].classList.remove('assistant__buttons__slider__active__dark')
+            $sliderButtonsActive[1].classList.remove('assistant__buttons__slider__active__dark')
+            $sliderButtonsActive[2].classList.remove('assistant__buttons__slider__active__dark')
+            $sliderButtonsActive[3].classList.remove('assistant__buttons__slider__active__dark')
+            $sliderButtonsBox.classList.remove('assistant__buttons__dakr')
+            $sliderButtonsActiveBox.classList.remove('assistant__buttons__slider__dark')
+    }
 }
