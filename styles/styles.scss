@@ -96,7 +96,62 @@ body{
         }
     }
 }
-
+@mixin dark-mode {
+    .body__dark{
+        background-color:$color-dark-two;
+    }
+    .header__dark{
+        background-color:$color-dark-four;
+        color:white;
+        .nav{
+            .menu{
+                .menu__link__dark{
+                    color:white;
+                }
+            }
+            .circle{
+                background-color:$color-dark-three;
+            }
+        }
+    }
+    .main__dark{
+        color:white;
+    }
+    .assistant{
+        .assistant__body__dark{
+            background-color:$color-dark-two;
+            color:white;
+            .assistant__slider{
+                .assistant__slider__slides{
+                    .assistant__slider__slide{
+                        .assistant__slider__text{
+                            .front-met__dark{
+                                color:white;
+                            }
+                        }
+                    }
+                }
+            }
+            .assistant__buttons__dakr{
+                background-color:$color-dark-two;
+                .assistant__buttons__button__dark{
+                    background-color:white;
+                    color:black;
+                }
+            }
+            .assistant__buttons__slider__dark{
+                background-color:$color-dark-two;
+                .assistant__buttons__slider__active__dark{
+                    background-color:#7d7d7d;
+                }
+                .slider__button__enabled__dark{
+                    background-color: white;
+                }
+            }
+        }
+    }
+}
+@include dark-mode;
 .assistant{
     background-color:rgba(0, 0, 0, 0.541);
     position: fixed;
@@ -107,6 +162,7 @@ body{
     display:flex;
     align-items: center;
     justify-content: center;
+    z-index:999;
     .assistant__body{
         background-color: white;
         width: 100%;
@@ -221,6 +277,7 @@ body{
             }
         }
     }
+    @include dark-mode;
 }
 @media screen and (min-width:1000px){
     .header{
@@ -353,4 +410,5 @@ body{
             }
         }
     }
+    @include dark-mode;
 }
