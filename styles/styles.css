@@ -819,4 +819,16 @@ body {
   .assistant .assistant__body__dark .assistant__buttons__slider__dark .slider__button__enabled__dark {
     background-color: white;
   }
+
+  .messenge-dark-mode {
+    z-index: 888;
+    right: auto;
+    left: 1rem;
+    top: auto;
+    bottom: 7rem;
+    width: 144px;
+    height: 38px;
+    font-size: 12px;
+    font-weight: 500;
+  }
 }

@@ -436,4 +436,15 @@ body{
         }
     }
     @include dark-mode;
+    .messenge-dark-mode{
+        z-index: 888;
+        right: auto;
+        left:1rem;
+        top:auto;
+        bottom:7rem;
+        width: 144px;
+        height: 38px;
+        font-size:12px;
+        font-weight:500;
+    }
 }

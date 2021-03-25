@@ -12,6 +12,7 @@ export const DarkMode = () =>{
     let $sliderButtonsActive = document.querySelectorAll('.assistant__buttons__slider__active')
     let $imagePhoenix = document.querySelector('.phoenix__image')
     let $imagePhoenixSlider = document.querySelectorAll('.assistan__slider__image')
+    let $message = document.querySelector('.messenge-dark-mode')
 
     document.addEventListener('click',(e)=>{
         if (e.target === $circle || e.target.matches('.phoenix__image') ) {
@@ -44,6 +45,11 @@ export const DarkMode = () =>{
             $imagePhoenix.setAttribute('src','resources/images/images-main/fenix-light.svg')
             $imagePhoenixSlider[3].setAttribute('src','resources/images/images-main/fenix-light.svg')
         }
+        if (e.target.matches('.close__icon')) {
+            setTimeout(() => {
+                $message.classList.add('messenge-dark-mode__disabled')        
+            }, 3000);
+        }   
     })
     if (localStorage.getItem('dark-mode-index') === 'true') {
             $body.classList.add('body__dark')
