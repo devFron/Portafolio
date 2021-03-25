@@ -65,6 +65,7 @@ export const DarkMode = () =>{
             $sliderButtons[0].classList.add('assistant__buttons__button__dark')
             $sliderButtons[1].classList.add('assistant__buttons__button__dark')
             $sliderButtonsActive[0].classList.add('assistant__buttons__slider__active__dark')
+            $sliderButtonsActive[0].classList.add('slider__button__enabled__dark')
             $sliderButtonsActive[1].classList.add('assistant__buttons__slider__active__dark')
             $sliderButtonsActive[2].classList.add('assistant__buttons__slider__active__dark')
             $sliderButtonsActive[3].classList.add('assistant__buttons__slider__active__dark')

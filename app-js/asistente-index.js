@@ -160,24 +160,45 @@ export const assistantSlider =( )=>{
 
         if (e.target === $sliderButtonLeft || e.target === $sliderButtontIconLeft) {
             $sliderSlide[i].classList.remove('slide-active')
-            $buttonsSliders[i].classList.remove('slider__button__enabled')
+            if (localStorage.getItem('dark-mode-index')=== 'true'){
+                $buttonsSliders[i].classList.remove('slider__button__enabled__dark')
+            }else{
+                $buttonsSliders[i].classList.remove('slider__button__enabled')
+            }
             i--
             if (i < 0) {
                 i = $sliderSlide.length - 1
             }
             $sliderSlide[i].classList.add('slide-active')
-            $buttonsSliders[i].classList.add('slider__button__enabled')
+            
+            if (localStorage.getItem('dark-mode-index')=== 'true'){
+                $buttonsSliders[i].classList.add('slider__button__enabled__dark')
+            }else{
+                $buttonsSliders[i].classList.add('slider__button__enabled')
+            }
+            
         }
         if (e.target === $sliderButtontRight || e.target === $sliderButtontIconRight) {
+
             $sliderSlide[i].classList.remove('slide-active')
-            $buttonsSliders[i].classList.remove('slider__button__enabled')
+
+            if (localStorage.getItem('dark-mode-index')=== 'true'){
+                $buttonsSliders[i].classList.remove('slider__button__enabled__dark')
+            }else{
+                $buttonsSliders[i].classList.remove('slider__button__enabled')
+            }
             
             i++
             if (i >= $sliderSlide.length ) {
                 i = 0
             }
             $sliderSlide[i].classList.add('slide-active')
-            $buttonsSliders[i].classList.add('slider__button__enabled')
+            if (localStorage.getItem('dark-mode-index')=== 'true'){
+                $buttonsSliders[i].classList.add('slider__button__enabled__dark')
+            }else{
+                $buttonsSliders[i].classList.add('slider__button__enabled')
+            }
+
         }
         if (e.target.matches('.close__icon')) {
             $assistant.classList.add('assistant__disabled')
