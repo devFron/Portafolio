@@ -456,49 +456,6 @@ body {
   display: none;
 }
 
-.body__dark {
-  background-color: #1c1c24;
-}
-
-.header__dark {
-  background-color: #272731;
-  color: white;
-}
-.header__dark .nav .menu .menu__link__dark {
-  color: white;
-}
-.header__dark .nav .circle__dark {
-  background-color: #131419;
-}
-
-.main__dark {
-  color: white;
-}
-
-.assistant .assistant__body__dark {
-  background-color: #1c1c24;
-  color: white;
-}
-.assistant .assistant__body__dark .assistant__slider .assistant__slider__slides .assistant__slider__slide .assistant__slider__text .front-met__dark {
-  color: white;
-}
-.assistant .assistant__body__dark .assistant__buttons__dakr {
-  background-color: #1c1c24;
-}
-.assistant .assistant__body__dark .assistant__buttons__dakr .assistant__buttons__button__dark {
-  background-color: white;
-  color: black;
-}
-.assistant .assistant__body__dark .assistant__buttons__slider__dark {
-  background-color: #1c1c24;
-}
-.assistant .assistant__body__dark .assistant__buttons__slider__dark .assistant__buttons__slider__active__dark {
-  background-color: #7d7d7d;
-}
-.assistant .assistant__body__dark .assistant__buttons__slider__dark .slider__button__enabled__dark {
-  background-color: white;
-}
-
 .assistant {
   background-color: rgba(0, 0, 0, 0.541);
   position: fixed;
@@ -604,6 +561,62 @@ body {
   display: none;
 }
 
+.body__dark {
+  background-color: #1c1c24;
+}
+
+.header__dark {
+  background-color: #272731;
+  color: white;
+}
+.header__dark .nav {
+  background-color: #272731;
+}
+.header__dark .nav .menu {
+  background-color: #272731;
+}
+.header__dark .nav .menu .menu__link__dark {
+  color: white;
+}
+.header__dark .nav .circle__dark {
+  background-color: #131419;
+}
+
+.main__dark {
+  color: white;
+}
+
+.main .proyects .proyect .proyect__body__text .proyect__link__dark {
+  color: white;
+}
+
+.assistant .assistant__body__dark {
+  background-color: #1c1c24;
+  color: white;
+}
+.assistant .assistant__body__dark .assistant__slider {
+  background-color: #1c1c24;
+}
+.assistant .assistant__body__dark .assistant__slider .assistant__slider__slides .assistant__slider__slide .assistant__slider__text .front-met__dark {
+  color: white;
+}
+.assistant .assistant__body__dark .assistant__buttons__dakr {
+  background-color: #1c1c24;
+}
+.assistant .assistant__body__dark .assistant__buttons__dakr .assistant__buttons__button__dark {
+  background-color: white;
+  color: black;
+}
+.assistant .assistant__body__dark .assistant__buttons__slider__dark {
+  background-color: #1c1c24;
+}
+.assistant .assistant__body__dark .assistant__buttons__slider__dark .assistant__buttons__slider__active__dark {
+  background-color: #7d7d7d;
+}
+.assistant .assistant__body__dark .assistant__buttons__slider__dark .slider__button__enabled__dark {
+  background-color: white;
+}
+
 @media screen and (min-width: 552px) {
   .header .nav .menu .menu__link {
     font-size: 20px;
@@ -621,6 +634,12 @@ body {
     background-color: #272731;
     color: white;
   }
+  .header__dark .nav {
+    background-color: #272731;
+  }
+  .header__dark .nav .menu {
+    background-color: #272731;
+  }
   .header__dark .nav .menu .menu__link__dark {
     color: white;
   }
@@ -632,9 +651,16 @@ body {
     color: white;
   }
 
+  .main .proyects .proyect .proyect__body__text .proyect__link__dark {
+    color: white;
+  }
+
   .assistant .assistant__body__dark {
     background-color: #1c1c24;
     color: white;
+  }
+  .assistant .assistant__body__dark .assistant__slider {
+    background-color: #1c1c24;
   }
   .assistant .assistant__body__dark .assistant__slider .assistant__slider__slides .assistant__slider__slide .assistant__slider__text .front-met__dark {
     color: white;
@@ -785,6 +811,12 @@ body {
     background-color: #272731;
     color: white;
   }
+  .header__dark .nav {
+    background-color: #272731;
+  }
+  .header__dark .nav .menu {
+    background-color: #272731;
+  }
   .header__dark .nav .menu .menu__link__dark {
     color: white;
   }
@@ -796,9 +828,16 @@ body {
     color: white;
   }
 
+  .main .proyects .proyect .proyect__body__text .proyect__link__dark {
+    color: white;
+  }
+
   .assistant .assistant__body__dark {
     background-color: #1c1c24;
     color: white;
+  }
+  .assistant .assistant__body__dark .assistant__slider {
+    background-color: #1c1c24;
   }
   .assistant .assistant__body__dark .assistant__slider .assistant__slider__slides .assistant__slider__slide .assistant__slider__text .front-met__dark {
     color: white;

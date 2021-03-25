@@ -129,7 +129,9 @@ body{
         background-color:$color-dark-four;
         color:white;
         .nav{
+            background-color:$color-dark-four;
             .menu{
+                background-color:$color-dark-four;
                 .menu__link__dark{
                     color:white;
                 }
@@ -141,12 +143,25 @@ body{
     }
     .main__dark{
         color:white;
+       
+    }
+    .main{
+        .proyects{
+            .proyect{
+                .proyect__body__text{
+                    .proyect__link__dark{
+                         color:white;
+                    }
+                }
+            }
+        }
     }
     .assistant{
         .assistant__body__dark{
             background-color:$color-dark-two;
             color:white;
             .assistant__slider{
+                background-color:$color-dark-two;
                 .assistant__slider__slides{
                     .assistant__slider__slide{
                         .assistant__slider__text{
@@ -176,7 +191,7 @@ body{
         }
     }
 }
-@include dark-mode;
+
 .assistant{
     background-color:rgba(0, 0, 0, 0.541);
     position: fixed;
@@ -281,6 +296,7 @@ body{
 .assistant__disabled{
     display:none;
 }
+@include dark-mode;
 @media screen and (min-width:552px){
     .header{
         .nav{
