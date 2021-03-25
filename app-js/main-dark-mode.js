@@ -10,6 +10,8 @@ export const DarkMode = () =>{
     let $sliderButtonsBox = document.querySelector('.assistant__buttons')
     let $sliderButtonsActiveBox = document.querySelector('.assistant__buttons__slider')
     let $sliderButtonsActive = document.querySelectorAll('.assistant__buttons__slider__active')
+    let $imagePhoenix = document.querySelector('.phoenix__image')
+    let $imagePhoenixSlider = document.querySelectorAll('.assistan__slider__image')
 
     document.addEventListener('click',(e)=>{
         if (e.target === $circle || e.target.matches('.phoenix__image') ) {
@@ -35,8 +37,12 @@ export const DarkMode = () =>{
         }
         if ($body.classList.contains('body__dark')) {
             localStorage.setItem('dark-mode-index','true')
+            $imagePhoenix.setAttribute('src','resources/images/images-main/phoenix-framework-color.svg')
+            $imagePhoenixSlider[3].setAttribute('src','resources/images/images-main/phoenix-framework-color.svg')
         }else{
             localStorage.setItem('dark-mode-index','false')
+            $imagePhoenix.setAttribute('src','resources/images/images-main/fenix-light.svg')
+            $imagePhoenixSlider[3].setAttribute('src','resources/images/images-main/fenix-light.svg')
         }
     })
     if (localStorage.getItem('dark-mode-index') === 'true') {
