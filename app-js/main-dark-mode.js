@@ -13,7 +13,8 @@ export const DarkMode = () =>{
     let $imagePhoenix = document.querySelector('.phoenix__image')
     let $imagePhoenixSlider = document.querySelectorAll('.assistan__slider__image')
     let $message = document.querySelector('.messenge-dark-mode')
-
+    let $linkProyects = document.querySelectorAll('.proyect__link')
+   
     document.addEventListener('click',(e)=>{
         if (e.target === $circle || e.target.matches('.phoenix__image') ) {
             $body.classList.toggle('body__dark')
@@ -34,7 +35,9 @@ export const DarkMode = () =>{
             $sliderButtonsActive[3].classList.toggle('assistant__buttons__slider__active__dark')
             $sliderButtonsBox.classList.toggle('assistant__buttons__dakr')
             $sliderButtonsActiveBox.classList.toggle('assistant__buttons__slider__dark')
-
+            $linkProyects.forEach(el => {
+                el.classList.toggle('proyect__link__dark')                
+            });
         }
         if ($body.classList.contains('body__dark')) {
             localStorage.setItem('dark-mode-index','true')
@@ -71,6 +74,9 @@ export const DarkMode = () =>{
             $sliderButtonsActive[3].classList.add('assistant__buttons__slider__active__dark')
             $sliderButtonsBox.classList.add('assistant__buttons__dakr')
             $sliderButtonsActiveBox.classList.add('assistant__buttons__slider__dark')
+            $linkProyects.forEach(el => {
+                el.classList.add('proyect__link__dark')                
+            });
     } else {
         $body.classList.remove('body__dark')
             $header.classList.remove('header__dark')
@@ -90,5 +96,8 @@ export const DarkMode = () =>{
             $sliderButtonsActive[3].classList.remove('assistant__buttons__slider__active__dark')
             $sliderButtonsBox.classList.remove('assistant__buttons__dakr')
             $sliderButtonsActiveBox.classList.remove('assistant__buttons__slider__dark')
+            $linkProyects.forEach(el => {
+                el.classList.remove('proyect__link__dark')                
+            });
     }
 }
