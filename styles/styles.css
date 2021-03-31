@@ -361,7 +361,6 @@ body {
   justify-content: center;
   background-color: white;
   height: 85px;
-  box-shadow: 0 0 50px rgba(0, 0, 0, 0.425);
 }
 .header .nav .menu {
   background-color: white;
@@ -377,21 +376,21 @@ body {
   z-index: 888;
 }
 .header .nav .menu .menu__item {
-  padding: 1rem 10px;
+  padding: 1rem;
 }
 .header .nav .menu .menu__link {
   text-decoration: none;
   color: white;
   font-weight: 500;
   color: black;
-  font-size: 16px;
+  font-size: 20px;
 }
 .header .nav .circle {
   position: absolute;
   top: -20px;
   width: 50px;
   height: 50px;
-  background-color: #eee;
+  background-color: black;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -429,33 +428,6 @@ body {
   font-size: 20px;
 }
 
-.messenge-dark-mode {
-  position: fixed;
-  bottom: 9rem;
-  left: 0;
-  right: 0;
-  display: flex;
-  justify-content: center;
-  background-color: #eee;
-  box-shadow: 0 1rem 10px rgba(0, 0, 0, 0.63);
-}
-.messenge-dark-mode::before {
-  content: " ";
-  background: transparent;
-  padding: 0;
-  margin: 0;
-  position: absolute;
-  top: 100%;
-  border-top: 20px solid #eee;
-  border-bottom: 20px solid transparent;
-  border-left: 20px solid transparent;
-  border-right: 20px solid transparent;
-}
-
-.messenge-dark-mode__disabled {
-  display: none;
-}
-
 .assistant {
   background-color: rgba(0, 0, 0, 0.541);
   position: fixed;
@@ -466,7 +438,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 999;
 }
 .assistant .assistant__body {
   background-color: white;
@@ -561,125 +532,9 @@ body {
   display: none;
 }
 
-.body__dark {
-  background-color: #1c1c24;
-}
-
-.header__dark {
-  background-color: #272731;
-  color: white;
-}
-.header__dark .nav {
-  background-color: #272731;
-}
-.header__dark .nav .menu {
-  background-color: #272731;
-}
-.header__dark .nav .menu .menu__link__dark {
-  color: white;
-}
-.header__dark .nav .circle__dark {
-  background-color: #131419;
-}
-
-.main__dark {
-  color: white;
-}
-
-.main .proyects .proyect .proyect__body__text .proyect__link__dark {
-  color: white;
-}
-
-.assistant .assistant__body__dark {
-  background-color: #1c1c24;
-  color: white;
-}
-.assistant .assistant__body__dark .assistant__slider {
-  background-color: #1c1c24;
-}
-.assistant .assistant__body__dark .assistant__slider .assistant__slider__slides .assistant__slider__slide .assistant__slider__text .front-met__dark {
-  color: white;
-}
-.assistant .assistant__body__dark .assistant__buttons__dakr {
-  background-color: #1c1c24;
-}
-.assistant .assistant__body__dark .assistant__buttons__dakr .assistant__buttons__button__dark {
-  background-color: white;
-  color: black;
-}
-.assistant .assistant__body__dark .assistant__buttons__slider__dark {
-  background-color: #1c1c24;
-}
-.assistant .assistant__body__dark .assistant__buttons__slider__dark .assistant__buttons__slider__active__dark {
-  background-color: #7d7d7d;
-}
-.assistant .assistant__body__dark .assistant__buttons__slider__dark .slider__button__enabled__dark {
-  background-color: white;
-}
-
 @media screen and (min-width: 552px) {
-  .header .nav .menu .menu__link {
-    font-size: 20px;
-  }
-
   .main .proyects .proyect .proyect__body__text .proyect__link {
     font-size: 2rem;
-  }
-
-  .body__dark {
-    background-color: #1c1c24;
-  }
-
-  .header__dark {
-    background-color: #272731;
-    color: white;
-  }
-  .header__dark .nav {
-    background-color: #272731;
-  }
-  .header__dark .nav .menu {
-    background-color: #272731;
-  }
-  .header__dark .nav .menu .menu__link__dark {
-    color: white;
-  }
-  .header__dark .nav .circle__dark {
-    background-color: #131419;
-  }
-
-  .main__dark {
-    color: white;
-  }
-
-  .main .proyects .proyect .proyect__body__text .proyect__link__dark {
-    color: white;
-  }
-
-  .assistant .assistant__body__dark {
-    background-color: #1c1c24;
-    color: white;
-  }
-  .assistant .assistant__body__dark .assistant__slider {
-    background-color: #1c1c24;
-  }
-  .assistant .assistant__body__dark .assistant__slider .assistant__slider__slides .assistant__slider__slide .assistant__slider__text .front-met__dark {
-    color: white;
-  }
-  .assistant .assistant__body__dark .assistant__buttons__dakr {
-    background-color: #1c1c24;
-  }
-  .assistant .assistant__body__dark .assistant__buttons__dakr .assistant__buttons__button__dark {
-    background-color: white;
-    color: black;
-  }
-  .assistant .assistant__body__dark .assistant__buttons__slider__dark {
-    background-color: #1c1c24;
-  }
-  .assistant .assistant__body__dark .assistant__buttons__slider__dark .assistant__buttons__slider__active__dark {
-    background-color: #7d7d7d;
-  }
-  .assistant .assistant__body__dark .assistant__buttons__slider__dark .slider__button__enabled__dark {
-    background-color: white;
   }
 }
 @media screen and (min-width: 1000px) {
@@ -698,7 +553,6 @@ body {
     display: block;
     height: auto;
     background-color: transparent;
-    box-shadow: none;
   }
   .header .nav .menu {
     box-shadow: none;
@@ -718,7 +572,6 @@ body {
     text-decoration: none;
     color: black;
     font-weight: 500;
-    font-size: 20px;
   }
   .header .nav .circle {
     position: fixed;
@@ -801,73 +654,5 @@ body {
     width: 40px;
     height: 40px;
     font-size: 25px;
-  }
-
-  .body__dark {
-    background-color: #1c1c24;
-  }
-
-  .header__dark {
-    background-color: #272731;
-    color: white;
-  }
-  .header__dark .nav {
-    background-color: #272731;
-  }
-  .header__dark .nav .menu {
-    background-color: #272731;
-  }
-  .header__dark .nav .menu .menu__link__dark {
-    color: white;
-  }
-  .header__dark .nav .circle__dark {
-    background-color: #131419;
-  }
-
-  .main__dark {
-    color: white;
-  }
-
-  .main .proyects .proyect .proyect__body__text .proyect__link__dark {
-    color: white;
-  }
-
-  .assistant .assistant__body__dark {
-    background-color: #1c1c24;
-    color: white;
-  }
-  .assistant .assistant__body__dark .assistant__slider {
-    background-color: #1c1c24;
-  }
-  .assistant .assistant__body__dark .assistant__slider .assistant__slider__slides .assistant__slider__slide .assistant__slider__text .front-met__dark {
-    color: white;
-  }
-  .assistant .assistant__body__dark .assistant__buttons__dakr {
-    background-color: #1c1c24;
-  }
-  .assistant .assistant__body__dark .assistant__buttons__dakr .assistant__buttons__button__dark {
-    background-color: white;
-    color: black;
-  }
-  .assistant .assistant__body__dark .assistant__buttons__slider__dark {
-    background-color: #1c1c24;
-  }
-  .assistant .assistant__body__dark .assistant__buttons__slider__dark .assistant__buttons__slider__active__dark {
-    background-color: #7d7d7d;
-  }
-  .assistant .assistant__body__dark .assistant__buttons__slider__dark .slider__button__enabled__dark {
-    background-color: white;
-  }
-
-  .messenge-dark-mode {
-    z-index: 888;
-    right: auto;
-    left: 1rem;
-    top: auto;
-    bottom: 7rem;
-    width: 144px;
-    height: 38px;
-    font-size: 12px;
-    font-weight: 500;
   }
 }
