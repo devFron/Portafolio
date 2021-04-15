@@ -19,4 +19,19 @@ const Fenix =(options)=>{
     xhr.send()
 }
 
-document.addEventListener('DOMContentLoaded',(e)=> Fenix())
+document.addEventListener('DOMContentLoaded',(e)=> {
+
+    let $reference = document.querySelectorAll('[data-content]')
+    $reference.forEach((el) =>{
+        Fenix({
+            url:`${el.dataset.content}`,
+            succes:(xhr,el)=>{
+                el.outerHTML = xhr.response
+            },
+            error:(xhr,el)=>{
+                el.outerHTML =`${xhr.response} Ocurrio un error` 
+            },
+            el            
+        }) 
+    })
+})
