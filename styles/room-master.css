@@ -468,7 +468,7 @@ body {
   line-height: 23px;
 }
 
-.circle {
+.circle__phoenix {
   position: fixed;
   bottom: 0;
   left: 0;
@@ -481,12 +481,12 @@ body {
   align-items: center;
   z-index: 999;
 }
-.circle .phoenix__image {
+.circle__phoenix .phoenix__image {
   width: 35px;
 }
 
 @media screen and (min-width: 1000px) {
-  .circle {
+  .circle__phoenix {
     position: fixed;
     bottom: 1rem;
     top: auto;
@@ -494,7 +494,7 @@ body {
     width: 70px;
     height: 70px;
   }
-  .circle .phoenix__image {
+  .circle__phoenix .phoenix__image {
     width: 65%;
   }
 }
