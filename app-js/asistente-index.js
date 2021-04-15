@@ -18,46 +18,47 @@ export const assistant = ( )=>{
     // slider - slides
     let $assistantSliderSlides = document.createElement('div')
     $assistantSliderSlides.classList.add('assistant__slider__slides')
-    // slider-slide One
-    let $assistantSliderSlideOne = document.createElement('div')
-    $assistantSliderSlideOne.classList.add('assistant__slider__slide')
-    $assistantSliderSlideOne.classList.add('slide-active')
+    // // slider-slide One
+    // let $assistantSliderSlideOne = document.createElement('div')
+    // $assistantSliderSlideOne.classList.add('assistant__slider__slide')
+    // $assistantSliderSlideOne.classList.add('slide-active')
 
-    // slider-slide-iamge-One
-    let $assistantSliderSlideImageOne = document.createElement('img')
-    $assistantSliderSlideImageOne.setAttribute('src','resources/images/images-main/undraw_Hello_qnas (1).svg')
-    $assistantSliderSlideImageOne.classList.add('assistan__slider__image')
-    // slider-slide-text-One
-    let $assistantSliderSlideTextOne = document.createElement('p')
-    $assistantSliderSlideTextOne.textContent = 'Hola mi nombre es'
-    $assistantSliderSlideTextOne.classList.add('assistant__slider__text')
-    let $assistantSliderSlideTextSpanOne = document.createElement('span')
-    $assistantSliderSlideTextSpanOne.classList.add('my-name')
-    $assistantSliderSlideTextSpanOne.textContent = 'Josè Gabriel'
-    // inyecciones-one
-    $assistantSliderSlideOne.appendChild($assistantSliderSlideImageOne)
-    $assistantSliderSlideOne.appendChild($assistantSliderSlideTextOne)
-    $assistantSliderSlideTextOne.appendChild($assistantSliderSlideTextSpanOne)
+    // // slider-slide-iamge-One
+    // let $assistantSliderSlideImageOne = document.createElement('img')
+    // $assistantSliderSlideImageOne.setAttribute('src','resources/images/images-main/undraw_Hello_qnas (1).svg')
+    // $assistantSliderSlideImageOne.classList.add('assistan__slider__image')
+    // // slider-slide-text-One
+    // let $assistantSliderSlideTextOne = document.createElement('p')
+    // $assistantSliderSlideTextOne.textContent = 'Hola mi nombre es'
+    // $assistantSliderSlideTextOne.classList.add('assistant__slider__text')
+    // let $assistantSliderSlideTextSpanOne = document.createElement('span')
+    // $assistantSliderSlideTextSpanOne.classList.add('my-name')
+    // $assistantSliderSlideTextSpanOne.textContent = 'Josè Gabriel'
+    // // inyecciones-one
+    // $assistantSliderSlideOne.appendChild($assistantSliderSlideImageOne)
+    // $assistantSliderSlideOne.appendChild($assistantSliderSlideTextOne)
+    // $assistantSliderSlideTextOne.appendChild($assistantSliderSlideTextSpanOne)
 
 
-    // slider-slide Two
-    let $assistantSliderSlideTwo = document.createElement('div')
-    $assistantSliderSlideTwo.classList.add('assistant__slider__slide')
-    // slider-slide-iamge-two
-    let $assistantSliderSlideImageTwo = document.createElement('img')
-    $assistantSliderSlideImageTwo.setAttribute('src','resources/images/images-main/undraw_portfolio_website_lidw.svg')
-    $assistantSliderSlideImageTwo.classList.add('assistan__slider__image')
-    // slider-slide-text-Two
-    let $assistantSliderSlideTextTwo = document.createElement('p')
-    $assistantSliderSlideTextTwo.textContent = 'Este es mi Portafolio aqui veras de lo que soy capaz de hacer con tecnologias como HTML,CSS Y JS'
-    $assistantSliderSlideTextTwo.classList.add('assistant__slider__text')
-    // inyecciones-Two
-    $assistantSliderSlideTwo.appendChild($assistantSliderSlideImageTwo)
-    $assistantSliderSlideTwo.appendChild($assistantSliderSlideTextTwo)
+    // // slider-slide Two
+    // let $assistantSliderSlideTwo = document.createElement('div')
+    // $assistantSliderSlideTwo.classList.add('assistant__slider__slide')
+    // // slider-slide-iamge-two
+    // let $assistantSliderSlideImageTwo = document.createElement('img')
+    // $assistantSliderSlideImageTwo.setAttribute('src','resources/images/images-main/undraw_portfolio_website_lidw.svg')
+    // $assistantSliderSlideImageTwo.classList.add('assistan__slider__image')
+    // // slider-slide-text-Two
+    // let $assistantSliderSlideTextTwo = document.createElement('p')
+    // $assistantSliderSlideTextTwo.textContent = 'Este es mi Portafolio aqui veras de lo que soy capaz de hacer con tecnologias como HTML,CSS Y JS'
+    // $assistantSliderSlideTextTwo.classList.add('assistant__slider__text')
+    // // inyecciones-Two
+    // $assistantSliderSlideTwo.appendChild($assistantSliderSlideImageTwo)
+    // $assistantSliderSlideTwo.appendChild($assistantSliderSlideTextTwo)
 
     // slider-slide Three
     let $assistantSliderSlideThree = document.createElement('div')
     $assistantSliderSlideThree.classList.add('assistant__slider__slide')
+    $assistantSliderSlideThree.classList.add('slide-active')
     // slider-slide-iamge-Three
     let $assistantSliderSlideImageThree = document.createElement('img')
     $assistantSliderSlideImageThree.setAttribute('src','resources/images/images-main/front mentor.png')
@@ -95,8 +96,8 @@ export const assistant = ( )=>{
 
     // inyeccion a slider
     $assistantSlider.appendChild($assistantSliderSlides)
-    $assistantSliderSlides.appendChild($assistantSliderSlideOne)
-    $assistantSliderSlides.appendChild($assistantSliderSlideTwo)
+    // $assistantSliderSlides.appendChild($assistantSliderSlideOne)
+    // $assistantSliderSlides.appendChild($assistantSliderSlideTwo)
     $assistantSliderSlides.appendChild($assistantSliderSlideThree)
     $assistantSliderSlides.appendChild($assistantSliderSlideFour)
     // buttons
@@ -111,7 +112,7 @@ export const assistant = ( )=>{
 
     let $assistantButtonsSlider = document.createElement('article')
     $assistantButtonsSlider.classList.add('assistant__buttons__slider')
-    for (let i = 0; i <= 3; i++) {
+    for (let i = 0; i <= 1; i++) {
         let $assistantButtonsSliderActive = document.createElement('div')
         $assistantButtonsSliderActive.classList.add('assistant__buttons__slider__active')
         $assistantButtonsSlider.appendChild($assistantButtonsSliderActive)

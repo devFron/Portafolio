@@ -31,8 +31,8 @@ export const DarkMode = () =>{
             $sliderButtons[1].classList.toggle('assistant__buttons__button__dark')
             $sliderButtonsActive[0].classList.toggle('assistant__buttons__slider__active__dark')
             $sliderButtonsActive[1].classList.toggle('assistant__buttons__slider__active__dark')
-            $sliderButtonsActive[2].classList.toggle('assistant__buttons__slider__active__dark')
-            $sliderButtonsActive[3].classList.toggle('assistant__buttons__slider__active__dark')
+            // $sliderButtonsActive[2].classList.toggle('assistant__buttons__slider__active__dark')
+            // $sliderButtonsActive[3].classList.toggle('assistant__buttons__slider__active__dark')
             $sliderButtonsBox.classList.toggle('assistant__buttons__dakr')
             $sliderButtonsActiveBox.classList.toggle('assistant__buttons__slider__dark')
             $linkProyects.forEach(el => {
@@ -42,11 +42,11 @@ export const DarkMode = () =>{
         if ($body.classList.contains('body__dark')) {
             localStorage.setItem('dark-mode-index','true')
             $imagePhoenix.setAttribute('src','resources/images/images-main/phoenix-framework-color.svg')
-            $imagePhoenixSlider[3].setAttribute('src','resources/images/images-main/phoenix-framework-color.svg')
+            $imagePhoenixSlider[1].setAttribute('src','resources/images/images-main/phoenix-framework-color.svg')
         }else{
             localStorage.setItem('dark-mode-index','false')
             $imagePhoenix.setAttribute('src','resources/images/images-main/fenix-light.svg')
-            $imagePhoenixSlider[3].setAttribute('src','resources/images/images-main/fenix-light.svg')
+            $imagePhoenixSlider[1].setAttribute('src','resources/images/images-main/fenix-light.svg')
         }
         if (e.target.matches('.close__icon')) {
             setTimeout(() => {
@@ -70,8 +70,8 @@ export const DarkMode = () =>{
             $sliderButtonsActive[0].classList.add('assistant__buttons__slider__active__dark')
             $sliderButtonsActive[0].classList.add('slider__button__enabled__dark')
             $sliderButtonsActive[1].classList.add('assistant__buttons__slider__active__dark')
-            $sliderButtonsActive[2].classList.add('assistant__buttons__slider__active__dark')
-            $sliderButtonsActive[3].classList.add('assistant__buttons__slider__active__dark')
+            // $sliderButtonsActive[2].classList.add('assistant__buttons__slider__active__dark')
+            // $sliderButtonsActive[3].classList.add('assistant__buttons__slider__active__dark')
             $sliderButtonsBox.classList.add('assistant__buttons__dakr')
             $sliderButtonsActiveBox.classList.add('assistant__buttons__slider__dark')
             $linkProyects.forEach(el => {
@@ -92,8 +92,8 @@ export const DarkMode = () =>{
             $sliderButtons[1].classList.remove('assistant__buttons__button__dark')
             $sliderButtonsActive[0].classList.remove('assistant__buttons__slider__active__dark')
             $sliderButtonsActive[1].classList.remove('assistant__buttons__slider__active__dark')
-            $sliderButtonsActive[2].classList.remove('assistant__buttons__slider__active__dark')
-            $sliderButtonsActive[3].classList.remove('assistant__buttons__slider__active__dark')
+            // $sliderButtonsActive[2].classList.remove('assistant__buttons__slider__active__dark')
+            // $sliderButtonsActive[3].classList.remove('assistant__buttons__slider__active__dark')
             $sliderButtonsBox.classList.remove('assistant__buttons__dakr')
             $sliderButtonsActiveBox.classList.remove('assistant__buttons__slider__dark')
             $linkProyects.forEach(el => {
