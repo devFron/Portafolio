@@ -14,7 +14,10 @@ export const DarkMode = () =>{
     let $imagePhoenixSlider = document.querySelectorAll('.assistan__slider__image')
     let $message = document.querySelector('.messenge-dark-mode')
     let $linkProyects = document.querySelectorAll('.proyect__link')
-   
+    let $circleOfFenix = document.querySelector('.circle__of__fenix')
+    let $menuOptions = document.querySelector('.menu-options')
+    let $menuOptionsLink = document.querySelectorAll('.menu-options__menu__link')
+    let $menuOptionsItem = document.querySelectorAll('.menu-options__menu__item')
     document.addEventListener('click',(e)=>{
         if (e.target === $circle || e.target.matches('.phoenix__image') ) {
             $body.classList.toggle('body__dark')
@@ -38,6 +41,17 @@ export const DarkMode = () =>{
             $linkProyects.forEach(el => {
                 el.classList.toggle('proyect__link__dark')                
             });
+            $circleOfFenix.classList.toggle('circle__of__fenix__dark')
+            $menuOptions.classList.toggle('menu-options__dark')
+            $menuOptionsItem.forEach(el => {
+                el.classList.toggle('menu-options__menu__item__dark')
+            });
+            $menuOptionsLink.forEach(el => {
+                el.classList.toggle('menu-options__menu__link__dark')
+            });
+            // $menuOptionsLink.classList.toggle('menu-options__menu__link__dark')
+
+
         }
         if ($body.classList.contains('body__dark')) {
             localStorage.setItem('dark-mode-index','true')
@@ -77,8 +91,16 @@ export const DarkMode = () =>{
             $linkProyects.forEach(el => {
                 el.classList.add('proyect__link__dark')                
             });
+            $circleOfFenix.classList.add('circle__of__fenix__dark')
+            $menuOptions.classList.add('menu-options__dark')
+            $menuOptionsItem.forEach(el => {
+                el.classList.add('menu-options__menu__item__dark')
+            });
+            $menuOptionsLink.forEach(el => {
+                el.classList.add('menu-options__menu__link__dark')
+            });
     } else {
-        $body.classList.remove('body__dark')
+            $body.classList.remove('body__dark')
             $header.classList.remove('header__dark')
             $menuLink[0].classList.remove('menu__link__dark')
             $menuLink[1].classList.remove('menu__link__dark')
@@ -98,6 +120,14 @@ export const DarkMode = () =>{
             $sliderButtonsActiveBox.classList.remove('assistant__buttons__slider__dark')
             $linkProyects.forEach(el => {
                 el.classList.remove('proyect__link__dark')                
+            });
+            $circleOfFenix.classList.remove('circle__of__fenix__dark')
+            $menuOptions.classList.remove('menu-options__dark')
+            $menuOptionsItem.forEach(el => {
+                el.classList.remove('menu-options__menu__item__dark')
+            });
+            $menuOptionsLink.forEach(el => {
+                el.classList.remove('menu-options__menu__link__dark')
             });
     }
 }
