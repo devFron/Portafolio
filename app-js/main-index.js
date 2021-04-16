@@ -7,4 +7,8 @@ document.addEventListener('DOMContentLoaded',(e)=>{
     assistantSlider()
     Menu()
     DarkMode()
+    setTimeout(() => {
+        let $loader = document.querySelector('.loader')        
+        $loader.classList.add('loader__disable')
+    }, 3000);
 })
