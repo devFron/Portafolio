@@ -18,6 +18,9 @@ export const DarkMode = () =>{
     let $menuOptions = document.querySelector('.menu-options')
     let $menuOptionsLink = document.querySelectorAll('.menu-options__menu__link')
     let $menuOptionsItem = document.querySelectorAll('.menu-options__menu__item')
+    let $mainTitle = document.querySelector('.main__text__title')
+    let $mainDescription = document.querySelector('.main__text__description')
+
     document.addEventListener('click',(e)=>{
         if (e.target === $circle || e.target.matches('.phoenix__image') ) {
             $body.classList.toggle('body__dark')
@@ -50,8 +53,8 @@ export const DarkMode = () =>{
                 el.classList.toggle('menu-options__menu__link__dark')
             });
             // $menuOptionsLink.classList.toggle('menu-options__menu__link__dark')
-
-
+            $mainTitle.classList.toggle('main__text__title__dark')
+            $mainDescription.classList.toggle('main__text__description__dark')
         }
         if ($body.classList.contains('body__dark')) {
             localStorage.setItem('dark-mode-index','true')
@@ -99,6 +102,8 @@ export const DarkMode = () =>{
             $menuOptionsLink.forEach(el => {
                 el.classList.add('menu-options__menu__link__dark')
             });
+            $mainTitle.classList.add('main__text__title__dark')
+            $mainDescription.classList.add('main__text__description__dark')
     } else {
             $body.classList.remove('body__dark')
             $header.classList.remove('header__dark')
@@ -129,5 +134,7 @@ export const DarkMode = () =>{
             $menuOptionsLink.forEach(el => {
                 el.classList.remove('menu-options__menu__link__dark')
             });
+            $mainTitle.classList.remove('main__text__title__dark')
+            $mainDescription.classList.remove('main__text__description__dark')
     }
 }
