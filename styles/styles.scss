@@ -199,6 +199,30 @@ body{
 .messenge-dark-mode__disabled{
     display: none;
 }
+.main{
+    display:flex;
+    justify-items: center;
+    align-items: center;
+    display:grid;
+    .main__text{
+        .main__text__title{
+            color:black;
+            font-size:25px;
+            text-align: center;
+            font-weight: 700;
+        }
+        .main__text__description{
+            color:black;
+            font-size:16px;
+            font-weight: 400;
+            text-align: center;
+            padding:0 7px;
+        }
+    }
+    .main__image{
+        width:250px ;
+    }
+}
 @mixin dark-mode {
     .body__dark{
         background-color:$color-dark-two;
@@ -283,6 +307,16 @@ body{
                 .slider__button__enabled__dark{
                     background-color: white;
                 }
+            }
+        }
+    }
+    .main{
+        .main__text{
+            .main__text__title__dark{
+                color:white;
+            }
+            .main__text__description__dark{
+                color:white;
             }
         }
     }
@@ -460,6 +494,17 @@ body{
                     }
                 }
             }
+        }
+    }
+    .main{
+        .main__text{
+            .main__text__description{
+                font-size:19px;
+                padding:0 1rem;
+            }
+        }
+        .main__image{
+            width: 350px;
         }
     }
     @include dark-mode;
@@ -644,6 +689,22 @@ body{
         .loader__text{
             font-size:150px;
             // line-height: 0;
+        }
+    }
+    .main{
+        justify-content: center;
+        grid-template-columns:650px 400px ;
+        grid-gap:1rem;
+        .main__text{
+            .main__text__title{
+                font-size:50px;
+            }
+            .main__text__description{
+                font-size:20px;
+            }
+        }
+        .main__image{
+            width: 400px;
         }
     }
 }

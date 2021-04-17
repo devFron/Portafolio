@@ -534,6 +534,29 @@ body {
   display: none;
 }
 
+.main {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  display: grid;
+}
+.main .main__text .main__text__title {
+  color: black;
+  font-size: 25px;
+  text-align: center;
+  font-weight: 700;
+}
+.main .main__text .main__text__description {
+  color: black;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  padding: 0 7px;
+}
+.main .main__image {
+  width: 250px;
+}
+
 .loader {
   position: fixed;
   top: 0;
@@ -744,6 +767,13 @@ body {
   background-color: white;
 }
 
+.main .main__text .main__text__title__dark {
+  color: white;
+}
+.main .main__text .main__text__description__dark {
+  color: white;
+}
+
 @media screen and (min-width: 552px) {
   .header .menu-options .menu-options__menu .menu-options__menu__item {
     display: flex;
@@ -762,6 +792,14 @@ body {
 
   .section-proyects .proyects .proyect .proyect__body__text .proyect__link {
     font-size: 2rem;
+  }
+
+  .main .main__text .main__text__description {
+    font-size: 19px;
+    padding: 0 1rem;
+  }
+  .main .main__image {
+    width: 350px;
   }
 
   .body__dark {
@@ -834,6 +872,13 @@ body {
   }
   .assistant .assistant__body__dark .assistant__buttons__slider__dark .slider__button__enabled__dark {
     background-color: white;
+  }
+
+  .main .main__text .main__text__title__dark {
+    color: white;
+  }
+  .main .main__text .main__text__description__dark {
+    color: white;
   }
 }
 @media screen and (min-width: 1000px) {
@@ -1062,6 +1107,13 @@ body {
     background-color: white;
   }
 
+  .main .main__text .main__text__title__dark {
+    color: white;
+  }
+  .main .main__text .main__text__description__dark {
+    color: white;
+  }
+
   .messenge-dark-mode {
     z-index: 888;
     right: auto;
@@ -1076,5 +1128,20 @@ body {
 
   .loader .loader__text {
     font-size: 150px;
+  }
+
+  .main {
+    justify-content: center;
+    grid-template-columns: 650px 400px;
+    grid-gap: 1rem;
+  }
+  .main .main__text .main__text__title {
+    font-size: 50px;
+  }
+  .main .main__text .main__text__description {
+    font-size: 20px;
+  }
+  .main .main__image {
+    width: 400px;
   }
 }
