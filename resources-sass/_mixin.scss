@@ -140,6 +140,10 @@
         display:flex;
         justify-content: space-around;
         align-items: center;
+        .home__link{
+            text-decoration:none;
+            color:black;
+        }
         .menu-options{
             display:none;
         }
