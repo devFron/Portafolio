@@ -351,6 +351,10 @@ body {
   justify-content: space-around;
   align-items: center;
 }
+.header .home__link {
+  text-decoration: none;
+  color: black;
+}
 .header .menu-options {
   display: none;
 }
@@ -581,5 +585,96 @@ body {
   }
   .header .nav .circle .phoenix .phoenix__image {
     width: 70%;
+  }
+}
+main {
+  padding: 0 0 7rem 0;
+  display: grid;
+  grid-gap: 1rem;
+}
+main .card {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  display: grid;
+  grid-gap: 1rem;
+}
+main .card .card__image {
+  width: 200px;
+}
+main .card .card__text .card__text__title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 30px;
+}
+main .card .card__text .card__text__description {
+  text-align: center;
+  padding: 0 1rem;
+  line-height: 25px;
+}
+main .card #card-image-acerca {
+  grid-row: 2/3;
+}
+main .card #card-text-acerca {
+  grid-row: 1/2;
+}
+main .card .intereses {
+  list-style: none;
+  padding: 0 10px;
+  margin: 0;
+  text-align: center;
+}
+main .card .intereses .intereses__title {
+  font-weight: 700;
+  width: 100%;
+  display: inline-block;
+  padding: 1rem 0;
+}
+
+@media screen and (min-width: 560px) {
+  main .card .card__image {
+    width: 270px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  main {
+    display: flex;
+    justify-content: center;
+    display: grid;
+    padding: 0;
+  }
+  main .card {
+    grid-template-columns: 480px 400px;
+  }
+  main .card .card__image {
+    width: 400px;
+  }
+  main .card .card__text .card__text__title {
+    font-size: 45px;
+  }
+  main .card .card__text .card__text__description {
+    font-size: 20px;
+  }
+  main .card #card-image-acerca {
+    grid-row: 1/2;
+    grid-column: 1/2;
+  }
+  main .card #card-text-acerca {
+    grid-column: 2/3;
+  }
+  main .card .intereses {
+    text-align: start;
+    font-size: 20px;
+  }
+  main .card .intereses .intereses__item {
+    display: flex;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    grid-template-rows: repeat(3, 30px);
+  }
+  main .card .intereses .intereses__title {
+    display: inline;
+    text-align: start;
   }
 }
