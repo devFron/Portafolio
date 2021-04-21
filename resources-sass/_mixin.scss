@@ -390,3 +390,101 @@
         }
     }
 }
+@mixin dark-mode-index {
+    .body__dark{
+        background-color:$color-dark-two;
+    }
+    .header__dark{
+        background-color:$color-dark-four;
+        color:white;
+        .menu-options__dark{
+            background-color:$color-dark-four;
+            color:white;
+            .menu-options__menu{
+                .menu-options__menu__link__dark{
+                    color:white;
+                }
+                .menu-options__menu__item__dark{
+                    border-top:1px solid $color-dark-four;
+                }
+            }
+        }
+        .nav{
+            background-color:$color-dark-four;
+            .menu{
+                background-color:$color-dark-four;
+                .menu__link__dark{
+                    color:white;
+                }
+            }
+            .circle__dark{
+                background-color:none;
+                .phoenix{
+                    background-color:$color-dark-four;
+                }
+                .circle__of__fenix__dark{
+                    background-color: $color-dark-two;
+                }
+            }
+        }
+    }
+    .section__proyects__dark{
+        color:white;
+       
+    }
+    .section-proyects{
+        .proyects{
+            .proyect{
+                .proyect__body__text{
+                    .proyect__link__dark{
+                         color:white;
+                    }
+                }
+            }
+        }
+    }
+    .assistant{
+        .assistant__body__dark{
+            background-color:$color-dark-two;
+            color:white;
+            .assistant__slider{
+                background-color:$color-dark-two;
+                .assistant__slider__slides{
+                    .assistant__slider__slide{
+                        .assistant__slider__text{
+                            .front-met__dark{
+                                color:white;
+                            }
+                        }
+                    }
+                }
+            }
+            .assistant__buttons__dakr{
+                background-color:$color-dark-two;
+                .assistant__buttons__button__dark{
+                    background-color:white;
+                    color:black;
+                }
+            }
+            .assistant__buttons__slider__dark{
+                background-color:$color-dark-two;
+                .assistant__buttons__slider__active__dark{
+                    background-color:#7d7d7d;
+                }
+                .slider__button__enabled__dark{
+                    background-color: white;
+                }
+            }
+        }
+    }
+    .main{
+        .main__text{
+            .main__text__title__dark{
+                color:white;
+            }
+            .main__text__description__dark{
+                color:white;
+            }
+        }
+    }
+}
