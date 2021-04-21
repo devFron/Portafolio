@@ -394,6 +394,11 @@
     .body__dark{
         background-color:$color-dark-two;
     }
+    .header__title{
+        .home__link__dark{
+            color:white;
+        }
+    }
     .header__dark{
         background-color:$color-dark-four;
         color:white;
