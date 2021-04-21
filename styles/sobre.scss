@@ -52,6 +52,16 @@ main{
     }
 }
 @include dark-mode-index;
+@mixin dark-mode-sobre {
+    main{
+        .card{
+            .card__text__dark{
+                color:white;
+            }
+        }
+    }
+}
+@include dark-mode-sobre;
 @media screen and (min-width:560px){
     main{
         .card{

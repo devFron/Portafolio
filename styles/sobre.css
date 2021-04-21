@@ -714,6 +714,10 @@ main .card .intereses .intereses__title {
   color: white;
 }
 
+main .card .card__text__dark {
+  color: white;
+}
+
 @media screen and (min-width: 560px) {
   main .card .card__image {
     width: 270px;
