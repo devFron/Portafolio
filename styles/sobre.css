@@ -631,9 +631,175 @@ main .card .intereses .intereses__title {
   padding: 1rem 0;
 }
 
+.body__dark {
+  background-color: #1c1c24;
+}
+
+.header__title .home__link__dark {
+  color: white;
+}
+
+.header__dark {
+  background-color: #272731;
+  color: white;
+}
+.header__dark .menu-options__dark {
+  background-color: #272731;
+  color: white;
+}
+.header__dark .menu-options__dark .menu-options__menu .menu-options__menu__link__dark {
+  color: white;
+}
+.header__dark .menu-options__dark .menu-options__menu .menu-options__menu__item__dark {
+  border-top: 1px solid #272731;
+}
+.header__dark .nav {
+  background-color: #272731;
+}
+.header__dark .nav .menu {
+  background-color: #272731;
+}
+.header__dark .nav .menu .menu__link__dark {
+  color: white;
+}
+.header__dark .nav .circle__dark {
+  background-color: none;
+}
+.header__dark .nav .circle__dark .phoenix {
+  background-color: #272731;
+}
+.header__dark .nav .circle__dark .circle__of__fenix__dark {
+  background-color: #1c1c24;
+}
+
+.section__proyects__dark {
+  color: white;
+}
+
+.section-proyects .proyects .proyect .proyect__body__text .proyect__link__dark {
+  color: white;
+}
+
+.assistant .assistant__body__dark {
+  background-color: #1c1c24;
+  color: white;
+}
+.assistant .assistant__body__dark .assistant__slider {
+  background-color: #1c1c24;
+}
+.assistant .assistant__body__dark .assistant__slider .assistant__slider__slides .assistant__slider__slide .assistant__slider__text .front-met__dark {
+  color: white;
+}
+.assistant .assistant__body__dark .assistant__buttons__dakr {
+  background-color: #1c1c24;
+}
+.assistant .assistant__body__dark .assistant__buttons__dakr .assistant__buttons__button__dark {
+  background-color: white;
+  color: black;
+}
+.assistant .assistant__body__dark .assistant__buttons__slider__dark {
+  background-color: #1c1c24;
+}
+.assistant .assistant__body__dark .assistant__buttons__slider__dark .assistant__buttons__slider__active__dark {
+  background-color: #7d7d7d;
+}
+.assistant .assistant__body__dark .assistant__buttons__slider__dark .slider__button__enabled__dark {
+  background-color: white;
+}
+
+.main .main__text .main__text__title__dark {
+  color: white;
+}
+.main .main__text .main__text__description__dark {
+  color: white;
+}
+
 @media screen and (min-width: 560px) {
   main .card .card__image {
     width: 270px;
+  }
+
+  .body__dark {
+    background-color: #1c1c24;
+  }
+
+  .header__title .home__link__dark {
+    color: white;
+  }
+
+  .header__dark {
+    background-color: #272731;
+    color: white;
+  }
+  .header__dark .menu-options__dark {
+    background-color: #272731;
+    color: white;
+  }
+  .header__dark .menu-options__dark .menu-options__menu .menu-options__menu__link__dark {
+    color: white;
+  }
+  .header__dark .menu-options__dark .menu-options__menu .menu-options__menu__item__dark {
+    border-top: 1px solid #272731;
+  }
+  .header__dark .nav {
+    background-color: #272731;
+  }
+  .header__dark .nav .menu {
+    background-color: #272731;
+  }
+  .header__dark .nav .menu .menu__link__dark {
+    color: white;
+  }
+  .header__dark .nav .circle__dark {
+    background-color: none;
+  }
+  .header__dark .nav .circle__dark .phoenix {
+    background-color: #272731;
+  }
+  .header__dark .nav .circle__dark .circle__of__fenix__dark {
+    background-color: #1c1c24;
+  }
+
+  .section__proyects__dark {
+    color: white;
+  }
+
+  .section-proyects .proyects .proyect .proyect__body__text .proyect__link__dark {
+    color: white;
+  }
+
+  .assistant .assistant__body__dark {
+    background-color: #1c1c24;
+    color: white;
+  }
+  .assistant .assistant__body__dark .assistant__slider {
+    background-color: #1c1c24;
+  }
+  .assistant .assistant__body__dark .assistant__slider .assistant__slider__slides .assistant__slider__slide .assistant__slider__text .front-met__dark {
+    color: white;
+  }
+  .assistant .assistant__body__dark .assistant__buttons__dakr {
+    background-color: #1c1c24;
+  }
+  .assistant .assistant__body__dark .assistant__buttons__dakr .assistant__buttons__button__dark {
+    background-color: white;
+    color: black;
+  }
+  .assistant .assistant__body__dark .assistant__buttons__slider__dark {
+    background-color: #1c1c24;
+  }
+  .assistant .assistant__body__dark .assistant__buttons__slider__dark .assistant__buttons__slider__active__dark {
+    background-color: #7d7d7d;
+  }
+  .assistant .assistant__body__dark .assistant__buttons__slider__dark .slider__button__enabled__dark {
+    background-color: white;
+  }
+
+  .main .main__text .main__text__title__dark {
+    color: white;
+  }
+  .main .main__text .main__text__description__dark {
+    color: white;
   }
 }
 @media screen and (min-width: 1000px) {
@@ -676,5 +842,88 @@ main .card .intereses .intereses__title {
   main .card .intereses .intereses__title {
     display: inline;
     text-align: start;
+  }
+
+  .body__dark {
+    background-color: #1c1c24;
+  }
+
+  .header__title .home__link__dark {
+    color: white;
+  }
+
+  .header__dark {
+    background-color: #272731;
+    color: white;
+  }
+  .header__dark .menu-options__dark {
+    background-color: #272731;
+    color: white;
+  }
+  .header__dark .menu-options__dark .menu-options__menu .menu-options__menu__link__dark {
+    color: white;
+  }
+  .header__dark .menu-options__dark .menu-options__menu .menu-options__menu__item__dark {
+    border-top: 1px solid #272731;
+  }
+  .header__dark .nav {
+    background-color: #272731;
+  }
+  .header__dark .nav .menu {
+    background-color: #272731;
+  }
+  .header__dark .nav .menu .menu__link__dark {
+    color: white;
+  }
+  .header__dark .nav .circle__dark {
+    background-color: none;
+  }
+  .header__dark .nav .circle__dark .phoenix {
+    background-color: #272731;
+  }
+  .header__dark .nav .circle__dark .circle__of__fenix__dark {
+    background-color: #1c1c24;
+  }
+
+  .section__proyects__dark {
+    color: white;
+  }
+
+  .section-proyects .proyects .proyect .proyect__body__text .proyect__link__dark {
+    color: white;
+  }
+
+  .assistant .assistant__body__dark {
+    background-color: #1c1c24;
+    color: white;
+  }
+  .assistant .assistant__body__dark .assistant__slider {
+    background-color: #1c1c24;
+  }
+  .assistant .assistant__body__dark .assistant__slider .assistant__slider__slides .assistant__slider__slide .assistant__slider__text .front-met__dark {
+    color: white;
+  }
+  .assistant .assistant__body__dark .assistant__buttons__dakr {
+    background-color: #1c1c24;
+  }
+  .assistant .assistant__body__dark .assistant__buttons__dakr .assistant__buttons__button__dark {
+    background-color: white;
+    color: black;
+  }
+  .assistant .assistant__body__dark .assistant__buttons__slider__dark {
+    background-color: #1c1c24;
+  }
+  .assistant .assistant__body__dark .assistant__buttons__slider__dark .assistant__buttons__slider__active__dark {
+    background-color: #7d7d7d;
+  }
+  .assistant .assistant__body__dark .assistant__buttons__slider__dark .slider__button__enabled__dark {
+    background-color: white;
+  }
+
+  .main .main__text .main__text__title__dark {
+    color: white;
+  }
+  .main .main__text .main__text__description__dark {
+    color: white;
   }
 }

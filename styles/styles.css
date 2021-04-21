@@ -699,6 +699,10 @@ body {
   background-color: #1c1c24;
 }
 
+.header__title .home__link__dark {
+  color: white;
+}
+
 .header__dark {
   background-color: #272731;
   color: white;
@@ -804,6 +808,10 @@ body {
 
   .body__dark {
     background-color: #1c1c24;
+  }
+
+  .header__title .home__link__dark {
+    color: white;
   }
 
   .header__dark {
@@ -1037,6 +1045,10 @@ body {
 
   .body__dark {
     background-color: #1c1c24;
+  }
+
+  .header__title .home__link__dark {
+    color: white;
   }
 
   .header__dark {

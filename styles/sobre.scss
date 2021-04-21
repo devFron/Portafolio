@@ -51,6 +51,7 @@ main{
         }
     }
 }
+@include dark-mode-index;
 @media screen and (min-width:560px){
     main{
         .card{
@@ -59,6 +60,7 @@ main{
             }
         }
     }
+    @include dark-mode-index;
 }
 @media screen and (min-width:1000px) {
     main{
@@ -102,5 +104,6 @@ main{
                 }
             }
         }
-    }        
+    } 
+    @include dark-mode-index;
 }
