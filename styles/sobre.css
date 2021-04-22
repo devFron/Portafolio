@@ -805,6 +805,10 @@ main .card .card__text__dark {
   .main .main__text .main__text__description__dark {
     color: white;
   }
+
+  main .card .card__text__dark {
+    color: white;
+  }
 }
 @media screen and (min-width: 1000px) {
   main {
@@ -928,6 +932,10 @@ main .card .card__text__dark {
     color: white;
   }
   .main .main__text .main__text__description__dark {
+    color: white;
+  }
+
+  main .card .card__text__dark {
     color: white;
   }
 }

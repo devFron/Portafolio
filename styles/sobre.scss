@@ -71,6 +71,7 @@ main{
         }
     }
     @include dark-mode-index;
+    @include dark-mode-sobre;
 }
 @media screen and (min-width:1000px) {
     main{
@@ -116,4 +117,5 @@ main{
         }
     } 
     @include dark-mode-index;
+    @include dark-mode-sobre;
 }
