@@ -1,0 +1,19 @@
+{
+    "post-ig":[
+        {
+            "image":"../resources/images/post-ig/post-1.png",
+            "link":"https://www.instagram.com/p/CNBjBmyAnKb/?utm_source=ig_web_copy_link",
+            "id":1
+        },
+        {
+            "image":"../resources/images/post-ig/post-2.png",
+            "link":"https://www.instagram.com/p/CNTKdpcryfz/?utm_source=ig_web_copy_link",
+            "id":2
+        },
+        {
+            "image":"../resources/images/post-ig/post-3.png",
+            "link":"https://www.instagram.com/p/CNkbTcGgPNw/?utm_source=ig_web_copy_link",
+            "id":3
+        }
+    ]
+}
