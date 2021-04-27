@@ -1,0 +1,28 @@
+@import "../resources-sass/mixin";
+@import "../resources-sass/variables";
+@import "../resources-sass/normalize";
+body{
+    font-family: 'Roboto', sans-serif
+}
+
+@include header;
+main{
+    .title__blog{
+        text-align: center;
+        font-size:35px;
+        margin:0;
+        padding: 1rem 0;
+    }
+    .posts{
+        display:flex;
+        justify-content: center;
+        display:grid;
+        grid-gap:1rem;
+        .post{
+            .post__image{
+                max-width: 250px;
+            }
+        }
+    }
+}
+
