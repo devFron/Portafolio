@@ -159,6 +159,48 @@ body{
     border-radius:13px;
     margin:0 auto 6rem auto;
 }
+@mixin dark-mode-cv {
+    .body__black{
+        background-color:$color-dark-two;
+        color:white;
+    }
+    .my{
+        .my__button__black{
+            color:black;
+            background-color: white;
+        }
+    }
+    .contact{
+        .contact__social-media{
+            .contact__social-media__item{
+                .contact__social-media__link__black{
+                    color:white;
+                }
+            }
+        }
+    }
+    .techlogies{
+        .technologies__menu{
+            .technologies__menu__item{
+                .icon-github{
+                    color:white;
+                }
+            }
+        }
+    }
+    .cursos{
+        .cursos__cursos__certificates{
+            .cursos__curso__certificado__black{
+                color:white;
+            }
+        }
+    }
+    .my__button-two__black{
+        color:black;
+        background-color: white;
+    }
+}
+@include dark-mode-cv;
 @media screen and (min-width:700px){
     .my{
         .my__image{
