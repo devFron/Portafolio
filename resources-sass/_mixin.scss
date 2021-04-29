@@ -493,3 +493,44 @@
         }
     }
 }
+@mixin dark-mode-header {
+    .header__title{
+        .home__link__dark{
+            color:white;
+        }
+    }
+    .header__dark{
+        background-color:$color-dark-four;
+        color:white;
+        .menu-options__dark{
+            background-color:$color-dark-four;
+            color:white;
+            .menu-options__menu{
+                .menu-options__menu__link__dark{
+                    color:white;
+                }
+                .menu-options__menu__item__dark{
+                    border-top:1px solid $color-dark-four;
+                }
+            }
+        }
+        .nav{
+            background-color:$color-dark-four;
+            .menu{
+                background-color:$color-dark-four;
+                .menu__link__dark{
+                    color:white;
+                }
+            }
+            .circle__dark{
+                background-color:none;
+                .phoenix{
+                    background-color:$color-dark-four;
+                }
+                .circle__of__fenix__dark{
+                    background-color: $color-dark-two;
+                }
+            }
+        }
+    }
+}
