@@ -57,7 +57,7 @@ export const DarkModeCV = ( )=>{
         })
         $githubIcon[5].classList.remove('icon-github')
         $cursoCertificado.forEach(el => {
-            el.classList.add('cursos__curso__certificado__black')
+            el.classList.remove('cursos__curso__certificado__black')
         });
         $myButtonTwo.classList.remove('my__button-two__black')
     }
