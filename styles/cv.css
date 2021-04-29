@@ -741,6 +741,43 @@ body {
   margin: 0 auto 6rem auto;
 }
 
+.header__title .home__link__dark {
+  color: white;
+}
+
+.header__dark {
+  background-color: #272731;
+  color: white;
+}
+.header__dark .menu-options__dark {
+  background-color: #272731;
+  color: white;
+}
+.header__dark .menu-options__dark .menu-options__menu .menu-options__menu__link__dark {
+  color: white;
+}
+.header__dark .menu-options__dark .menu-options__menu .menu-options__menu__item__dark {
+  border-top: 1px solid #272731;
+}
+.header__dark .nav {
+  background-color: #272731;
+}
+.header__dark .nav .menu {
+  background-color: #272731;
+}
+.header__dark .nav .menu .menu__link__dark {
+  color: white;
+}
+.header__dark .nav .circle__dark {
+  background-color: none;
+}
+.header__dark .nav .circle__dark .phoenix {
+  background-color: #272731;
+}
+.header__dark .nav .circle__dark .circle__of__fenix__dark {
+  background-color: #1c1c24;
+}
+
 .body__black {
   background-color: #1c1c24;
   color: white;
