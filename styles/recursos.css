@@ -657,3 +657,9 @@ main .recurso .recuros__title {
     text-align: center;
   }
 }
+@media screen and (min-width: 1000px) {
+  main .recursos__cards {
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0 3rem;
+  }
+}
