@@ -623,3 +623,9 @@ body {
 .header__dark .nav .circle__dark .circle__of__fenix__dark {
   background-color: #1c1c24;
 }
+
+main .recursos__title {
+  font-weight: 700;
+  text-align: center;
+  font-size: 35px;
+}

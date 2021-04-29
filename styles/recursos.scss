@@ -6,3 +6,10 @@ body{
 }
 @include header;
 @include dark-mode-header;
+main{
+    .recursos__title{
+        font-weight: 700;
+        text-align: center;
+        font-size:35px;
+    }
+}
