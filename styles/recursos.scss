@@ -29,6 +29,22 @@ main{
         }
     }
 }
+@mixin  dark-mode-recursos {
+    body{
+        background-color:$color-dark-two;
+        color:white;
+    }
+    main{
+        .recursos__cards{
+            .recurso{
+                .recuros__title{
+                    color:white;
+                }
+            }
+        }
+    }
+}
+@include dark-mode-recursos;
 @media screen and (min-width:552px){
 
     main{
