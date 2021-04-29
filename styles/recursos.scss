@@ -7,9 +7,25 @@ body{
 @include header;
 @include dark-mode-header;
 main{
+    display:grid;
+    grid-gap:1rem;
+    padding:0 0 6rem 0;
     .recursos__title{
         font-weight: 700;
         text-align: center;
         font-size:35px;
+    }
+    .recurso{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        .recurso__image{
+            width:100px;
+        }
+        .recuros__title{
+            color:black;
+            text-decoration: none;
+            margin:1rem 0;
+        }
     }
 }
