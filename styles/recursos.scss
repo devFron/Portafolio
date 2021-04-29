@@ -30,14 +30,14 @@ main{
     }
 }
 @mixin  dark-mode-recursos {
-    body{
+    .body__black{
         background-color:$color-dark-two;
         color:white;
     }
     main{
         .recursos__cards{
             .recurso{
-                .recuros__title{
+                .recuros__title__dark{
                     color:white;
                 }
             }

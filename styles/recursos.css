@@ -648,12 +648,12 @@ main .recurso .recuros__title {
   margin: 1rem 0;
 }
 
-body {
+.body__black {
   background-color: #1c1c24;
   color: white;
 }
 
-main .recursos__cards .recurso .recuros__title {
+main .recursos__cards .recurso .recuros__title__dark {
   color: white;
 }
 
