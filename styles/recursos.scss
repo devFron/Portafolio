@@ -29,3 +29,17 @@ main{
         }
     }
 }
+@media screen and (min-width:552px){
+
+    main{
+        .recursos__cards{
+            display:grid;
+            grid-template-columns:repeat(3,1fr);
+            .recurso{
+                .recuros__title{
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

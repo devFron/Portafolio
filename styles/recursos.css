@@ -647,3 +647,13 @@ main .recurso .recuros__title {
   text-decoration: none;
   margin: 1rem 0;
 }
+
+@media screen and (min-width: 552px) {
+  main .recursos__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  main .recursos__cards .recurso .recuros__title {
+    text-align: center;
+  }
+}
