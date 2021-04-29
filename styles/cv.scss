@@ -13,7 +13,7 @@ body{
     display:grid;
     grid-template-rows: repeat(4,auto);
     .my__image{
-        width: 50%;
+        width:120px;
         border-radius:100%;
     }
     .my__profession{
@@ -205,7 +205,7 @@ body{
 @media screen and (min-width:700px){
     .my{
         .my__image{
-            width:35%;
+            width:200px;
         }
         .my__profession{
             font-size:18px;
