@@ -740,3 +740,54 @@ body {
   border-radius: 13px;
   margin: 0 auto 6rem auto;
 }
+
+@media screen and (min-width: 700px) {
+  .my .my__image {
+    width: 35%;
+  }
+  .my .my__profession {
+    font-size: 18px;
+  }
+  .my .my__name {
+    font-size: 30px;
+  }
+
+  .contact .contact__title {
+    font-size: 30px;
+  }
+
+  .techlogies .technologies__title {
+    font-size: 30px;
+  }
+  .techlogies .technologies__menu {
+    display: flex;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+  }
+  .techlogies .technologies__menu .technologies__menu__item .technologies__image {
+    font-size: 75px;
+    width: 60px;
+  }
+
+  .cursos .cursos__title {
+    font-size: 30px;
+  }
+  .cursos .cursos__curso .cursos__curso__from {
+    font-size: 25px;
+  }
+  .cursos .cursos__curso .cursos__curso__title {
+    font-size: 18px;
+    padding: 0 0 1rem 0;
+  }
+  .cursos .cursos__curso .cursos__cursos__certificates .line-divisor {
+    padding: 0 1rem;
+  }
+  .cursos .cursos__curso .cursos__cursos__certificates .cursos__curso__certificado {
+    font-size: 16px;
+  }
+
+  .my__button-two {
+    margin: 25px auto 6rem auto;
+  }
+}
