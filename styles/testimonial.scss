@@ -10,3 +10,75 @@ body{
     --color-card-three:#18202d;
 }
 @include phoenix;
+.cards{
+    padding:1rem;
+    background-color: #edf1f8;
+    display:grid;
+    grid-gap:1rem;
+    .card{
+        padding:  1rem;
+        border-radius:1rem ;
+        color:white;
+        &:nth-child(1){
+            background:url(../resources/images/testimonial/bg-pattern-quotation.svg),var(--color-card-one);
+            background-repeat: no-repeat;
+            background-position: right top;
+        }
+        &:nth-child(2){
+            background-color:var(--color-card-two);
+        }
+        &:nth-child(3){
+            color:var(--color-card-three);
+            background-color:white;
+            .card__graduate{
+                color:var(--color-card-three);
+            }
+        }
+        &:nth-child(4){
+            background-color: var(--color-card-three);
+        }
+        &:nth-child(5){
+            background-color:white;
+            .card__header{
+                .header__card__user{
+                    .header__card__user__name{
+                        color:var(--color-card-three);
+                    }
+                }
+            }
+            .card__profession{
+                color:var(--color-card-three);
+            }
+            .card__graduate{
+                color:var(--color-card-three);
+            }
+        }
+        .card__header{
+            display:flex;
+            align-items: center;
+            .card__header__imag{
+                border-radius: 100%;
+            }
+            .header__card__user{
+                padding:0 0 0 10px;
+                .header__card__user__name{
+                    margin:0;
+                    font-weight: 500;
+                    padding:0 0 5px 0;
+                }
+                .header__card__user__prosession{
+                    margin:0;
+                    color:#c4c4c4;
+                    font-size: 12px;
+                }
+            }
+        }
+        .card__profession{
+            font-weight: 700;
+            letter-spacing:1px;
+        }
+        .card__graduate{
+            color:#c4c4c4;
+        }
+    }
+}
