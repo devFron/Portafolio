@@ -6,6 +6,7 @@ body{
 }
 
 @include header;
+@include dark-mode-header;
 main{
     .title__blog{
         text-align: center;
@@ -20,7 +21,32 @@ main{
         grid-gap:1rem;
         .post{
             .post__image{
-                max-width: 250px;
+                width: 250px;
+            }
+        }
+    }
+}
+.body__dark{
+    background-color:$color-dark-two ;
+}
+main{
+    .title__blog__dark{
+        color:white;
+    }
+}
+@media screen and (min-width:550px){
+    .posts{
+        grid-template-columns: repeat(2,250px);
+    }
+}
+@media screen and (min-width:1000px){
+    main{
+        .posts{
+            grid-template-columns: repeat(3,300px);
+            .post{
+                .post__image{
+                    width: 300px;
+                }
             }
         }
     }
