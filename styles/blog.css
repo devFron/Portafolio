@@ -600,5 +600,19 @@ main .posts {
   grid-gap: 1rem;
 }
 main .posts .post .post__image {
-  max-width: 250px;
+  width: 250px;
+}
+
+@media screen and (min-width: 550px) {
+  .posts {
+    grid-template-columns: repeat(2, 250px);
+  }
+}
+@media screen and (min-width: 1000px) {
+  main .posts {
+    grid-template-columns: repeat(3, 300px);
+  }
+  main .posts .post .post__image {
+    width: 300px;
+  }
 }
