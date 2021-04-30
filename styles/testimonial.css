@@ -342,6 +342,12 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+:root {
+  --color-card-one:#733fc8;
+  --color-card-two:#49556b;
+  --color-card-three:#18202d;
+}
+
 .circle__phoenix {
   position: fixed;
   bottom: 0;
