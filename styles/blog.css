@@ -587,6 +587,43 @@ body {
     width: 70%;
   }
 }
+.header__title .home__link__dark {
+  color: white;
+}
+
+.header__dark {
+  background-color: #272731;
+  color: white;
+}
+.header__dark .menu-options__dark {
+  background-color: #272731;
+  color: white;
+}
+.header__dark .menu-options__dark .menu-options__menu .menu-options__menu__link__dark {
+  color: white;
+}
+.header__dark .menu-options__dark .menu-options__menu .menu-options__menu__item__dark {
+  border-top: 1px solid #272731;
+}
+.header__dark .nav {
+  background-color: #272731;
+}
+.header__dark .nav .menu {
+  background-color: #272731;
+}
+.header__dark .nav .menu .menu__link__dark {
+  color: white;
+}
+.header__dark .nav .circle__dark {
+  background-color: none;
+}
+.header__dark .nav .circle__dark .phoenix {
+  background-color: #272731;
+}
+.header__dark .nav .circle__dark .circle__of__fenix__dark {
+  background-color: #1c1c24;
+}
+
 main .title__blog {
   text-align: center;
   font-size: 35px;
@@ -601,6 +638,14 @@ main .posts {
 }
 main .posts .post .post__image {
   width: 250px;
+}
+
+.body__dark {
+  background-color: #1c1c24;
+}
+
+main .title__blog__dark {
+  color: white;
 }
 
 @media screen and (min-width: 550px) {

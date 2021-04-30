@@ -6,6 +6,7 @@ body{
 }
 
 @include header;
+@include dark-mode-header;
 main{
     .title__blog{
         text-align: center;
@@ -23,6 +24,14 @@ main{
                 width: 250px;
             }
         }
+    }
+}
+.body__dark{
+    background-color:$color-dark-two ;
+}
+main{
+    .title__blog__dark{
+        color:white;
     }
 }
 @media screen and (min-width:550px){
