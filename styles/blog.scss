@@ -8,6 +8,7 @@ body{
 @include header;
 @include dark-mode-header;
 main{
+    padding:0 0 6rem 0;
     .title__blog{
         text-align: center;
         font-size:35px;
