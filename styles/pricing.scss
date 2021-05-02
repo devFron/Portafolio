@@ -4,6 +4,7 @@
 body{
     font-family:'Roboto',sans-serif;
 }
+@include phoenix;
 :root{
     --color-one:#f1f5fe;
     --color-tw:#11d8c5;
