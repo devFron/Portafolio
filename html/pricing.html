@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive pricing component</title>
+    <link rel="stylesheet" href="../styles/pricing.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="pricing">
+        <article class="pricing__header">
+            <p class="pricing__header___title">Simple,traffic-based pricing</p>
+            <p class="pricing__header__description">
+                Sign-up for our 30-day trial.
+                No credit card required.
+            </p>
+        </article>
+        <article class="pricing__card">
+
+            <div class="pricing__card__header">
+                <p class="pricing__card__header__title">100k pageviwes</p>
+                <form action="" id="form">
+                    <input type="range" name="range" id="range" class="range">
+                </form>
+                <p class="pricing__card__header__number">$16.00<span class="month"> / month</span></p>
+            </div>
+
+            <div class="pricing__card__body">
+                <p class="pricing__card__body__monthly">Monthly Billing</p>
+                <button class="pricing__card__body__button"><div class="circle__button"></div></button>
+                <p class="pricing__card__body__yearly">Yearly Billing</p>
+                <p class="pricing__card__body__yearly__number">-25%</p>
+            </div>
+
+            <div class="pricing__card__options">
+                <ul class="pricing__card__options__list">
+                    <li class="pricing__card__options__list__item"><img src="../resources/images/pricing/icon-check.svg" alt="" class="pricing__card__options__list__item__icon">Unilimited websites</li>
+                    <li class="pricing__card__options__list__item"><img src="../resources/images/pricing/icon-check.svg" alt="" class="pricing__card__options__list__item__icon">100% data ownership</li>
+                    <li class="pricing__card__options__list__item"><img src="../resources/images/pricing/icon-check.svg" alt="" class="pricing__card__options__list__item__icon">Email reports</li>
+                </ul>
+                <div class="pricing__card__options__button"><p class="pricing__card__options__button__txt">Start my trial</p></div>
+            </div>
+        </article>
+    </section>
+
+    <script src="../app-js/pricing.js"></script>
+</body>
+</html>
