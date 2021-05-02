@@ -14,6 +14,9 @@ body{
 
 }
 .pricing{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
     .pricing__header{
         background:url(../resources/images/pricing/pattern-circles.svg),var(--color-one);
         background-repeat: no-repeat;
@@ -32,6 +35,94 @@ body{
             font-weight: 400;
             text-align: center;
             padding:0 35px;
+        }
+    }
+    .pricing__card{
+        // background-color:red;
+        position:absolute;
+        background: white;
+        top:50%;
+        left:12px;
+        right:12px;
+        border-radius:10px;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding:2rem 0;
+        .pricing__card__header{
+            // background-color:green;
+            .pricing__card__header__title{
+                color:var(--color-sixe);
+                margin:0;
+                text-transform: uppercase;
+            }
+            .pricing__card__header__number{
+                margin:0;
+                color:var(--color-three);
+                font-size:30px;
+                font-weight: 700;
+            }
+            .month{
+                font-size:1rem;
+                color:var(--color-sixe);
+                font-weight:400;
+            }
+        }
+        .pricing__card__body{
+            display:flex;
+            align-items: center;
+            padding:1rem 0;
+            .pricing__card__body__monthly{
+                color:var(--color-sixe);
+                font-size:12px;
+                margin:0;
+                padding:0;
+                padding:0 10px 0 0;
+            }
+            .pricing__card__body__button{
+                width: 40px;
+                height: 20px;
+                background-color:#eeee;
+                border:none;
+                position:relative;
+                border-radius:20px;
+            }
+            .circle__button{
+                width:16px;
+                height:16px;
+                background-color:white;
+                border-radius: 100%;
+                position:absolute;
+                top:2px;
+                left:5px;
+            }
+            .circle__button__toggle{
+                left:auto;
+                right:5px;
+            }
+
+            .pricing__card__body__yearly{
+                font-size:12px;
+                margin:0;
+                padding:0;
+                color:var(--color-sixe);
+                padding:0 5px;
+                display:inline-block;
+            }
+            .pricing__card__body__yearly__number{
+                display:inline-block;
+                color:var(--color-four);
+                background-color:var(--color-five);
+                width: 40px;
+                height: 20px;
+                font-size:14px;
+                margin:0;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                border-radius:8px;
+            }
         }
     }
 }
