@@ -484,6 +484,9 @@ body {
   width: 35px;
 }
 
+.section-proyects {
+  padding: 0 0 7rem 0;
+}
 .section-proyects .section-proyects__title {
   text-align: center;
 }
@@ -972,6 +975,9 @@ body {
     width: 70%;
   }
 
+  .section-proyects {
+    padding: 0 0 2rem 0;
+  }
   .section-proyects .section-proyects__title {
     text-align: center;
     font-size: 2rem;
