@@ -350,3 +350,24 @@ body {
   --color-five:#fdede8;
   --color-sixe:#c3c8d2;
 }
+
+.pricing .pricing__header {
+  background: url(../resources/images/pricing/pattern-circles.svg), var(--color-one);
+  background-repeat: no-repeat;
+  background-position: center 50px;
+  height: 50vh;
+  border-bottom-left-radius: 100px;
+  padding: 4rem 0;
+}
+.pricing .pricing__header .pricing__header___title {
+  color: var(--color-three);
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+}
+.pricing .pricing__header .pricing__header__description {
+  color: var(--color-three);
+  font-weight: 400;
+  text-align: center;
+  padding: 0 35px;
+}
