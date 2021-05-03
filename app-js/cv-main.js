@@ -1,5 +1,5 @@
 import { Menu } from "./index_menu.js";
-import { DarkModeCV } from "./cv-dark-mode.js";
+import { DarkModeCV } from "./cv_dark-mode.js";
 document.addEventListener('DOMContentLoaded',(e)=>{ 
     Menu()
     DarkModeCV()
