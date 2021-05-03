@@ -1,4 +1,4 @@
-import { assistant, assistantSlider } from "./asistente-index.js";
+import { assistant, assistantSlider } from "./index_asistente.js";
 import { Menu } from "./main-menu.js";
 import { DarkMode } from "./main-dark-mode.js";
 
