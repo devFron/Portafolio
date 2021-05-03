@@ -1,6 +1,6 @@
 import { assistant, assistantSlider } from "./index_asistente.js";
 import { Menu } from "./index_menu.js";
-import { DarkMode } from "./main-dark-mode.js";
+import { DarkMode } from "./index_dark-mode.js";
 
 document.addEventListener('DOMContentLoaded',(e)=>{
     assistant()
