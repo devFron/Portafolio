@@ -1,4 +1,4 @@
-import { Menu } from "./menu-blogr.js";
+import { Menu } from "./blogr_menu.js";
 
 document.addEventListener('DOMContentLoaded',(e)=>{
     Menu()
