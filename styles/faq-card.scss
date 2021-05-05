@@ -8,20 +8,20 @@ body{
     background-size: 100%;
 }
 .faq{
-    background-color:white;
-    margin:8rem 1rem 0 1rem;
+    margin:8rem  0 0 0;
     position: relative;
     padding:7rem 1rem 1rem 1rem;
     border-radius:10px;
     .faq__image__box{
-        position: absolute;
-        top:-110px;
-        width:100%;
-        display: flex;
+        display:flex;
         flex-direction: column;
-        align-items:center;
+        align-items: center;
         padding:0;
         margin:0;
+        position: absolute;
+        left:0;
+        right:0;
+        top:0;
         .faq__image{
             margin:0 0 0 -30px;
         }
@@ -31,12 +31,15 @@ body{
             margin:0;
         }
         .faq__image__cube{
-            width:80px;
-            position:absolute;
+            display:none;
+            // position:absolute;
             left:0;
         }
     }
     .faq-list{
+        background-color:white;
+        border-radius:10px;
+        padding:7rem 1rem 1rem 1rem ;
         .faq-list__title{
             text-align: center;
             font-weight: 700;
@@ -57,6 +60,9 @@ body{
                 .faq-list__list__itme__icon{
                     top:0;
                 }
+            }    
+            &:nth-child(6){
+                border-bottom:none;
             }
             .faq-list__list__item__title{
                 color:#2b2b36;
