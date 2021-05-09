@@ -347,3 +347,8 @@ template {
   --color-seven:#df3052;
   --color-eight:#4564f4;
 }
+
+body {
+  background: var(--color-gradient);
+  font-family: "Roboto", sans-serif;
+}
