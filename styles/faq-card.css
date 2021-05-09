@@ -369,10 +369,6 @@ body {
   top: 50%;
   margin: 0;
 }
-.faq .faq__image__box .faq__image__cube {
-  display: none;
-  left: 0;
-}
 .faq .faq-list {
   background-color: white;
   border-radius: 10px;
@@ -423,6 +419,10 @@ body {
 }
 .faq .faq-list .faq-list__list__item .faq-list__list__itme__icon__click {
   transform: rotate(180deg);
+}
+
+.faq__image__cube {
+  display: none;
 }
 
 @media screen and (min-width: 1000px) {

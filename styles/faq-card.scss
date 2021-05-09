@@ -29,11 +29,6 @@ body{
             top:50%;
             margin:0;
         }
-        .faq__image__cube{
-            display:none;
-            // position:absolute;
-            left:0;
-        }
     }
     .faq-list{
         background-color:white;
@@ -87,6 +82,9 @@ body{
             }
         }
     }
+}
+.faq__image__cube{
+    display:none;
 }
 @media screen and (min-width:1000px){
     .faq{
