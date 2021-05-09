@@ -60,3 +60,58 @@ header{
         }
     }
 }
+main{
+    .validations__options{
+        display:none;
+    }
+    .validations__options__box{
+        display:none;
+    }
+    .win{
+        display:none;
+    }
+}
+.rules{
+    display:flex;
+    justify-content: center;
+    padding:0 0 1rem 0;
+    .rules__button{
+        border:2px solid var(--color-three);
+        width: 150px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius:10px;
+        cursor: pointer;
+        .rules__button__text{
+            text-align: center;
+            color:white;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+        }
+    }
+    .rules__images__box{
+        display:none;
+    }
+    .rules__images__box__enabled{
+        background-color:white;
+        position: fixed;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+        padding:0 1rem;
+        .rules__image{
+            width: 100%;
+        }
+        .rules__image__closed{
+            position: absolute;
+            bottom:2rem;
+        }
+    }
+}
