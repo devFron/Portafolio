@@ -20,3 +20,43 @@ body{
     height: 100vh;
     padding:0 20px;
 }
+header{
+    border:2px solid var(--color-three);
+    margin:2rem 0 0  0;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:20px 2rem;
+    border-radius: 10px;
+    nav{
+        .game{
+            list-style: none;
+            padding:0;
+            margin:0;
+            .game__item{
+                .game__item__logo{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .score{
+        background-color:white;
+        border-radius:10px;
+        padding:20px 1rem;
+        .score__title{
+            font-size:20px;
+            margin:0;
+            color:var(--color-nine);
+            font-weight: 700;
+            padding:0 0 1rem 0;
+        }
+        .score__number{
+            font-size:2rem;
+            font-weight: 700;
+            text-align:center;
+            margin:0;
+            color:var(--color-ten);
+        }
+    }
+}
