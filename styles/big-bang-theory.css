@@ -346,9 +346,15 @@ template {
   --color-six:#8651e5;
   --color-seven:#df3052;
   --color-eight:#4564f4;
+  --color-nine:#7d89ce;
+  --color-ten:#525161;
 }
 
 body {
   background: var(--color-gradient);
   font-family: "Roboto", sans-serif;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 100vh;
+  padding: 0 20px;
 }
