@@ -22,7 +22,7 @@ body{
 }
 header{
     border:2px solid var(--color-three);
-    margin:2rem 0 0  0;
+    margin:1rem 0 0  0;
     display:flex;
     align-items: center;
     justify-content: space-between;
@@ -61,6 +61,67 @@ header{
     }
 }
 main{
+    display:flex;
+    justify-content: center;
+    .items__options{
+        background-image:url(../resources/images/big-bang-images/bg-pentagon.svg);
+        background-repeat:no-repeat ;
+        background-size:100%;
+        background-position: center center;
+        width: 250px;
+        height: 50vh;
+        padding:1rem 0 ;
+        position: relative;
+        padding:0 0 4rem 0;
+        .item__option{
+            background-color:white;
+            height: 70px;
+            width: 70px;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            .item__option__image{
+                width: 40px;
+            }
+            &:nth-child(1){
+                border: 10px solid var(--color-four);
+                border-radius: 100%;
+                position: absolute;
+                left:35%;
+                top:0;
+            }
+            &:nth-child(2){
+                border: 10px solid var(--color-eight);
+                border-radius: 100%;
+                position: absolute;
+                right:0;
+                top:30%;
+            }
+            &:nth-child(3){
+                border: 10px solid var(--color-five);
+                border-radius: 100%;
+                position: absolute;
+                left:0;
+                top:30%;
+            }
+            &:nth-child(4){
+                border: 10px solid var(--color-six);
+                border-radius: 100%;
+                position: absolute;
+                left:0;
+                top:65%;
+            }
+            &:nth-child(5){
+                border: 10px solid var(--color-seven);
+                border-radius: 100%;
+                position: absolute;
+                right:0;
+                top:65%;
+            }
+            
+        }
+    }
     .validations__options{
         display:none;
     }
@@ -74,7 +135,7 @@ main{
 .rules{
     display:flex;
     justify-content: center;
-    padding:0 0 1rem 0;
+    padding:0 0 0 0;
     .rules__button{
         border:2px solid var(--color-three);
         width: 150px;
