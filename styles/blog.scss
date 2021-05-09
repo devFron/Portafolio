@@ -20,6 +20,7 @@ main{
         justify-content: center;
         display:grid;
         grid-gap:1rem;
+        cursor: pointer;
         .post{
             .post__image{
                 width: 250px;
