@@ -424,3 +424,74 @@ body {
 .faq .faq-list .faq-list__list__item .faq-list__list__itme__icon__click {
   transform: rotate(180deg);
 }
+
+@media screen and (min-width: 1000px) {
+  .faq {
+    height: 100vh;
+    padding: 0 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 90vh;
+    padding: 0 4rem 0 4rem;
+    position: relative;
+  }
+  .faq .faq__image__box {
+    position: relative;
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .faq .faq__image__box .faq__image {
+    position: absolute;
+    left: -10px;
+    z-index: 800;
+  }
+  .faq .faq__image__box .faq__image__two {
+    position: absolute;
+    left: -10%;
+    top: 5%;
+    width: 100%;
+  }
+  .faq .faq-list {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color: white;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .faq .faq-list .faq-list__title {
+    text-align: start;
+  }
+
+  .faq__image__cube {
+    animation-name: cube-float;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: alternate;
+    display: block;
+    position: absolute;
+    left: -10px;
+    top: 40%;
+    z-index: 999;
+  }
+
+  @keyframes cube-float {
+    0% {
+      top: 30%;
+    }
+    50% {
+      top: 40%;
+    }
+    100% {
+      top: 30%;
+    }
+  }
+}
