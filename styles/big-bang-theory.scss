@@ -1,3 +1,12 @@
 @import "../resources-sass/mixin";
 @import "../resources-sass/normalize";
 @import "../resources-sass/variables";
+:root{
+    --color-gradient:linear-gradient(to top, #141e30, #243b55);
+    --color-three:#596d86;
+    --color-four:#ee9f17;
+    --color-five:#3cb7ca;
+    --color-six:#8651e5;
+    --color-seven:#df3052;
+    --color-eight:#4564f4;
+}
