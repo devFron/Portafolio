@@ -506,9 +506,88 @@ main .win {
   padding: 0 1rem;
 }
 .rules .rules__images__box__enabled .rules__image {
-  width: 100%;
+  width: 250px;
 }
 .rules .rules__images__box__enabled .rules__image__closed {
   position: absolute;
   bottom: 2rem;
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    padding: 1rem 0 0 0;
+    height: 97.5vh;
+  }
+
+  header {
+    width: 50%;
+    margin: 0 auto 0 auto;
+    padding: 10px 2rem;
+  }
+  header .score {
+    width: 100px;
+  }
+  header .score .score__title {
+    text-align: center;
+  }
+
+  main .items__options {
+    padding: 4rem 0 0 0;
+    margin: 0;
+  }
+  main .items__options .item__option:nth-child(1) {
+    top: 10%;
+    left: 35%;
+  }
+  main .items__options .item__option:nth-child(2) {
+    right: -45px;
+  }
+  main .items__options .item__option:nth-child(3) {
+    left: -45px;
+  }
+
+  .rules {
+    margin: 0;
+    width: 20%;
+    position: absolute;
+    right: 0;
+    bottom: 1rem;
+    padding: 0;
+  }
+  .rules .rules__images__box {
+    width: 30%;
+    height: 70vh;
+    margin: auto;
+    z-index: 500;
+    border-radius: 10px;
+  }
+  .rules .rules__images__box::before {
+    content: "RULES";
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    color: #2e4053;
+    font-weight: 700;
+    font-size: 25px;
+  }
+  .rules .rules__images__box .rules__image__closed {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+  .rules .box-shadow {
+    display: none;
+  }
+  .rules .box-shadow__enabled {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.459);
+    z-index: 400;
+    margin: 0;
+    padding: 0;
+  }
 }
