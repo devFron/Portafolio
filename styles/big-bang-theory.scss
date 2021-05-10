@@ -163,12 +163,6 @@ main{
                     width: 40px;
                 }
             }
-            #number-one{
-                border:10px solid var(--color-six);
-            }
-            #number-two{
-                border:10px solid var(--color-seven);
-            }
         }
     }
     .win{
@@ -245,6 +239,44 @@ main{
         }
     }
 }
+@mixin items-border-style {
+            
+    .rock{
+        border:10px solid var(--color-seven);
+    }
+    .paper{
+        border:10px solid var(--color-eight);
+    }
+    .scissors{
+        border:10px solid var(--color-four);
+    }
+    .lizard{
+        border:10px solid var(--color-six);
+    }
+    .spock{
+        border:10px solid var(--color-five);
+    }
+    
+    @media screen and (min-width:1000px) {
+        .rock{
+            border:15px solid var(--color-seven);
+        }
+        .paper{
+            border:15px solid var(--color-eight);
+        }
+        .scissors{
+            border:15px solid var(--color-four);
+        }
+        .lizard{
+            border:15px solid var(--color-six);
+        }
+        .spock{
+            border:15px solid var(--color-five);
+        }
+    }
+    
+}
+@include items-border-style();
 @media screen and (min-width:1000px) {
     body{
         padding:1rem 0 0 0;
@@ -278,7 +310,7 @@ main{
                 }
             }
         }
-        .valitdations__options{
+        .valitdations__options__enabled{
             display:grid;
             grid-template-columns:repeat(3,1fr) ;
             grid-gap:2rem;
