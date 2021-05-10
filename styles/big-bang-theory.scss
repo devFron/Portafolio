@@ -122,14 +122,83 @@ main{
             
         }
     }
-    .validations__options{
+    .items__options__disabled{
         display:none;
     }
-    .validations__options__box{
+    .valitdations__options{
         display:none;
+    }
+    .valitdations__options__enabled{
+        display:flex;
+        justify-content: center;
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap:1rem;
+        padding:2rem 0 0 0;
+        .validations__options__box{
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .validations__options__text{
+                margin:0;
+                padding:10px 0 0 0 ;
+                color:white;
+                font-weight: 500;
+                text-transform: uppercase;
+                text-align:center;
+                letter-spacing: 3px;
+            }
+            .validations__options__image__box{
+                width: 80px;
+                height: 80px;
+                border-radius: 100%;
+                background-color:white;
+                display:flex;
+                justify-content: center;
+                align-items:center;
+                display:flex;
+                justify-content: center;
+                .validations__options__image{
+                    width: 40px;
+                }
+            }
+            #number-one{
+                border:10px solid var(--color-six);
+            }
+            #number-two{
+                border:10px solid var(--color-seven);
+            }
+        }
     }
     .win{
-        display:none;
+        color:white;
+        text-align:center;
+        margin:auto;
+        grid-column:1/3;
+        .win__title{
+            font-size:30px;
+            text-transform: uppercase;
+            margin:0;
+            font-weight: 700;
+            padding:10px 0;
+        }
+        .win__play{
+            cursor: pointer;
+            background-color:white;
+            margin:0;
+            height:50px;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            text-transform: uppercase;
+            color:#2e4053;
+            margin:10px 0;
+            padding:0 2rem;
+            letter-spacing: 5px;
+            font-weight: 500;
+        }
     }
 }
 .rules{
@@ -207,6 +276,35 @@ main{
                 &:nth-child(3){
                     left:-45px;
                 }
+            }
+        }
+        .valitdations__options{
+            display:grid;
+            grid-template-columns:repeat(3,1fr) ;
+            grid-gap:2rem;
+            .validations__options__box{
+                display:flex;
+                justify-items: center;
+                display:grid;
+                grid-template-rows:50px 1fr  ;
+                .validations__options__text{
+                    grid-row:1/2;      
+                }
+                .validations__options__image__box{
+                    width: 150px;
+                    height: 150px;
+                    .validations__options__image{
+                        width: 80px;
+                    }
+                    
+                }
+                &:nth-child(2){
+                    grid-column:3/4;   
+                }
+            }
+            .win{
+                grid-column: 2/3;
+                grid-row: 1/2;
             }
         }
     }
