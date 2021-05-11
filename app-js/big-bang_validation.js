@@ -226,7 +226,7 @@ export const Game =( )=>{
                     case 'paper':
                         $winModule.classList.add('valitdations__options__enabled')
                         $itemsModule.classList.add('items__options__disabled')
-                        $winTitle.textContent = 'your lose'
+                        $winTitle.textContent = 'you lose'
                         $housePickedBox[0].classList.add('spock')
                         $housePickedBox[0].classList.remove('rock')
                         $housePickedBox[0].classList.remove('scissors')
@@ -260,7 +260,7 @@ export const Game =( )=>{
                     case 'lizard':
                         $winModule.classList.add('valitdations__options__enabled')
                         $itemsModule.classList.add('items__options__disabled')
-                        $winTitle.textContent = 'your lose'
+                        $winTitle.textContent = 'you lose'
                         $housePickedBox[0].classList.add('spock')
                         $housePickedBox[0].classList.remove('rock')
                         $housePickedBox[0].classList.remove('scissors')
