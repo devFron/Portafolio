@@ -12,6 +12,7 @@
     --color-nine:#7d89ce;
     --color-ten:#525161;
 }
+@include phoenix;
 body{
     background:var(--color-gradient);
     font-family:'Roboto', sans-serif;
