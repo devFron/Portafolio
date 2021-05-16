@@ -123,3 +123,34 @@ body{
         }
     }
 }
+@media screen and (min-width:600px){
+    .card{
+        display:flex;
+        height: 100vh;
+        padding:0 2rem;
+        align-items:center;
+        .article{
+            display:grid;
+            grid-template-columns: repeat(2,1fr);
+            border-radius:10px;
+            padding:0;
+            .article__image{
+                grid-row:1/3;
+                height: 100%;
+                border-radius:10px 0 0 10px ;
+            }
+            .article__body{
+                border-radius:0 10px 0 0 ;
+            }
+            .article__user{
+                border-radius:0 0 10px 0 ;
+                grid-column:2/3;
+                .article__user__share__enabled{
+                    .article__user__share__section{
+                        border-radius: 0 0 10px 0;
+                    }
+                }
+            }
+        }
+    }
+}
