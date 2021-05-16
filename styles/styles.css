@@ -408,6 +408,7 @@ body {
 }
 .header .header__title {
   margin: 0;
+  font-size: 25px;
 }
 .header .nav {
   position: fixed;
