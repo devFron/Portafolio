@@ -88,7 +88,7 @@ export const assistant = ( )=>{
     $assistantSliderSlideImageFour.classList.add('assistan__slider__image')
     // slider-slide-text- four
     let $assistantSliderSlideTextFour = document.createElement('p')
-    $assistantSliderSlideTextFour.textContent = 'El es Phoenix el te ayudara a volver a la pagian de inicio ya que no existe algo que enlaze a ella'
+    $assistantSliderSlideTextFour.textContent = 'El es Phoenix el te ayudara a volver a la pagina de inicio ya que no existe algo que enlaze a ella'
     $assistantSliderSlideTextFour.classList.add('assistant__slider__text')
     // inyecciones- four
     $assistantSliderSlideFour.appendChild($assistantSliderSlideImageFour)
