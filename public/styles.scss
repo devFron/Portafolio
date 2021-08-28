@@ -9,6 +9,7 @@ body{
     background:url(../public/background-mobile.png);
 }
 header{
+    background:$color-two;
     position: fixed;
     bottom:0;
     left:0;
@@ -32,6 +33,7 @@ header{
             display:flex;
             flex-direction: column;
             text-decoration: none;
+            color:$color-five;
         }
     }
     .dakr-mode{
@@ -52,6 +54,7 @@ header{
             display:flex;
             justify-content: center;
             align-items: center;
+            background:$color-one;
         }
         .dark-mode__icon{
             font-size:2rem;
