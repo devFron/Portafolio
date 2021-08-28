@@ -265,6 +265,8 @@ header ul .menu__link {
   flex-direction: column;
   text-decoration: none;
   color: #2b2c34;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
 }
 header .dakr-mode {
   background: white;

@@ -5,6 +5,8 @@ $color-two:#EEEEEE;
 $color-three:#1C1C24 ;
 $color-four:#272731;
 $color-five:rgb(43,44,52);
+$font-roboto:'Roboto', sans-serif;
+$font-poppins:'Poppins', sans-serif;
 body{
     background:url(../public/background-mobile.png);
 }
@@ -34,6 +36,8 @@ header{
             flex-direction: column;
             text-decoration: none;
             color:$color-five;
+            font-family: $font-roboto;
+            font-weight: 500;
         }
     }
     .dakr-mode{
