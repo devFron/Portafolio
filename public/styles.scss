@@ -3,3 +3,58 @@
 body{
     background:url(../public/background-mobile.png);
 }
+header{
+    position: fixed;
+    bottom:0;
+    left:0;
+    right:0;
+    padding:50px 0 5px 0 ;
+    border-radius:30px 30px 0 0  ;
+    img{
+        display:none;
+    }
+    ul{
+        margin:0;
+        padding:0;
+        display: flex;
+        justify-content: center;
+        .menu__item{
+            padding:0 12px;
+            font-size:20px;
+        }
+        .menu__link{
+            text-align: center;
+            display:flex;
+            flex-direction: column;
+            text-decoration: none;
+        }
+    }
+    .dakr-mode{
+        background:white;
+        position: absolute;
+        top:-60%;
+        left:30%;
+        width:100px;
+        height:100px;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        article:nth-child(1){
+            width: 60px;
+            height:60px;
+            border-radius: 100%;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .dark-mode__icon{
+            font-size:2rem;
+            color:white;
+            &:nth-child(1){
+                display: none;
+                color:white;
+            }
+        }
+    }
+}
