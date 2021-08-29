@@ -8,15 +8,15 @@ const Cv = ()=>{
         <a href="" class="cv__button" download="cv-gariel-vit">Version Impresa</a>
         <section class="cv__contacts">
             <article class="cv__contact">
-                <i class="cv__contact__icon"></i>
+                <i class="cv__contact__icon fas fa-envelope"></i>
                 <p class="cv__contact__description">developermater26@gmail.com</p>
             </article>
             <article class="cv__contact">
-                <i class="cv__contact__icon"></i>
+                <i class="cv__contact__icon fas fa-map-marker-alt"></i>
                 <p class="cv__contact__description">Guatemala Zona 19 colonia la florida</p>
             </article>
             <article class="cv__contact">
-                <i class="cv__contact__icon"></i>
+                <i class="cv__contact__icon fas fa-link"></i>
                 <p class="cv__contact__description">devfron.github.io</p>
             </article>
         </section>
