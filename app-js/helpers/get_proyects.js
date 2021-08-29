@@ -19,7 +19,7 @@ const GetProyects =( ) =>{
         });
     })
     .catch((err)=>{console.log(err.status)})
-
+    $Proyects.classList.add('proyects__box')
     return $Proyects
 }
 export default GetProyects
