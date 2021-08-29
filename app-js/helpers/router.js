@@ -1,5 +1,6 @@
 import PresentationCard from '../components/presentation_card.js'
 import GetProyects from './get_proyects.js'
+import Cv from '../components/cv.js'
 const Router =()=>{
     let {hash} = location
 
@@ -23,7 +24,7 @@ const Router =()=>{
     }else{
         switch (hash) {
             case '#/cv':
-                $mainHome.innerHTML += `<h1>CV</h1>`
+                $mainHome.appendChild(Cv())
             break;
 
             case '#/sobre':
