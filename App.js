@@ -4,17 +4,19 @@ import GetProyects from './app-js/helpers/get_proyects.js'
 const App =()=>{
     const $root = document.getElementById('root')
     const $Fragment = document.createDocumentFragment()
+    const $mainHome = document.createElement('section')
     const $ProyectsBox = document.createElement('section')
     const $SkillsBox = document.createElement('section')
 
-
+    $mainHome.classList.add('main__box')
 
     $Fragment.appendChild(Header())
-    $Fragment.appendChild(PresentationCard())
+    $mainHome.appendChild(PresentationCard())
     $ProyectsBox.appendChild(GetProyects().Proyects)
-    $Fragment.appendChild($ProyectsBox)
+    $mainHome.appendChild($ProyectsBox)
     $SkillsBox.appendChild(GetProyects().Skills)
-    $Fragment.appendChild($SkillsBox)
+    $mainHome.appendChild($SkillsBox)
+    $Fragment.appendChild($mainHome)
     $root.appendChild($Fragment)
 }
 export default App
