@@ -70,3 +70,46 @@ header{
         }
     }
 }
+.presentation-card{
+    padding:60px  1rem 0 1rem;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin:2rem 0 0 0 ;
+    .presentation-card__image{
+        width: 150px;
+        border-radius: 100%;
+        position: absolute;
+        top:0;
+    }
+    .flag{
+        width: 50px;
+    }
+    article{
+        background:$color-one;
+        color:white;
+        padding: 100px 1rem 1rem 1rem;
+        border-radius: 30px;
+    }
+    .presentation-card__name{
+        font-family: $font-poppins;
+        font-size:25px;
+        font-weight: 700;
+    }
+    .presentation-card__description{
+        font-family: $font-roboto;
+        font-weight: 400;
+        font-size:16px;
+    }
+    .presentation-card__social-media{
+        display: flex;
+        justify-content: flex-end;
+        padding:0;
+    }
+    .social-media__link{
+        font-size:25px;
+        color:white;
+        margin:0 10px;
+    }
+}
