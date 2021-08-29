@@ -415,7 +415,3 @@ header .dakr-mode .dark-mode__icon:nth-child(1) {
   color: #272731;
   margin: 1rem 0;
 }
-
-header {
-  display: none;
-}
