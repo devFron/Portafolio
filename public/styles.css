@@ -343,10 +343,9 @@ header .dakr-mode .dark-mode__icon:nth-child(1) {
 }
 
 .proyects__box {
-  margin: 0 0 7rem 0;
   display: grid;
   grid-gap: 2rem;
-  padding: 1rem;
+  padding: 1rem 1rem 2rem 1rem;
   font-family: "Roboto", sans-serif;
 }
 .proyects__box .proyect {
@@ -391,4 +390,32 @@ header .dakr-mode .dark-mode__icon:nth-child(1) {
   text-decoration: none;
   border: 2px solid white;
   border-radius: 10px;
+}
+
+.skills__box {
+  padding: 1rem;
+  display: grid;
+  grid-gap: 1rem;
+}
+.skills__box .kill__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #EEEEEE;
+}
+.skills__box .kill__box .kill__image {
+  width: 100%;
+}
+.skills__box .kill__box .kill__link {
+  text-decoration: none;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: #272731;
+  margin: 1rem 0;
+}
+
+header {
+  display: none;
 }

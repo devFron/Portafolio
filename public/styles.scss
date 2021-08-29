@@ -114,10 +114,9 @@ header{
     }
 }
 .proyects__box{
-    margin:0 0 7rem 0;
     display:grid;
     grid-gap:2rem;
-    padding:1rem;
+    padding:1rem 1rem 2rem 1rem; 
     font-family: $font-roboto;
     .proyect{
         border-radius: 15px;
@@ -162,4 +161,30 @@ header{
         border:2px solid white;
         border-radius:10px;
     }
+}
+.skills__box{
+    padding:1rem;
+    display:grid;
+    grid-gap:1rem;
+    .kill__box{
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        background:$color-two;
+        .kill__image{
+            width: 100%;
+        }
+        .kill__link{
+            text-decoration: none;
+            font-size:18px;
+            font-family: $font-roboto;
+            font-weight: 500;
+            color:$color-four;
+            margin:1rem 0;
+        }
+    }
+}
+header{
+    display: none;
 }
