@@ -7,6 +7,7 @@ const Cv = ()=>{
         <p class="cv__profesion">Programador Web</p>
         <a href="" class="cv__button" download="cv-gariel-vit">Version Impresa</a>
         <section class="cv__contacts">
+            <p class="cv__contacts__title">Contacto</p>
             <article class="cv__contact">
                 <i class="cv__contact__icon fas fa-envelope"></i>
                 <p class="cv__contact__description">developermater26@gmail.com</p>
@@ -21,6 +22,7 @@ const Cv = ()=>{
             </article>
         </section>
         <section class="technologies">
+            <p class="cv__contacts__title">Tecnologias</p>
             <article class="technologie">
                 <img src="public/html-logo.svg" alt="html5 logo" class="technologie__image">
             </article>
@@ -47,6 +49,7 @@ const Cv = ()=>{
             </article>
         </section>
         <section class="cursos">
+            <p class="cv__contacts__title">Cursos</p>
             <article class="curso">
                 <p class="curso__title">Google Actívate</p>
                 <p class="curso__description">Curso de introduccion al Desarrollo web 1 y 2</p>
