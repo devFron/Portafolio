@@ -13,6 +13,7 @@ const CardProyect =(props)=>{
     $ProyectDescriptionTxt.textContent = description
     $ProyectSee.href = link
     $ProyectSee.textContent ='Ver'
+    $ProyectSee.target = '_blank'
 
     $Proyect.classList.add('proyect')
     $ProyectImage.classList.add('proyect__image')
