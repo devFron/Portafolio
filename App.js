@@ -5,13 +5,16 @@ const App =()=>{
     const $root = document.getElementById('root')
     const $Fragment = document.createDocumentFragment()
     const $ProyectsBox = document.createElement('section')
+    const $SkillsBox = document.createElement('section')
 
 
 
     $Fragment.appendChild(Header())
     $Fragment.appendChild(PresentationCard())
-    $ProyectsBox.appendChild(GetProyects())
+    $ProyectsBox.appendChild(GetProyects().Proyects)
     $Fragment.appendChild($ProyectsBox)
+    $SkillsBox.appendChild(GetProyects().Skills)
+    $Fragment.appendChild($SkillsBox)
     $root.appendChild($Fragment)
 }
 export default App
