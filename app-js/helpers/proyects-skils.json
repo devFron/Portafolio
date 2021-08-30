@@ -9,6 +9,12 @@
         }
     ],
     "skills":[
-        {}
+        {
+            "id":0,
+            "image":"https://devfron.github.io/resources/images/images-preview/big-bang-preview.jpg",
+            "link":"http://mypokedexe.github.io/",
+            "description":"My pokédex es un proyecto  en el cual se muestran 1118 pokemones con alguna informacion de ellos",
+            "title": "My Pokédex"
+        }
     ]
 }
