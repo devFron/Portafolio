@@ -415,3 +415,100 @@ header .dakr-mode .dark-mode__icon:nth-child(1) {
   color: #272731;
   margin: 1rem 0;
 }
+
+.cv {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #2b2c34;
+}
+.cv .cv__image {
+  width: 150px;
+  border-radius: 100%;
+}
+.cv .cv__name {
+  font-weight: 700;
+  font-size: 20px;
+  margin: 0;
+  padding: 1rem;
+}
+.cv .cv__profesion {
+  font-weight: 500;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0 0 1rem 0;
+}
+.cv .cv__button {
+  background: black;
+  color: white;
+  text-decoration: none;
+  padding: 10px 2rem;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 1rem;
+}
+.cv .cv__contacts {
+  padding: 1rem 0 0 0;
+}
+.cv .cv__contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #2b2c34;
+}
+.cv .cv__contact__icon {
+  color: black;
+  font-size: 25px;
+}
+.cv .cv__contact__description {
+  font-weight: 500;
+  color: #272731;
+}
+.cv .technologies {
+  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+}
+.cv .technologie__image {
+  width: 50px;
+}
+.cv .cursos {
+  padding: 0 1rem 8rem 1rem;
+}
+.cv .curso {
+  margin: 1rem 0;
+}
+.cv .curso__title {
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0;
+  padding: 1rem 0;
+}
+.cv .cv__contacts__title, .cv .cv__course__title, .cv .cv__technologies__title {
+  font-weight: 700;
+  text-align: center;
+  font-size: 25px;
+  margin: 0;
+  padding: 1rem 0;
+}
+.cv .cv__technologies__title {
+  grid-column: 1/4;
+}
+.cv .curso__description {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0;
+  padding: 0 0 10px 0;
+}
+.cv .curso__certificacion, .cv .curos__certificacion {
+  font-size: 13px;
+  font-weight: 400;
+  margin: 0;
+  color: #2b2c34;
+}
+.cv .curos__edteam {
+  margin: 1rem 0;
+}
