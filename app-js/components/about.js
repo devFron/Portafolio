@@ -35,7 +35,7 @@ const About = ()=>{
                         <span class="intereses__description">Me encanta aprender cosas nuevas y raras</span>
                     </li>
                     <li class="intereses__item">
-                        <span class="intereses__title">Minimalismo</span>
+                        <span class="intereses__title">Fitness</span>
                         <span class="intereses__description">Me gusta hacer ejercico para maternerme saludable y verme bien siempre, tengo un gusto raro por el Box y MMA</span>
                     </li>
                 </ul>
