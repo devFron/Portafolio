@@ -2,7 +2,7 @@ import PresentationCard from '../components/presentation_card.js'
 import GetProyects from './get_proyects.js'
 import Cv from '../components/cv.js'
 import About from '../components/about.js'
-import Blog from '../components/blog.js'
+import BlogBox from './get_blog.js'
 const Router =()=>{
     let {hash} = location
 
@@ -34,7 +34,7 @@ const Router =()=>{
             break;
 
             case '#/blog':
-                $mainHome.appendChild(Blog)
+                $mainHome.appendChild(BlogBox())
             break;
         
             default:
