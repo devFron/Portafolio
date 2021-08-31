@@ -1,6 +1,6 @@
 import Header from './app-js/components/header.js'
 import Router from './app-js/helpers/router.js'
-const App =()=>{
+const App =async()=>{
 
     const $root = document.getElementById('root')
     $root.innerHTML = ''
@@ -13,6 +13,6 @@ const App =()=>{
     $Fragment.appendChild(Header())
     $Fragment.appendChild($mainHome)
     $root.appendChild($Fragment)
-    Router()
+    await Router()
 }
 export default App
