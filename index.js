@@ -17,5 +17,8 @@ document.addEventListener('click',(e)=>{
         }else{
             localStorage.setItem('devfron-dark-mode','false')
         }
+        if(e.target.matches('.dark-mode__circle')){
+            e.target.classList.toggle('dark-mode__circle__active')
+        }
     }
 })
