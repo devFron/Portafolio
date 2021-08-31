@@ -471,3 +471,23 @@ header{
       opacity: 0;
     }
 }
+@media screen  and (min-width:400px){
+    header{
+        .dakr-mode{
+            left:35%;
+        }
+    }
+}
+@media screen and (min-width:500px){
+    .proyects__box,.skills__box,.blog__box{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .presentation-card{
+        .presentation-card__name{
+            font-size:35px;
+        }
+        .presentation-card__description{
+            font-size:20px;
+        }
+    }
+}
