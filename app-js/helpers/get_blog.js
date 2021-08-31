@@ -6,7 +6,8 @@ const BlogBox = ()=>{
     fetch('http://localhost:8848/app-js/helpers/blog.json')
     .then((res)=> res.ok ? res.json():Promise.reject({status:res.status}))
     .then((json)=>{
-        json.forEach(el => {
+        for (let i = 0; i < json.length; i++) {
+            const el = json[i];
             $BlogBox.appendChild(
                 Blog({
                     id:el.id,
@@ -15,7 +16,7 @@ const BlogBox = ()=>{
                     description:el.description
                 })
             )
-        });
+        }
     })
     $BlogBox.classList.add('blog__box')
     return $BlogBox
