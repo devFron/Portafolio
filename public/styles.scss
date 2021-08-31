@@ -8,8 +8,31 @@ $color-five:rgb(43,44,52);
 $color-six:#F1F2FD;
 $font-roboto:'Roboto', sans-serif;
 $font-poppins:'Poppins', sans-serif;
+@mixin dark-mode {
+    
+    .font-dark{
+        color:white;
+    }
+    .background-dark{
+        background:#1C1C24
+    }
+    .background-item-dark{
+        background:$color-four;
+    }
+    .all-dark{
+        background:#1C1C24;
+        color:white;
+        .all-dark-item{
+            background:$color-four;
+            color:white;
+        }
+    }
+}
 body{
     background:url(../public/background-mobile.png);
+}
+.body-dark{
+    background:url(../public/background-mobile-dark.png),$color-three;
 }
 header{
     background:$color-two;
@@ -40,6 +63,9 @@ header{
             font-family: $font-roboto;
             font-weight: 500;
         }
+        .font-dark{
+            color:white;
+        }
     }
     .dakr-mode{
         background: linear-gradient(0deg, white 0%, transparent 50%);
@@ -69,6 +95,9 @@ header{
                 color:white;
             }
         }
+    }
+    .dark-mode-dark{
+        background: linear-gradient(0deg, $color-three 0%, transparent 50%);
     }
 }
 .presentation-card{
@@ -113,6 +142,7 @@ header{
         color:white;
         margin:0 10px;
     }
+    @include dark-mode()
 }
 .proyects__box{
     display:grid;
@@ -162,6 +192,8 @@ header{
         border:2px solid white;
         border-radius:10px;
     }
+    @include dark-mode()
+
 }
 .skills__box{
     padding:1rem 1rem 8rem 1rem;
@@ -184,7 +216,11 @@ header{
             color:$color-four;
             margin:1rem 0;
         }
+        .font-dark{
+            color:white;
+        }
     }
+    @include dark-mode()
 }
 .cv{
     font-family: $font-roboto;
@@ -282,9 +318,11 @@ header{
     .curos__edteam{
         margin:1rem 0;
     }
+    @include dark-mode()
 }
 .about{
     font-family: $font-roboto;
+    
     .about__item{
         display:flex;
         flex-direction: column;
@@ -293,6 +331,9 @@ header{
         &:nth-child(3){
             padding:0 0 8rem 0;
         }
+    }
+    .font-dark{
+        color:white;
     }
     .about__item__title{
         font-weight: 700;
@@ -319,6 +360,8 @@ header{
     .intereses__title{
         font-weight: 700;
     }
+    @include dark-mode()
+
 }
 .blog__box{
     padding:1rem  1rem 8rem 1rem;
@@ -354,8 +397,15 @@ header{
             font-weight: 500;
             margin:0 0 1rem 1rem;
         }
+        .button-blog{
+            color:white;
+            background:$color-four;
+            box-shadow:8px 8px 0 $color-three; 
+        }
     }
+    @include dark-mode()
 }
+@include dark-mode();
 // header{
 //     display: none;
 // }

@@ -237,6 +237,10 @@ body {
   background: url(../public/background-mobile.png);
 }
 
+.body-dark {
+  background: url(../public/background-mobile-dark.png), #1C1C24;
+}
+
 header {
   background: #EEEEEE;
   position: fixed;
@@ -268,6 +272,9 @@ header ul .menu__link {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
 }
+header ul .font-dark {
+  color: white;
+}
 header .dakr-mode {
   background: linear-gradient(0deg, white 0%, transparent 50%);
   position: absolute;
@@ -296,6 +303,9 @@ header .dakr-mode .dark-mode__icon {
 header .dakr-mode .dark-mode__icon:nth-child(1) {
   display: none;
   color: white;
+}
+header .dark-mode-dark {
+  background: linear-gradient(0deg, #1C1C24 0%, transparent 50%);
 }
 
 .presentation-card {
@@ -340,6 +350,23 @@ header .dakr-mode .dark-mode__icon:nth-child(1) {
   font-size: 25px;
   color: white;
   margin: 0 10px;
+}
+.presentation-card .font-dark {
+  color: white;
+}
+.presentation-card .background-dark {
+  background: #1C1C24;
+}
+.presentation-card .background-item-dark {
+  background: #272731;
+}
+.presentation-card .all-dark {
+  background: #1C1C24;
+  color: white;
+}
+.presentation-card .all-dark .all-dark-item {
+  background: #272731;
+  color: white;
 }
 
 .proyects__box {
@@ -391,6 +418,23 @@ header .dakr-mode .dark-mode__icon:nth-child(1) {
   border: 2px solid white;
   border-radius: 10px;
 }
+.proyects__box .font-dark {
+  color: white;
+}
+.proyects__box .background-dark {
+  background: #1C1C24;
+}
+.proyects__box .background-item-dark {
+  background: #272731;
+}
+.proyects__box .all-dark {
+  background: #1C1C24;
+  color: white;
+}
+.proyects__box .all-dark .all-dark-item {
+  background: #272731;
+  color: white;
+}
 
 .skills__box {
   padding: 1rem 1rem 8rem 1rem;
@@ -414,6 +458,26 @@ header .dakr-mode .dark-mode__icon:nth-child(1) {
   font-weight: 500;
   color: #272731;
   margin: 1rem 0;
+}
+.skills__box .kill__box .font-dark {
+  color: white;
+}
+.skills__box .font-dark {
+  color: white;
+}
+.skills__box .background-dark {
+  background: #1C1C24;
+}
+.skills__box .background-item-dark {
+  background: #272731;
+}
+.skills__box .all-dark {
+  background: #1C1C24;
+  color: white;
+}
+.skills__box .all-dark .all-dark-item {
+  background: #272731;
+  color: white;
 }
 
 .cv {
@@ -512,6 +576,23 @@ header .dakr-mode .dark-mode__icon:nth-child(1) {
 .cv .curos__edteam {
   margin: 1rem 0;
 }
+.cv .font-dark {
+  color: white;
+}
+.cv .background-dark {
+  background: #1C1C24;
+}
+.cv .background-item-dark {
+  background: #272731;
+}
+.cv .all-dark {
+  background: #1C1C24;
+  color: white;
+}
+.cv .all-dark .all-dark-item {
+  background: #272731;
+  color: white;
+}
 
 .about {
   font-family: "Roboto", sans-serif;
@@ -524,6 +605,9 @@ header .dakr-mode .dark-mode__icon:nth-child(1) {
 }
 .about .about__item:nth-child(3) {
   padding: 0 0 8rem 0;
+}
+.about .font-dark {
+  color: white;
 }
 .about .about__item__title {
   font-weight: 700;
@@ -549,6 +633,23 @@ header .dakr-mode .dark-mode__icon:nth-child(1) {
 }
 .about .intereses__title {
   font-weight: 700;
+}
+.about .font-dark {
+  color: white;
+}
+.about .background-dark {
+  background: #1C1C24;
+}
+.about .background-item-dark {
+  background: #272731;
+}
+.about .all-dark {
+  background: #1C1C24;
+  color: white;
+}
+.about .all-dark .all-dark-item {
+  background: #272731;
+  color: white;
 }
 
 .blog__box {
@@ -586,4 +687,47 @@ header .dakr-mode .dark-mode__icon:nth-child(1) {
   color: #2b2c34;
   font-weight: 500;
   margin: 0 0 1rem 1rem;
+}
+.blog__box .blog .button-blog {
+  color: white;
+  background: #272731;
+  box-shadow: 8px 8px 0 #1C1C24;
+}
+.blog__box .font-dark {
+  color: white;
+}
+.blog__box .background-dark {
+  background: #1C1C24;
+}
+.blog__box .background-item-dark {
+  background: #272731;
+}
+.blog__box .all-dark {
+  background: #1C1C24;
+  color: white;
+}
+.blog__box .all-dark .all-dark-item {
+  background: #272731;
+  color: white;
+}
+
+.font-dark {
+  color: white;
+}
+
+.background-dark {
+  background: #1C1C24;
+}
+
+.background-item-dark {
+  background: #272731;
+}
+
+.all-dark {
+  background: #1C1C24;
+  color: white;
+}
+.all-dark .all-dark-item {
+  background: #272731;
+  color: white;
 }
