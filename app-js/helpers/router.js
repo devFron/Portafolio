@@ -3,7 +3,7 @@ import GetProyects from './get_proyects.js'
 import Cv from '../components/cv.js'
 import About from '../components/about.js'
 import BlogBox from './get_blog.js'
-const Router =()=>{
+const Router =async()=>{
     let {hash} = location
 
     const $mainHome = document.querySelector('.main__box')
@@ -34,7 +34,7 @@ const Router =()=>{
             break;
 
             case '#/blog':
-                $mainHome.appendChild(BlogBox())
+                await $mainHome.appendChild(await BlogBox())
             break;
         
             default:
