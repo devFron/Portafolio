@@ -19,6 +19,11 @@ const BlogBox = ()=>{
         }
     })
     $BlogBox.classList.add('blog__box')
-    return $BlogBox
+    
+    return  new Promise((resolve,reject)=>{
+        setTimeout(() => {
+            resolve($BlogBox)
+        }, 3000);
+    }) 
 }
 export default BlogBox
