@@ -1,11 +1,13 @@
-import { DarkModeToggle } from "./app-js/helpers/dark-mode.js";
+import { DarkModeToggle, DarkModeSave } from "./app-js/helpers/dark-mode.js";
 import App from "./App.js";
 
 document.addEventListener('DOMContentLoaded',async(e)=>{
     await App()
+    DarkModeSave()
 })
 window.addEventListener('hashchange',async(e)=> {
     await App()
+    DarkModeSave()
 })
 document.addEventListener('click',(e)=>{
     if(e.target.matches('.dark-mode__circle')||e.target.matches('.dark-mode__icon')){
