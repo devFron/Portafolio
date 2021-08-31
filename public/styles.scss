@@ -531,6 +531,10 @@ header{
                 border-radius: 100%;
                 left:0;
             }
+            .dark-mode__circle__active{
+                right: 0;
+                left:auto;
+            }
         }
         img{
             display:block;

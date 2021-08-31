@@ -856,6 +856,10 @@ header .dark-mode-dark {
     border-radius: 100%;
     left: 0;
   }
+  header .dakr-mode .dark-mode__circle__active {
+    right: 0;
+    left: auto;
+  }
   header img {
     display: block;
     width: 80px;
