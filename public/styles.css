@@ -236,6 +236,13 @@ table {
 body {
   background: url(../public/background-mobile.png);
 }
+body::-webkit-scrollbar {
+  width: 10px;
+}
+body::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
 
 .body-dark {
   background: url(../public/background-mobile-dark.png), #1C1C24;

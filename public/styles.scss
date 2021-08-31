@@ -30,6 +30,13 @@ $font-poppins:'Poppins', sans-serif;
 }
 body{
     background:url(../public/background-mobile.png);
+    &::-webkit-scrollbar {
+        width: 10px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: #ccc;
+        border-radius: 4px;
+    }
 }
 .body-dark{
     background:url(../public/background-mobile-dark.png),$color-three;
@@ -464,6 +471,3 @@ header{
       opacity: 0;
     }
 }
-// header{
-//     display: none;
-// }
