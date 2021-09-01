@@ -12,10 +12,15 @@ const App =async()=>{
     $mainHome.classList.add('main__box')
 
     $root.appendChild(Loader())
-    $Fragment.appendChild(Header())
-    $Fragment.appendChild($mainHome)
-    $root.appendChild($Fragment)
-    await Router()
-    document.querySelector('.loader-box').style.display = 'none'
+    if(location.href.indexOf('#/skill/') !== -1){
+        await Router()
+        document.querySelector('.loader-box').style.display = 'none'
+    }else{
+        $Fragment.appendChild(Header())
+        $Fragment.appendChild($mainHome)
+        $root.appendChild($Fragment)
+        await Router()
+        document.querySelector('.loader-box').style.display = 'none'
+    } 
 }
 export default App
