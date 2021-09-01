@@ -3,12 +3,18 @@ import GetProyects from './get_proyects.js'
 import Cv from '../components/cv.js'
 import About from '../components/about.js'
 import BlogBox from './get_blog.js'
+import HunddleSkill from '../components/Hunddle.js'
 const Router =async()=>{
     let {hash} = location
     let title = document.querySelector('title')
     const $mainHome = document.querySelector('.main__box')
-
-    $mainHome.innerHTML = ''
+    const $root = document.getElementById('root')
+    console.log(hash)
+    if(hash.indexOf('#/skill/')!== -1){
+        $root.innerHTML = ''
+    }else{
+        $mainHome.innerHTML = ''
+    }
 
     if(hash === '#/inicio' || hash === ''){
         const $sectionHome = document.createElement('section')
@@ -39,6 +45,10 @@ const Router =async()=>{
             case '#/blog':
                 await $mainHome.appendChild(await BlogBox())
                 title.textContent = 'Blog'
+            break;
+
+            case '#/skill/hunddle':
+                $root.appendChild(HunddleSkill())
             break;
         
             default:
