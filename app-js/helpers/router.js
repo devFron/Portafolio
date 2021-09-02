@@ -49,6 +49,7 @@ const Router =async()=>{
 
             case '#/skill/hunddle':
                 $root.appendChild(HunddleSkill())
+                document.querySelector('body').style.background = 'white'
             break;
         
             default:
