@@ -1061,3 +1061,165 @@ header .dark-mode-dark {
   height: 75px;
   border-radius: 50%;
 }
+
+.hunddle__header {
+  display: flex;
+  justify-content: space-around;
+  font-family: "Poppins", sans-serif;
+  padding: 1rem 0 0 0;
+  align-items: center;
+}
+.hunddle__header .hunddle__image {
+  width: 45%;
+}
+.hunddle__header .hunddle__header__button {
+  background: transparent;
+  color: #ff52bf;
+  border: 2px solid #ff52bf;
+  border-radius: 20px;
+  padding: 10px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.hunddle__welcome {
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+.hunddle__welcome .welcome__title {
+  color: #00252e;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+}
+.hunddle__welcome .welcome__description__box {
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hunddle__welcome .welcome__image {
+  width: 80%;
+}
+.hunddle__welcome .welcome__description {
+  text-align: center;
+}
+.hunddle__welcome .welcome__button {
+  background: #ff52bf;
+  color: #f5faff;
+  border-radius: 20px;
+  padding: 1rem;
+  border: none;
+}
+.hunddle__welcome .welcome__button:hover {
+  background: #ff8fd8;
+}
+
+.hunddle__followers {
+  display: flex;
+  justify-content: center;
+  display: grid;
+  padding: 1rem 0;
+  grid-gap: 2rem;
+}
+.hunddle__followers .followers__follow .followers__follow__number {
+  color: #00252e;
+  font-size: 50px;
+  font-weight: 700;
+  padding: 10px 0;
+  margin: 0;
+}
+.hunddle__followers .followers__follow .follower__follow__description {
+  color: #c4c4c4;
+  margin: 0;
+}
+
+.hunddle__grid {
+  display: grid;
+  grid-gap: 2rem;
+  padding: 3rem 1rem 0 1rem;
+}
+.hunddle__grid .grid__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hunddle__grid .grid__item .grid__item__image {
+  width: 50%;
+}
+.hunddle__grid .grid__item .grid__item__title {
+  color: #00252e;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+.hunddle__grid .grid__item .grid__item__description {
+  text-align: center;
+}
+
+.hunddle__build {
+  font-family: "Poppins", sans-serif;
+  padding: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hunddle__build .build__title {
+  font-size: 25px;
+  color: #00252e;
+  font-weight: 700;
+  text-align: center;
+}
+.hunddle__build .build__button {
+  background: #ff52bf;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 10px 2rem;
+  font-weight: 500;
+}
+.hunddle__build .build__button:hover {
+  background: #ff8fd8;
+}
+
+.hunddle__footer {
+  background: #00252e;
+}
+.hunddle__footer div:nth-child(1) svg {
+  background: white;
+}
+.hunddle__footer .footer__formuario {
+  color: white;
+  padding: 0 1rem;
+}
+.hunddle__footer .footer__formuario .footer__title {
+  font-weight: 500;
+  font-size: 25px;
+}
+.hunddle__footer .footer__formuario .henddle-input-mail {
+  border: none;
+  height: 40px;
+  border-radius: 10px;
+  outline: none;
+}
+.hunddle__footer .footer__formuario .henddle-button-mail {
+  background: #ff52bf;
+  border: none;
+  padding: 10px 2rem;
+  font-size: 25px;
+  color: white;
+  font-weight: 500;
+  border-radius: 10px;
+  margin: 1rem 0 0 0;
+}
+.hunddle__footer .footer__contact {
+  padding: 1rem;
+  color: white;
+}
+.hunddle__footer .social__media__icon {
+  margin: 0 5px;
+  font-size: 25px;
+}
