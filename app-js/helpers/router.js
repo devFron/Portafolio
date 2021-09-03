@@ -4,6 +4,7 @@ import Cv from '../components/cv.js'
 import About from '../components/about.js'
 import BlogBox from './get_blog.js'
 import HunddleSkill from '../components/Hunddle.js'
+import FyloSkill from '../components/Fylo.js'
 const Router =async()=>{
     let {hash} = location
     let title = document.querySelector('title')
@@ -49,6 +50,11 @@ const Router =async()=>{
 
             case '#/skill/hunddle':
                 $root.appendChild(HunddleSkill())
+                document.querySelector('body').style.background = 'white'
+            break;
+
+            case '#/skill/fylo':
+                $root.appendChild(FyloSkill())
                 document.querySelector('body').style.background = 'white'
             break;
         
