@@ -61,7 +61,7 @@ const HunddleSkill = ()=>{
             image:'public/resources-skills/hunddle/illustration-grow-together.svg',
             title:'Grow Together',
             description:'Generate meningful discussions with your audience and build a strong, loyal community Think of the insigtful conversations you miss out on with a feedback form.',
-            offset:''
+            offset:'left'
         },
         {
             image:'public/resources-skills/hunddle/illustration-flowing-conversation.svg',
@@ -69,13 +69,13 @@ const HunddleSkill = ()=>{
             description:`
             you wouldn't paginate a conversation in real life, so why do it onlin?our threads have just-in-time loading for a more natural flow.
             `,
-            offset:''
+            offset:'right'
         },
         {
             image:'public/resources-skills/hunddle/illustration-your-users.svg',
             title:'Your Users',
             description:`It takes no time at all to integrate Hunddle with your app's authentication solution.This means, once signed in to your app, your users can start catting immediately.` ,
-            offset:''
+            offset:'left'
         }
     ]
 
