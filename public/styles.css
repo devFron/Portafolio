@@ -1306,3 +1306,311 @@ header .dark-mode-dark {
     grid-template-columns: 400px 300px;
   }
 }
+.fylo__header {
+  padding: 1rem 0 0 0;
+}
+
+.fylo .fylo__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: static;
+  background: white;
+}
+.fylo .fylo__header img {
+  display: block;
+  width: 30%;
+}
+.fylo .fylo__header .fylo__menu .fylo__menu__item {
+  padding: 0 5px;
+}
+.fylo .fylo__header .fylo__menu .fylo__menu__link {
+  color: #070439;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.fylo__files {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0 0 0;
+}
+.fylo__files .fylo__files__image {
+  width: 50%;
+}
+.fylo__files .fylo__files__description {
+  font-size: 20px;
+  color: #070439;
+  padding: 0 1rem;
+  text-align: center;
+  font-weight: 700;
+  line-height: 26px;
+}
+.fylo__files .fylo__files__description__description {
+  text-align: center;
+  padding: 0 1rem;
+  color: #070439;
+}
+.fylo__files form {
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.fylo__files form input {
+  margin: 10px 0;
+  border: 2px solid #bfbfbf;
+  border-radius: 5px;
+  height: 30px;
+  padding: 0 0 0 1rem;
+}
+.fylo__files form input::placeholder {
+  color: #eee;
+}
+.fylo__files form button {
+  background: #3065f8;
+  color: white;
+  border: none;
+  padding: 10px 0;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+.fylo__stay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0 0 0;
+}
+.fylo__stay img {
+  width: 50%;
+}
+.fylo__stay .fylo__stay__description__box {
+  padding: 0 1rem 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.fylo__stay .fylo__stay__description__box .fylo__stay__description__title {
+  color: #070439;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 700;
+}
+.fylo__stay .fylo__stay__description__box .fylo__stay__description__description {
+  color: #bfbfbf;
+}
+.fylo__stay .fylo__stay__description__box a {
+  color: #3c9f8f;
+  border-bottom: 1px solid #3c9f8f;
+  padding: 0 0 10px 0;
+  display: inline-block;
+  margin: 0 0 10px 0;
+  text-decoration: none;
+}
+.fylo__stay .fylo__stay__user {
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.39);
+  border-radius: 5px;
+}
+.fylo__stay .fylo__stay__user img {
+  width: 20px;
+}
+.fylo__stay .fylo__stay__user .fylo__stay__user__description {
+  color: #070439;
+}
+.fylo__stay .fylo__stay__user .fylo__stay__user__info {
+  display: flex;
+  align-items: center;
+}
+.fylo__stay .fylo__stay__user .fylo__stay__user__info .fylo__stay__user__info__image {
+  border-radius: 100%;
+  width: 85px;
+  height: 55px;
+}
+.fylo__stay .fylo__stay__user .fylo__stay__user__info .fylo__stay__user__infor__personal {
+  padding: 0 1rem;
+}
+.fylo__stay .fylo__stay__user .fylo__stay__user__info .fylo__stay__user__name {
+  font-weight: 700;
+  color: #070439;
+}
+.fylo__stay .fylo__stay__user .fylo__stay__user__info .fylo__stay__user__profesion {
+  color: #bfbfbf;
+}
+
+.fylo__get {
+  background: #585989;
+  color: white;
+  padding: 2rem 0;
+}
+.fylo__get .fylo__get__title {
+  font-size: 20px;
+  text-align: center;
+}
+.fylo__get .fylo__get__description {
+  text-align: center;
+}
+.fylo__get form {
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.fylo__get form input {
+  margin: 10px 0;
+  border: 2px solid #bfbfbf;
+  border-radius: 5px;
+  height: 30px;
+  padding: 0 0 0 1rem;
+}
+.fylo__get form input::placeholder {
+  color: #eee;
+}
+.fylo__get form button {
+  background: #3065f8;
+  color: white;
+  border: none;
+  padding: 10px 0;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+.fylo__footer {
+  background: #070439;
+  padding: 1rem 0 0 0;
+  color: white;
+  margin: 0;
+  padding: 1rem 1rem 0 1rem;
+}
+.fylo__footer ul {
+  padding: 0;
+  margin: 0;
+  color: white;
+  list-style: none;
+}
+.fylo__footer ul li {
+  padding: 10px 0;
+  margin: 0;
+}
+.fylo__footer ul .fylo__footer__links:nth-child(2) {
+  padding: 1rem 0 0 0;
+}
+.fylo__footer ul a {
+  color: white;
+  text-decoration: none;
+}
+.fylo__footer ul .fylo__footer__social {
+  display: flex;
+  justify-content: center;
+}
+.fylo__footer ul .fylo__footer__social__icon {
+  font-size: 2rem;
+  margin: 0 1rem;
+}
+
+@media screen and (min-width: 1000px) {
+  .fylo .fylo__header {
+    padding: 1rem 1rem 0 1rem;
+  }
+  .fylo .fylo__header img {
+    width: 20%;
+  }
+  .fylo .fylo__header .fylo__menu .fylo__menu__item {
+    padding: 0 1rem;
+  }
+  .fylo .fylo__header .fylo__menu .fylo__menu__link {
+    font-size: 20px;
+  }
+
+  .fylo__files {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .fylo__files .fylo__files__image {
+    width: 100%;
+  }
+  .fylo__files .fylo__files__description__box {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .fylo__files .fylo__files__description__box p {
+    text-align: start;
+  }
+  .fylo__files .fylo__files__description__box .form-fylo {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .fylo__files .fylo__files__description__box .form-fylo button {
+    padding: 10px 3rem;
+  }
+
+  .fylo__stay {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+  }
+  .fylo__stay img {
+    width: 100%;
+  }
+  .fylo__stay .fylo__stay__description__box {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .fylo__stay .fylo__stay__description__box p {
+    text-align: start;
+  }
+  .fylo__stay .fylo__stay__description__box .fylo__stay__description__title {
+    font-size: 25px;
+  }
+  .fylo__stay .fylo__stay__description__box .fylo__stay__user .fylo__stay__user__info__image {
+    height: 80px;
+  }
+  .fylo__stay .fylo__stay__user {
+    width: 300px;
+  }
+
+  .fylo__get {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem;
+    column-gap: 2rem;
+  }
+  .fylo__get .fylo__form__get {
+    grid-column: 2/3;
+    grid-row: 1/3;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .fylo__get .fylo__form__get input {
+    width: 100%;
+  }
+  .fylo__get .fylo__form__get button {
+    padding: 10px 3rem;
+  }
+  .fylo__get .fylo__get__title, .fylo__get .fylo__get__description {
+    text-align: start;
+  }
+  .fylo__get .fylo__get__title {
+    margin: 0;
+    padding: 1rem 0;
+    font-size: 25px;
+    font-weight: 700;
+  }
+
+  .fylo__footer {
+    padding: 2rem 1rem 0 1rem;
+  }
+
+  .fylo__footer__menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .fylo__footer__menu .fylo__footer__menu__item:nth-child(2) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
