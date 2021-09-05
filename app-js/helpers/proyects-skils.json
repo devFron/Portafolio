@@ -20,6 +20,12 @@
             "image":"public/skills-images/fylo-preview.jpg",
             "link":"#/skill/fylo",
             "title": "Fylo Landing Page"
+        },
+        {
+            "id":2,
+            "image":"public/skills-images/fylo-dark-preview.jpg",
+            "link":"#/skill/fylo-dark-theme",
+            "title": "Fylo Dark Theme"
         }
     ]
 }
