@@ -1614,3 +1614,320 @@ header .dark-mode-dark {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+.fylo-dark__header {
+  background: #181f2a;
+  position: static;
+  padding: 0;
+  border-radius: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 0;
+}
+.fylo-dark__header img {
+  display: block;
+  margin: 0;
+  width: 25%;
+}
+.fylo-dark__header .menu__item {
+  padding: 0 5px;
+}
+.fylo-dark__header .menu__link {
+  font-size: 1rem;
+  color: white;
+}
+
+.fylo-dark__files {
+  background: #181f2a;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem 1rem 1rem;
+}
+.fylo-dark__files img {
+  width: 70%;
+}
+.fylo-dark__files .fylo-dark__files__title {
+  font-weight: 700;
+  text-align: center;
+  line-height: 30px;
+  font-size: 20px;
+}
+.fylo-dark__files .fylo-dark__files__description {
+  text-align: center;
+  line-height: 25px;
+}
+.fylo-dark__files .fylo-dark__files__description-box {
+  display: flex;
+  flex-direction: column;
+}
+.fylo-dark__files .fylo-dark__files__button {
+  padding: 10px 2rem;
+  background: #65e2d9;
+  border: none;
+  color: white;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+.fylo-dark__benefits {
+  background: #181f2a;
+  display: grid;
+  grid-gap: 2rem;
+  padding: 2rem 0 0 0;
+}
+.fylo-dark__benefits .fylo-dark__benefitie {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+.fylo-dark__benefits .fylo-dark__benefitie__title {
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  margin: 0;
+  padding: 1rem 0 0 0;
+}
+.fylo-dark__benefits .fylo-dark__benefitie__description {
+  text-align: center;
+  margin: 0;
+  padding: 1rem 0;
+}
+
+.fylo-dark__productives {
+  background: #181f2a;
+  padding: 1rem 0 0 0;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.fylo-dark__productives .fylo-dark__productive__image {
+  width: 50%;
+}
+.fylo-dark__productives .fylo-dark__productive__description-box {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+  align-items: flex-start;
+}
+.fylo-dark__productives .fylo-dark__productive__title {
+  font-weight: 700;
+  text-align: center;
+  font-size: 20px;
+}
+.fylo-dark__productives .fylo-dark__productive__see {
+  color: #65e2d9;
+  border-bottom: 1px solid #65e2d9;
+  padding: 0 0 5px 0;
+  text-decoration: none;
+}
+
+.fylo-dark__coments {
+  padding: 4rem 1rem 1rem 1rem;
+  color: white;
+  display: grid;
+  grid-gap: 2rem;
+  background: url(../public/resources-skills/fylo-dark/bg-quotes.png), #181f2a;
+  background-repeat: no-repeat;
+  background-position: 20px 20px;
+}
+.fylo-dark__coments .fylo-dark__comment__user {
+  border-radius: 5px;
+  background: #202a3c;
+  padding: 1rem;
+}
+.fylo-dark__coments .fylo-dark__comment__user__image {
+  width: 80px;
+  height: 60px;
+  border-radius: 100%;
+}
+.fylo-dark__coments .fylo-dark__comment__user__info {
+  display: flex;
+  align-items: center;
+}
+.fylo-dark__coments .fylo-dark__comment__user__data {
+  padding: 0 0 0 1rem;
+}
+.fylo-dark__coments .fylo-dark__comment__text {
+  line-height: 26px;
+}
+.fylo-dark__coments .fylo-dark__comment__user__profession {
+  color: #eee;
+}
+
+.fylo-dark__footer {
+  background: #181f2a;
+  position: relative;
+  padding: 9rem 0 0 0;
+  color: white;
+}
+.fylo-dark__footer ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.fylo-dark__footer form {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+.fylo-dark__footer form input {
+  border-radius: 20px;
+  border: none;
+  height: 30px;
+  outline: none;
+  padding: 0 0 0 10px;
+}
+.fylo-dark__footer form button {
+  padding: 10px 0;
+  margin: 1rem 0 0 0;
+  background: #65e2d9;
+  border: none;
+  color: white;
+  border-radius: 20px;
+}
+
+.fylo-dark__footer__contact__title {
+  font-weight: 700;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.fylo-dark__footer__contact__description {
+  text-align: center;
+  line-height: 25px;
+}
+
+.fylo-dark__footer__contact {
+  background: #202a3c;
+  color: white;
+  padding: 1rem;
+  position: absolute;
+  top: 0;
+  left: 1rem;
+  right: 1rem;
+}
+
+.fylo-dark__footer__info__box {
+  background: #0b1523;
+  padding: 15rem 1rem 1rem 1rem;
+}
+
+.fylo-dark__footer__info__item__contact__item__icon {
+  margin: 0 1rem 0 0;
+}
+
+.fylo-dark__footer__info__item__contact__item {
+  display: flex;
+}
+
+.fylo-dark__footer__info li {
+  padding: 1rem 0;
+}
+
+.fylo-dark__footer__info__social__item i {
+  border: 1px solid white;
+  padding: 10px;
+  font-size: 25px;
+  border-radius: 100%;
+}
+
+.fylo-dark__footer__info__social {
+  display: flex;
+  justify-content: center;
+}
+.fylo-dark__footer__info__social li {
+  padding: 0 1rem;
+}
+
+@media screen and (min-width: 500px) {
+  .fylo-dark__files__description-box {
+    align-items: center;
+  }
+  .fylo-dark__files__description-box .fylo-dark__files__button {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .fylo-dark__benefits {
+    display: flex;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+
+  .fylo-dark__coments {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .fylo-dark__footer__contact form {
+    align-items: center;
+  }
+  .fylo-dark__footer__contact form input, .fylo-dark__footer__contact form button {
+    width: 280px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .fylo-dark__productives {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .fylo-dark__coments {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .fylo-dark__footer__contact {
+    left: 2rem;
+    right: 2rem;
+  }
+  .fylo-dark__footer__contact .fylo-dark__footer__contact__title {
+    font-size: 25px;
+  }
+  .fylo-dark__footer__contact form {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .fylo-dark__footer__contact form input {
+    height: 38px;
+  }
+  .fylo-dark__footer__contact form button {
+    margin: 0 0 0 1rem;
+  }
+
+  .fylo-dark__footer__info__box {
+    padding: 7rem 0 0 0;
+  }
+  .fylo-dark__footer__info__box .fylo-dark__footer__info {
+    display: flex;
+    justify-content: space-around;
+  }
+  .fylo-dark__footer__info__box .fylo-dark__footer__info__item:nth-child(2) {
+    display: flex;
+    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+  }
+  .fylo-dark__footer__info__box .fylo-dark__footer__info__item__contact {
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+  }
+  .fylo-dark__footer__info__box .fylo-dark__footer__info__item__contact .fylo-dark__footer__info__item__contact__item:nth-child(3) {
+    grid-column: 2/3;
+  }
+  .fylo-dark__footer__info__box .fylo-dark__footer__info__item__contact .fylo-dark__footer__info__item__contact__item:nth-child(1) {
+    grid-column: 1/2;
+    grid-row: 1/3;
+  }
+
+  .fylo-dark__files img {
+    width: 30%;
+  }
+}
