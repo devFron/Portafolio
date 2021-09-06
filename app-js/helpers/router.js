@@ -6,6 +6,7 @@ import BlogBox from './get_blog.js'
 import HunddleSkill from '../components/Hunddle.js'
 import FyloSkill from '../components/Fylo.js'
 import FyloDark from '../components/Fylo_dark.js'
+import CountriesSkill from '../components/Countries_rest.js'
 const Router =async()=>{
     let {hash} = location
     let title = document.querySelector('title')
@@ -60,6 +61,10 @@ const Router =async()=>{
             break;
             case '#/skill/fylo-dark-theme':
                 $root.appendChild(FyloDark())
+                document.querySelector('body').style.background = 'white'
+            break;
+            case '#/skill/rest-countries':
+                $root.appendChild(CountriesSkill())
                 document.querySelector('body').style.background = 'white'
             break;
         
