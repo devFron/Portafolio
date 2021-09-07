@@ -981,3 +981,92 @@ $light-red: hsl(0, 100%, 63%);
     }
   }
 }
+@mixin CountryRest-skill {
+$dark-blue:hsl(209, 23%, 22%);
+$very-dark:hsl(207, 26%, 17%);
+$very-dark:hsl(200, 15%, 8%);
+$dark-gray:hsl(0, 0%, 52%);
+$very-light-gray: hsl(0, 0%, 98%);
+$White:hsl(0, 0%, 100%);
+  .header__country{
+    position:static;
+    background:$very-light-gray;
+    box-shadow:0 5px 3px #eee;
+    color:$very-dark;
+    padding:0;
+    border-radius:0;
+    display:flex;
+    justify-content: space-around;
+    .country__title{
+      font-size:20px;
+      margin:0;
+    }
+  } 
+  .country__search{
+    padding:1rem 1rem;
+    .country__search__a{
+      background:white;
+      padding:1rem 2rem;
+      display:flex;
+      border-radius:5px;
+      box-shadow:0 0 25px #c4c4c4;
+      justify-content: center;
+      .search-country__icon{
+        color:$dark-gray;
+        font-size:20px;
+        cursor:pointer;
+        margin:0 10px 0 0;
+      }
+      .search-country__input{
+        border:none;
+        outline: none;
+      }
+    }
+    .filter-country{
+      width: 75%;
+      padding:1rem 0 0 0 ;
+      position: relative;
+      .filter-country__box{
+        background:white;
+        display:flex;
+        align-items: center;
+        justify-content: space-around;
+        font-weight: 500;
+        border-radius:5px;
+        box-shadow:0 0 25px #c4c4c4;
+        i{
+          font-size:20px;
+          cursor:pointer;
+          transform: rotate(180deg);
+        }
+        .arrow-down-animation{
+          transform: rotate(0deg);
+        }
+      }
+      .filter-country__region__box{
+        background:white;
+        margin:0;
+        list-style:none;
+        margin:10px 0 0 0;
+        border-radius:5px;
+        box-shadow:0 0 25px #c4c4c4;
+        padding:0;
+        position: absolute;
+        left:0;
+        right:0;
+        top:100%;
+        display:none;
+        li{
+          padding:10px 0;
+          font-weight: 500;
+          color:$very-dark;
+          padding:1rem;
+          cursor:pointer;
+          &:hover{
+            background:#eee;
+          }
+        }
+      }
+    }
+  }
+}
