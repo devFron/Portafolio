@@ -15,14 +15,14 @@ const CountriesSkill =()=>{
     const $filter = document.createElement('section')
     $filter.classList.add('country__search')
     $filter.innerHTML = `
-        <article class="">
-            <input type="text" name="search-country" class="search-country__input" id="search-country-input" placholder="Search for a country">
+        <article class="country__search__a">
             <i class="search-country__icon fas fa-search"></i>
+            <input type="text" name="search-country" class="search-country__input" id="search-country-input" placeholder="Search for a country">
         </article>
         <article class="filter-country">
             <div class="filter-country__box">
                 <p class="filter-country__region-name">Filter By Region</p>
-                <i class="filter-country__region-name__icon fas fa-arrow-down"></i>
+                <i class="filter-country__region-name__icon fas fa-angle-down"></i>
             </div>
             <ul class="filter-country__region__box">
                 <li class="filter-country__region">Africa</li>
