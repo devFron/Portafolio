@@ -65,7 +65,7 @@ const Router =async()=>{
             break;
             case '#/skill/rest-countries':
                 $root.appendChild(CountriesSkill())
-                document.querySelector('body').style.background = 'white'
+                document.querySelector('body').style.background = 'hsl(0, 0%, 98%)'
             break;
         
             default:
