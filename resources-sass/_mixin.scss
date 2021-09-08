@@ -1069,4 +1069,43 @@ $White:hsl(0, 0%, 100%);
       }
     }
   }
+  .countries__country{
+    padding:0 1rem;
+    display: grid;
+    grid-gap:2rem;
+    .country{
+      box-shadow:0 0 25px #c4c4c4;
+      background:white;
+      img{
+        width:100%;
+      }
+      .country__data{
+        padding:1rem;
+        .country__name{
+          font-size:20px;
+          margin:0;
+          padding:0 0 1rem 0 ;
+          font-weight: 700;
+        }
+        .country__data__list{
+          margin:0;
+          padding:0;
+          list-style: none;
+        }
+        .country__data__list__item{
+          display: flex;
+          padding:13px 0;
+        }
+        .country__data__list__item__name{
+          font-weight: 700;
+          margin:0;
+          padding:0 10px 0 0 ;
+        }
+        .country__data__list__item__description{
+          font-weight:400;
+          margin:0;
+        }
+      }
+    }
+  }
 }
