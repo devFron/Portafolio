@@ -42,11 +42,23 @@ const Countri =(props)=>{
     $country.appendChild($countryData)
     return $country
 }
-const GetCountries = async()=>{
+const GetCountries = async(countries)=>{
     const $CountriesCountry =document.createElement('section')
     $CountriesCountry.classList.add('countries__country')
+    let {See,by} = countries
+
+    let searchBy = ''
+
+    if(See === 'all' || by === 'all'){
+        searchBy = 'https://restcountries.eu/rest/v2/all'
+    }else if(See ==='name'){
+        searchBy = `https://restcountries.eu/rest/v2/name/${by}`
+    }else if(See === 'region'){
+        searchBy = `https://restcountries.eu/rest/v2/region/${by}`
+    }
+
     try {
-        let res = await fetch('https://restcountries.eu/rest/v2/all')
+        let res = await fetch(searchBy)
         if(!res.ok)throw res.status
         let json = await res.json()
         json.forEach(el => {
