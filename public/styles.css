@@ -2017,6 +2017,9 @@ header .dark-mode-dark {
 .country__search .filter-country .filter-country__region__box li:hover {
   background: #eee;
 }
+.country__search .filter-country .filter-country__region__active {
+  display: block;
+}
 
 .countries__country {
   padding: 0 1rem;
