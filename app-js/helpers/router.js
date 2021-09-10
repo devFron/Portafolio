@@ -8,7 +8,7 @@ import FyloSkill from '../components/Fylo.js'
 import FyloDark from '../components/Fylo_dark.js'
 import CountriesSkill from '../components/Countries_rest.js'
 import Loader from '../components/loader.js'
-const Router =async()=>{
+const Router =async(countries)=>{
     let {hash} = location
     let title = document.querySelector('title')
     const $mainHome = document.querySelector('.main__box')
@@ -68,7 +68,7 @@ const Router =async()=>{
                 const $loader = document.createElement('section')
                 $loader.appendChild(Loader())
                 $root.appendChild($loader)
-                $root.appendChild(await CountriesSkill())
+                $root.appendChild(await CountriesSkill(countries))
                 document.querySelector('body').style.background = 'hsl(0, 0%, 98%)'
                 $root.removeChild($loader)
             break;
