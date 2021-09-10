@@ -1,6 +1,6 @@
 import GetCountries from "../helpers/get_coutries.js"
 import MenuSkill from "./Menu_skill.js"
-const CountriesSkill =async()=>{
+const CountriesSkill =async({See,by})=>{
     const $Countries = document.createElement('section')
     const $header = document.createElement('header')
     $Countries.classList.add('countries')
@@ -39,7 +39,7 @@ const CountriesSkill =async()=>{
     `
     $Countries.appendChild($header)
     $Countries.appendChild($filter)
-    $Countries.appendChild(await GetCountries())
+    $Countries.appendChild(await GetCountries({See,by}))
     $Countries.appendChild(MenuSkill(linkPage))
     return $Countries
 }
