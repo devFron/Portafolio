@@ -1,7 +1,7 @@
 import Loader from './app-js/components/loader.js';
 import Header from './app-js/components/header.js'
 import Router from './app-js/helpers/router.js'
-const App =async()=>{
+const App =async(countires)=>{
 
     const $root = document.getElementById('root')
     $root.innerHTML = ''
@@ -13,7 +13,7 @@ const App =async()=>{
 
     $root.appendChild(Loader())
     if(location.href.indexOf('#/skill/') !== -1){
-        await Router()
+        await Router(countires)
         document.querySelector('.loader-box').classList.add('loader-enabled')
     }else{
         $Fragment.appendChild(Header())
