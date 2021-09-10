@@ -14,13 +14,13 @@ const App =async()=>{
     $root.appendChild(Loader())
     if(location.href.indexOf('#/skill/') !== -1){
         await Router()
-        document.querySelector('.loader-box').style.display = 'none'
+        document.querySelector('.loader-box').classList.add('loader-enabled')
     }else{
         $Fragment.appendChild(Header())
         $Fragment.appendChild($mainHome)
         $root.appendChild($Fragment)
         await Router()
-        document.querySelector('.loader-box').style.display = 'none'
+        document.querySelector('.loader-box').classList.add('loader-enabled')
     } 
 }
 export default App
