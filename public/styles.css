@@ -752,6 +752,10 @@ header .dark-mode-dark {
   z-index: 999;
 }
 
+.loader-enabled {
+  display: none;
+}
+
 #teabag {
   transform-origin: top center;
   transform: rotate(3deg);

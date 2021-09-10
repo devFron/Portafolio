@@ -425,6 +425,9 @@ header{
     align-items:center;
     z-index:999;
 }
+.loader-enabled{
+    display:none;
+}
 #teabag{
     transform-origin: top center;
     transform: rotate(3deg);
