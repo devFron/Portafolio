@@ -7,6 +7,7 @@ import HunddleSkill from '../components/Hunddle.js'
 import FyloSkill from '../components/Fylo.js'
 import FyloDark from '../components/Fylo_dark.js'
 import CountriesSkill from '../components/Countries_rest.js'
+import Loader from '../components/loader.js'
 const Router =async()=>{
     let {hash} = location
     let title = document.querySelector('title')
@@ -64,8 +65,12 @@ const Router =async()=>{
                 document.querySelector('body').style.background = 'white'
             break;
             case '#/skill/rest-countries':
-                $root.appendChild(CountriesSkill())
+                const $loader = document.createElement('section')
+                $loader.appendChild(Loader())
+                $root.appendChild($loader)
+                $root.appendChild(await CountriesSkill())
                 document.querySelector('body').style.background = 'hsl(0, 0%, 98%)'
+                $root.removeChild($loader)
             break;
         
             default:
