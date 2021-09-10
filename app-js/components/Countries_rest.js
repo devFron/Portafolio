@@ -1,56 +1,11 @@
+import GetCountries from "../helpers/get_coutries.js"
 import MenuSkill from "./Menu_skill.js"
-const Countri =(props)=>{
-    let {id,img,name,data} = props
-    const $country = document.createElement('article')
-    const $countryImage = document.createElement('img')
-    const $countryName = document.createElement('p')
-    const $countryData = document.createElement('div')
-    const $countryDataList = document.createElement('ul')
-
-    $country.classList.add('country')
-    $countryImage.classList.add('country__image')
-    $countryName.classList.add('country__name')
-    $countryData.classList.add('country__data')
-    $countryDataList.classList.add('country__data__list')
-
-    $country.dataset.id = id
-    $countryImage.src = img
-    $countryImage.alt = `Flag ${name}`
-    $countryName.textContent = name
-
-    let dataInputs = Object.keys(data)
-    for (let i = 0; i < dataInputs.length; i++) {
-        const $countryDataListItem = document.createElement('li')
-        const $countryDataListItemName = document.createElement('p')
-        const $countryDataListItemDescription = document.createElement('p')
-
-        $countryDataListItem.classList.add('country__data__list__item')
-        $countryDataListItemName.classList.add('country__data__list__item__name')
-        $countryDataListItemDescription.classList.add('country__data__list__item__description')
-
-        $countryDataListItemName.textContent = `${dataInputs[i]}:`
-        $countryDataListItemDescription.textContent = data[dataInputs[i]]
-
-        $countryDataListItem.appendChild($countryDataListItemName)
-        $countryDataListItem.appendChild($countryDataListItemDescription)
-        $countryDataList.appendChild($countryDataListItem)
-
-    } 
-
-    $countryData.appendChild($countryName)
-    $countryData.appendChild($countryDataList)
-    $country.appendChild($countryImage)
-    $country.appendChild($countryData)
-    return $country
-}
-const CountriesSkill =()=>{
+const CountriesSkill =async()=>{
     const $Countries = document.createElement('section')
     const $header = document.createElement('header')
-    const $CountriesCountry =document.createElement('section')
     $Countries.classList.add('countries')
     $header.classList.add('header__country')
-    $CountriesCountry.classList.add('countries__country')
-
+    
     let linkPage = 'https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca'
 
     $header.innerHTML = `
@@ -82,28 +37,9 @@ const CountriesSkill =()=>{
             </ul>
         </article>
     `
-    fetch('https://restcountries.eu/rest/v2/all')
-    .then((res)=>res.ok ? res.json():Promise.reject(res.status))
-    .then((json)=>{
-        console.log(json)
-        json.forEach(el => {
-            $CountriesCountry.appendChild(
-                Countri({
-                    id:el.alpha2Code,
-                    img:el.flag,
-                    name:el.name,
-                    data:{
-                        Population:el.population,
-                        Region:el.region,
-                        Capital:el.capital
-                    }
-                })
-            )
-        });
-    })
     $Countries.appendChild($header)
     $Countries.appendChild($filter)
-    $Countries.appendChild($CountriesCountry)
+    $Countries.appendChild(await GetCountries())
     $Countries.appendChild(MenuSkill(linkPage))
     return $Countries
 }
