@@ -989,7 +989,9 @@ $dark-gray:hsl(0, 0%, 52%);
 $very-light-gray: hsl(0, 0%, 98%);
 $White:hsl(0, 0%, 100%);
   .header__country{
-    position:static;
+    position:fixed;
+    top:0;
+    bottom:auto;
     background:$very-light-gray;
     box-shadow:0 5px 3px #eee;
     color:$very-dark;
@@ -997,13 +999,14 @@ $White:hsl(0, 0%, 100%);
     border-radius:0;
     display:flex;
     justify-content: space-around;
+    z-index:888;
     .country__title{
       font-size:20px;
       margin:0;
     }
   } 
   .country__search{
-    padding:1rem 1rem;
+    padding:4rem 1rem 1rem 1rem;
     .country__search__a{
       background:white;
       padding:1rem 2rem;

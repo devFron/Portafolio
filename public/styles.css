@@ -1936,7 +1936,9 @@ header .dark-mode-dark {
   }
 }
 .header__country {
-  position: static;
+  position: fixed;
+  top: 0;
+  bottom: auto;
   background: #fafafa;
   box-shadow: 0 5px 3px #eee;
   color: #111517;
@@ -1944,6 +1946,7 @@ header .dark-mode-dark {
   border-radius: 0;
   display: flex;
   justify-content: space-around;
+  z-index: 888;
 }
 .header__country .country__title {
   font-size: 20px;
@@ -1951,7 +1954,7 @@ header .dark-mode-dark {
 }
 
 .country__search {
-  padding: 1rem 1rem;
+  padding: 4rem 1rem 1rem 1rem;
 }
 .country__search .country__search__a {
   background: white;
