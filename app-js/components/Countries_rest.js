@@ -29,7 +29,7 @@ const CountriesSkill =async({See,by})=>{
             </div>
             <ul class="filter-country__region__box">
                 <li class="filter-country__region">Africa</li>
-                <li class="filter-country__region">America</li>
+                <li class="filter-country__region">Americas</li>
                 <li class="filter-country__region">Asia</li>
                 <li class="filter-country__region">Europe</li>
                 <li class="filter-country__region">Oceania</li>
