@@ -1,3 +1,4 @@
+import { DarkModeCountries } from "./app-js/components/Countries_rest.js";
 import { DarkModeToggle, DarkModeSave } from "./app-js/helpers/dark-mode.js";
 import { ACountry } from "./app-js/helpers/get_coutries.js";
 import App from "./App.js";
@@ -53,10 +54,25 @@ document.addEventListener('click',async(e)=>{
         if(document.querySelector('.a-country').classList.contains('a-country__enabled')){
             document.querySelector('.a-country').classList.remove('a-country__enabled')
         }
+        if(document.querySelector('.a-country') !== null && document.querySelector('body').classList.contains('box-countries-dark')){
+            document.querySelector('.a-country').classList.toggle('box-countries-dark-countri')
+            document.querySelectorAll('.a-country__data__item__borders').forEach((el)=>el.classList.toggle('box-countries-dark'))
+            document.querySelector('.a-country__button').classList.toggle('box-countries-dark-countri')
+        }
+        if(document.querySelector('body').classList.contains('box-countries-dark')){
+            localStorage.setItem('devfron-skill-countries','true')
+        }else{
+            localStorage.setItem('devfron-skill-countries','false')
+        }
     }
     if(e.target.matches('.a-country__button')){
         document.querySelector('.a-country').classList.add('a-country__enabled')
     }
+    // DarkModeCountries
+    if(e.target.matches('.dark-mode__icon-country')){
+        DarkModeCountries()
+    }
+
 })
 document.addEventListener('keydown',(e)=>{
     if(e.target.matches('.search-country__input')&&e.key ==='Enter'){

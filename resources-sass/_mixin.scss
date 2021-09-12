@@ -1021,6 +1021,12 @@ $White:hsl(0, 0%, 100%);
         border:none;
         outline: none;
       }
+      
+    }
+    .box-countries-dark-countri{
+      background:hsl(209, 23%, 22%);
+      color:white;
+      box-shadow:0 0 25px hsl(200, 15%, 8%);
     }
     .filter-country{
       width: 75%;
@@ -1042,6 +1048,11 @@ $White:hsl(0, 0%, 100%);
         .arrow-down-animation{
           transform: rotate(0deg);
         }
+      }
+      .box-countries-dark-countri{
+        background:hsl(209, 23%, 22%);
+        color:white;
+        box-shadow:0 0 25px hsl(200, 15%, 8%);
       }
       .filter-country__region__box{
         background:white;
@@ -1067,6 +1078,14 @@ $White:hsl(0, 0%, 100%);
             background:#eee;
           }
         }
+        .text-countries-dark{
+          color:white;
+        }
+      }
+      .box-countries-dark-countri{
+        background:hsl(209, 23%, 22%);
+        color:white;
+        box-shadow:0 0 25px hsl(200, 15%, 8%);
       }
       .filter-country__region__active{
         display:block;
@@ -1112,6 +1131,11 @@ $White:hsl(0, 0%, 100%);
         }
       }
     }
+    .box-countries-dark-countri{
+      background:hsl(209, 23%, 22%);
+      color:white;
+      box-shadow:0 0 25px hsl(200, 15%, 8%);
+    }
   }
   .country-click{
     position:absolute;
@@ -1147,6 +1171,11 @@ $White:hsl(0, 0%, 100%);
       background:white;
       box-shadow:0 0 25px #c4c4c4;
     }
+    .box-countries-dark-countri{
+      background:hsl(209, 23%, 22%);
+      color:white;
+      box-shadow:0 0 25px hsl(200, 15%, 8%);
+    }
     .a-country__image{
       width:100%;
     }
@@ -1180,10 +1209,27 @@ $White:hsl(0, 0%, 100%);
           padding:10px 0;
           background:white;
         }
+        .box-countries-dark{
+          background:hsl(207, 26%, 17%);
+        }
       }
     }
   }
   .a-country__enabled{
     display:none;
+  }
+  .box-countries-dark{
+    background:hsl(207, 26%, 17%);
+  }
+  .box-countries-dark-countri__background{
+    background:hsl(209, 23%, 22%);
+  }
+  .box-countries-dark-countri{
+    background:hsl(209, 23%, 22%);
+    color:white;
+    box-shadow:0 0 25px hsl(200, 15%, 8%);
+  }
+  .text-countries-dark{
+    color:white;
   }
 }

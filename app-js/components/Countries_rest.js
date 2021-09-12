@@ -44,3 +44,62 @@ const CountriesSkill =async({See,by})=>{
     return $Countries
 }
 export default CountriesSkill
+
+export const DarkModeCountries =()=>{
+    document.querySelector('body').classList.toggle('box-countries-dark')
+    if(document.querySelector('body').classList.contains('box-countries-dark')){
+        document.querySelector('body').style.background='hsl(207, 26%, 17%)'
+    }else{
+        document.querySelector('body').style.background='rgb(250, 250, 250)'
+    }
+    document.querySelector('.header__country').classList.toggle('box-countries-dark-countri')
+    document.querySelector('.country__search__a').classList.toggle('box-countries-dark-countri')
+    document.querySelector('.filter-country__box').classList.toggle('box-countries-dark-countri')
+    document.querySelectorAll('.country').forEach((el)=>{el.classList.toggle('box-countries-dark-countri')})
+    document.querySelector('.filter-country__region__box').classList.toggle('box-countries-dark-countri')
+    document.querySelector('.search-country__input').classList.toggle('box-countries-dark-countri__background')
+    document.querySelectorAll('.filter-country__region').forEach((el)=>el.classList.toggle('text-countries-dark'))
+    if(document.querySelector('.a-country') !== null){
+        document.querySelector('.a-country').classList.toggle('box-countries-dark-countri')
+        document.querySelectorAll('.a-country__data__item__borders').forEach((el)=>el.classList.toggle('box-countries-dark'))
+        document.querySelector('.a-country__button').classList.toggle('box-countries-dark-countri')
+    }
+    if(document.querySelector('body').classList.contains('box-countries-dark')){
+        localStorage.setItem('devfron-skill-countries','true')
+    }else{
+        localStorage.setItem('devfron-skill-countries','false')
+    }
+}
+export const DarkModeCountriesStorage = ()=>{
+    if(localStorage.getItem('devfron-skill-countries')==='true'){
+        document.querySelector('body').classList.add('box-countries-dark')
+        document.querySelector('body').style.background='hsl(207, 26%, 17%)'
+        document.querySelector('.header__country').classList.add('box-countries-dark-countri')
+        document.querySelector('.country__search__a').classList.add('box-countries-dark-countri')
+        document.querySelector('.filter-country__box').classList.add('box-countries-dark-countri')
+        document.querySelectorAll('.country').forEach((el)=>{el.classList.add('box-countries-dark-countri')})
+        document.querySelector('.filter-country__region__box').classList.add('box-countries-dark-countri')
+        document.querySelector('.search-country__input').classList.add('box-countries-dark-countri__background')
+        document.querySelectorAll('.filter-country__region').forEach((el)=>el.classList.add('text-countries-dark'))
+        if(document.querySelector('.a-country') !== null){
+            document.querySelector('.a-country').classList.add('box-countries-dark-countri')
+            document.querySelectorAll('.a-country__data__item__borders').forEach((el)=>el.classList.add('box-countries-dark'))
+            document.querySelector('.a-country__button').classList.add('box-countries-dark-countri')
+        }
+    }else{
+        document.querySelector('body').classList.remove('box-countries-dark')
+        document.querySelector('body').style.background='rgb(250, 250, 250)'
+        document.querySelector('.header__country').classList.remove('box-countries-dark-countri')
+        document.querySelector('.country__search__a').classList.remove('box-countries-dark-countri')
+        document.querySelector('.filter-country__box').classList.remove('box-countries-dark-countri')
+        document.querySelectorAll('.country').forEach((el)=>{el.classList.remove('box-countries-dark-countri')})
+        document.querySelector('.filter-country__region__box').classList.remove('box-countries-dark-countri')
+        document.querySelector('.search-country__input').classList.remove('box-countries-dark-countri__background')
+        document.querySelectorAll('.filter-country__region').forEach((el)=>el.classList.remove('text-countries-dark'))
+        if(document.querySelector('.a-country') !== null){
+            document.querySelector('.a-country').classList.remove('box-countries-dark-countri')
+            document.querySelectorAll('.a-country__data__item').forEach((el)=>el.classList.remove('box-countries-dark'))
+            document.querySelector('.a-country__button').classList.remove('box-countries-dark-countri')
+        }
+    }
+}

@@ -1971,6 +1971,11 @@ header .dark-mode-dark {
   border: none;
   outline: none;
 }
+.country__search .box-countries-dark-countri {
+  background: #2b3945;
+  color: white;
+  box-shadow: 0 0 25px #111517;
+}
 .country__search .filter-country {
   width: 75%;
   padding: 1rem 0 0 0;
@@ -1992,6 +1997,11 @@ header .dark-mode-dark {
 }
 .country__search .filter-country .filter-country__box .arrow-down-animation {
   transform: rotate(0deg);
+}
+.country__search .filter-country .box-countries-dark-countri {
+  background: #2b3945;
+  color: white;
+  box-shadow: 0 0 25px #111517;
 }
 .country__search .filter-country .filter-country__region__box {
   background: white;
@@ -2017,6 +2027,14 @@ header .dark-mode-dark {
 }
 .country__search .filter-country .filter-country__region__box li:hover {
   background: #eee;
+}
+.country__search .filter-country .filter-country__region__box .text-countries-dark {
+  color: white;
+}
+.country__search .filter-country .box-countries-dark-countri {
+  background: #2b3945;
+  color: white;
+  box-shadow: 0 0 25px #111517;
 }
 .country__search .filter-country .filter-country__region__active {
   display: block;
@@ -2062,6 +2080,11 @@ header .dark-mode-dark {
   font-weight: 400;
   margin: 0;
 }
+.countries__country .box-countries-dark-countri {
+  background: #2b3945;
+  color: white;
+  box-shadow: 0 0 25px #111517;
+}
 
 .country-click {
   position: absolute;
@@ -2099,6 +2122,11 @@ header .dark-mode-dark {
   background: white;
   box-shadow: 0 0 25px #c4c4c4;
 }
+.a-country .box-countries-dark-countri {
+  background: #2b3945;
+  color: white;
+  box-shadow: 0 0 25px #111517;
+}
 .a-country .a-country__image {
   width: 100%;
 }
@@ -2130,7 +2158,28 @@ header .dark-mode-dark {
   padding: 10px 0;
   background: white;
 }
+.a-country .a-country__border__box ul .box-countries-dark {
+  background: #202c37;
+}
 
 .a-country__enabled {
   display: none;
+}
+
+.box-countries-dark {
+  background: #202c37;
+}
+
+.box-countries-dark-countri__background {
+  background: #2b3945;
+}
+
+.box-countries-dark-countri {
+  background: #2b3945;
+  color: white;
+  box-shadow: 0 0 25px #111517;
+}
+
+.text-countries-dark {
+  color: white;
 }

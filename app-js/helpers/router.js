@@ -6,7 +6,7 @@ import BlogBox from './get_blog.js'
 import HunddleSkill from '../components/Hunddle.js'
 import FyloSkill from '../components/Fylo.js'
 import FyloDark from '../components/Fylo_dark.js'
-import CountriesSkill from '../components/Countries_rest.js'
+import CountriesSkill, { DarkModeCountriesStorage } from '../components/Countries_rest.js'
 import Loader from '../components/loader.js'
 const Router =async(countries)=>{
     let {hash} = location
@@ -71,6 +71,7 @@ const Router =async(countries)=>{
                 $root.appendChild(await CountriesSkill(countries))
                 document.querySelector('body').style.background = 'hsl(0, 0%, 98%)'
                 $root.removeChild($loader)
+                DarkModeCountriesStorage()
             break;
         
             default:

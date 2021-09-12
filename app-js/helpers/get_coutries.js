@@ -165,7 +165,7 @@ export const ACountry = async(name)=>{
             if(el.borders.length > 0){
                 el.borders.forEach((el)=>{
                     const $borderItem = document.createElement('li')
-                    $borderItem.classList.add('a-country__data__item')
+                    $borderItem.classList.add('a-country__data__item','a-country__data__item__borders')
                     $borderItem.textContent = el
                     $ACountryBorders.appendChild($borderItem)
                     $ACountryDataTwo.appendChild($ACountryBorders)
