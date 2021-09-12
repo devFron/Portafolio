@@ -1,9 +1,11 @@
 import { DarkModeToggle, DarkModeSave } from "./app-js/helpers/dark-mode.js";
+import { ACountry } from "./app-js/helpers/get_coutries.js";
 import App from "./App.js";
 let countries = {
     See:'all',
     by:null
 }
+let $countryClickBox = document.createElement('section')
 document.addEventListener('DOMContentLoaded',async(e)=>{
     await App(countries)
     DarkModeSave()
@@ -12,7 +14,7 @@ window.addEventListener('hashchange',async(e)=> {
     await App(countries)
     DarkModeSave()
 })
-document.addEventListener('click',(e)=>{
+document.addEventListener('click',async(e)=>{
     if(e.target.matches('.dark-mode__circle')||e.target.matches('.dark-mode__icon')){
         DarkModeToggle()
         if(document.querySelector('body').classList.contains('body-dark')){
@@ -43,6 +45,17 @@ document.addEventListener('click',(e)=>{
                 by:document.querySelector('.search-country__input').value.toLowerCase()
             })
         }   
+    }
+    if(e.target.matches('.country-click')){
+        $countryClickBox.innerHTML = ''
+        $countryClickBox.appendChild(await ACountry(e.target.dataset.id))
+        document.querySelector('.countries').appendChild($countryClickBox)
+        if(document.querySelector('.a-country').classList.contains('a-country__enabled')){
+            document.querySelector('.a-country').classList.remove('a-country__enabled')
+        }
+    }
+    if(e.target.matches('.a-country__button')){
+        document.querySelector('.a-country').classList.add('a-country__enabled')
     }
 })
 document.addEventListener('keydown',(e)=>{
