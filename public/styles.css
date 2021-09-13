@@ -2186,3 +2186,109 @@ header .dark-mode-dark {
 .text-countries-dark {
   color: white;
 }
+
+@media screen and (min-width: 300px) {
+  .header__country {
+    padding: 1rem 0;
+  }
+  .header__country .country__title {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 500px) {
+  .header__country .country__title {
+    font-size: 20px;
+  }
+
+  .countries__country {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .country__search {
+    display: flex;
+    justify-content: space-between;
+  }
+  .country__search .filter-country {
+    padding: 0;
+    margin: 0 0 0 1rem;
+    width: 185px;
+  }
+  .country__search .country__search__a {
+    padding: 1rem;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .header__country {
+    justify-content: space-between;
+    padding: 1rem;
+  }
+
+  .countries__country {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .countries__country .country__image {
+    height: 145px;
+  }
+
+  .a-country {
+    padding: 4rem 1rem 1rem 1rem;
+    display: grid;
+    grid-template-columns: 450px 1fr 1fr;
+    grid-template-rows: 40px 150px 1fr;
+    column-gap: 20px;
+  }
+  .a-country::-webkit-scrollbar {
+    height: 0;
+    display: none;
+  }
+  .a-country::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 4px;
+  }
+  .a-country .a-country__button {
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+  }
+  .a-country .a-country__image {
+    grid-row: 1/4;
+    grid-column: 1/2;
+    height: 100%;
+  }
+  .a-country .a-country__name {
+    grid-column: 2/4;
+    text-align: center;
+    margin: 0;
+  }
+  .a-country .a-country__data__box {
+    display: flex;
+    justify-content: center;
+    grid-column: 2/4;
+  }
+  .a-country .a-country__border__box {
+    grid-column: 2/4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .a-country .a-country__border__box .a-country__border__title {
+    padding: 0 1rem 0 0;
+  }
+  .a-country .a-country__border__box .a-country__border__borders {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+  }
+
+  .a-country__enabled {
+    display: none;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .countries__country {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .a-country__enabled {
+    display: none;
+  }
+}
