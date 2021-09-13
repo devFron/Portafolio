@@ -32,6 +32,12 @@
             "image":"public/skills-images/rest-countries-preview.jpg",
             "link":"#/skill/rest-countries",
             "title": "Rest Countries"
+        },
+        {
+            "id":4,
+            "image":"public/skills-images/bookmark-preview.jpg",
+            "link":"#/skill/bookmark",
+            "title": "Bookmark landing page"
         }
     ]
 }
