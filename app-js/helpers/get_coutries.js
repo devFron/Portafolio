@@ -52,23 +52,24 @@ const GetCountries = async(countries)=>{
     let searchBy = ''
 
     if(See === 'all' || by === 'all'){
-        searchBy = 'https://restcountries.eu/rest/v2/all'
+        searchBy = 'https://restcountries.com/v3.1/all'
     }else if(See ==='name'){
-        searchBy = `https://restcountries.eu/rest/v2/name/${by}`
+        searchBy = `https://restcountries.com/v3.1/name/${by.toLowerCase().replace(/ /g, "-")}`
     }else if(See === 'region'){
-        searchBy = `https://restcountries.eu/rest/v2/region/${by}`
+        searchBy = `https://restcountries.com/v3.1/region/${by}`
     }
 
     try {
         let res = await fetch(searchBy)
         if(!res.ok)throw res.status
         let json = await res.json()
+        console.log(json)
         json.forEach(el => {
             $CountriesCountry.appendChild(
                 Countri({
                     id:el.alpha2Code,
-                    img:el.flag,
-                    name:el.name,
+                    img:el.flags.svg,
+                    name:el.name.common,
                     data:{
                         Population:el.population,
                         Region:el.region,
@@ -112,15 +113,15 @@ export const ACountry = async(name)=>{
     
     $ACountryButton.innerHTML = `<i class="fas fa-arrow-left"></i> Back`
     try {
-        let res = await fetch(`https://restcountries.eu/rest/v2/name/${name}`)
+        let res = await fetch(`https://restcountries.com/v3.1/name/${name}`)
         if(!res.ok) throw res.status
         let json = await res.json()
         json.forEach((el)=>{
-            $ACountryName.textContent = el.name
-            $ACountryImage.src = el.flag
+            $ACountryName.textContent = el.name.common
+            $ACountryImage.src = el.flags.svg
             $ACountryImage.alt = `Flag from ${el.name}`
             const dataOne = {
-                Native_Name:el.nativeName ? el.nativeName : ' ',
+                Native_Name:el.name.official ? el.name.official : ' ',
                 Population:el.population ? el.population : ' ',
                 Region:el.region ? el.region : ' ',
                 Sub_Region:el.subregion ? el.subregion : ' ' 
@@ -139,13 +140,13 @@ export const ACountry = async(name)=>{
             }
 
             const currenciesAll = []
-            el.currencies.forEach((el)=>{currenciesAll.push(el.name)}) 
+            Object.keys(el.currencies).forEach((currencyName)=>{currenciesAll.push(el.currencies[currencyName].name)}) 
 
             const lenguagesAll = []
-            el.languages.forEach((el)=>{lenguagesAll.push(el.name)}) 
+            Object.keys(el.languages).forEach((languageName)=>{lenguagesAll.push(el.languages[languageName])}) 
 
             const dataTwo = {
-                Top_Level_Domain:el.topLevelDomain.join(),
+                timezones:el.timezones.join(),
                 currencies:currenciesAll.join(),
                 Languages:lenguagesAll.join()
             }
@@ -162,7 +163,7 @@ export const ACountry = async(name)=>{
                 $ACountryDataTwo.appendChild($ACountryDataTwoItem) 
             }
             
-            if(el.borders.length > 0){
+            if('borders' in el && el.borders.length > 0){
                 el.borders.forEach((el)=>{
                     const $borderItem = document.createElement('li')
                     $borderItem.classList.add('a-country__data__item','a-country__data__item__borders')
@@ -175,7 +176,7 @@ export const ACountry = async(name)=>{
             }
         })
     } catch (err) {
-        alert(`Error ${err}`)
+        console.log(`Error ${err}`)
     }
 
     $ACountry.appendChild($ACountryButton)
