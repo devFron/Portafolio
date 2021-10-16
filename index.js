@@ -69,7 +69,7 @@ document.addEventListener('click',async(e)=>{
         document.querySelector('.a-country').classList.add('a-country__enabled')
     }
     // DarkModeCountries
-    if(e.target.matches('.dark-mode__icon-country')){
+    if(e.target.matches('.dark-mode__icon-country')||e.target.matches('.dark-mode__box > *')){
         DarkModeCountries()
     }
 
