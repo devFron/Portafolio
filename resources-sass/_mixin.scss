@@ -1339,3 +1339,9 @@ $White:hsl(0, 0%, 100%);
     }
   }
 }
+@mixin Bookmark-skill{
+  $soft-blue:hsl(231, 69%, 60%);
+  $soft-red:hsl(0, 96%, 68%);
+  $grayish-blue:hsl(229, 8%, 60%);
+  $dark-blue:hsl(229, 31%, 21%);
+}
