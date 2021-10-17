@@ -1,6 +1,7 @@
 import { DarkModeCountries } from "./app-js/components/Countries_rest.js";
 import { DarkModeToggle, DarkModeSave } from "./app-js/helpers/dark-mode.js";
 import { ACountry } from "./app-js/helpers/get_coutries.js";
+import { ChangeViewBookmark } from "./app-js/components/Bookmark.js";
 import App from "./App.js";
 let countries = {
     See:'all',
@@ -83,6 +84,15 @@ document.addEventListener('click',async(e)=>{
     if(e.target.matches('.arrow-question')){
         e.target.parentElement.parentElement.querySelector('.question__item__description').classList.toggle('question__item__description-active')
         e.target.classList.toggle('arro-active-question')
+    }
+    if(e.target.matches('.features__menu__item')){
+        document.querySelectorAll('.features__menu__father').forEach(el=>el.classList.remove('features__item__active'))
+        e.target.parentElement.classList.add('features__item__active')
+        ChangeViewBookmark({
+            img:e.target.dataset.img,
+            title:e.target.dataset.title,
+            description:e.target.dataset.description,
+        })
     }
 })
 document.addEventListener('keydown',(e)=>{
