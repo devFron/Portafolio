@@ -305,3 +305,11 @@ const BookmarkSkill =()=>{
     return BookMark   
 }
 export default BookmarkSkill
+export const ChangeViewBookmark = ({img,title,description})=>{
+    const $Image = document.querySelector('.feautres__change__image')
+    const $Title = document.querySelector('.feautres__change__title')
+    const $Description = document.querySelector('.feautres__change__description')
+    $Image.src = img
+    $Title.textContent = title
+    $Description.textContent = description
+}
