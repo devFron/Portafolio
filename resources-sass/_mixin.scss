@@ -1344,4 +1344,70 @@ $White:hsl(0, 0%, 100%);
   $soft-red:hsl(0, 96%, 68%);
   $grayish-blue:hsl(229, 8%, 60%);
   $dark-blue:hsl(229, 31%, 21%);
+  .header__bookmark{
+    position:static;
+    padding:0;
+    background:transparent;
+    border-radius: 0;
+    display: flex;
+    justify-content: space-between;
+    padding:1rem;
+    align-items: center;
+    .header__bookmar__menu{
+      z-index:800;
+      position:fixed;
+      background:hsla(229, 31%, 21%, 0.904);
+      left:0;
+      right:0;
+      top:0;
+      bottom:0;
+      color:#fff;
+      display: flex;
+      flex-direction:column;
+      justify-content: center;
+      margin:0;
+      padding:0;
+      padding:0 1rem ;
+      display: none;
+      li{
+        display: flex;
+        justify-content: center;
+        border-top:1px solid $grayish-blue;
+        p{
+          cursor:pointer;
+          font-weight: 700;
+        }
+        &:nth-last-child(2){
+          p{
+            width: 100%;
+            padding:1rem 0;
+            display: flex;
+            justify-content: center;
+            border:2px solid white;
+            border-radius:10px;
+            cursor:pointer;
+          }
+        }
+      }
+    }
+    .header__bookmar__menu__active{
+      display: flex;
+    }
+    i{
+      font-size:25px;
+      cursor:pointer;
+    }
+    .menu-bookmark-icon__enabled{
+      display: none;
+    }
+    .menu-bookmark-icon-close{
+      position:absolute;
+      top:1rem;
+      right: 1rem;
+    }
+    img{
+      display: block;
+      z-index:999;
+    }
+  }
 }
