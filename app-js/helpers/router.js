@@ -8,6 +8,7 @@ import FyloSkill from '../components/Fylo.js'
 import FyloDark from '../components/Fylo_dark.js'
 import CountriesSkill, { DarkModeCountriesStorage } from '../components/Countries_rest.js'
 import Loader from '../components/loader.js'
+import BookmarkSkill from '../components/Bookmark.js'
 const Router =async(countries)=>{
     let {hash} = location
     let title = document.querySelector('title')
@@ -73,7 +74,10 @@ const Router =async(countries)=>{
                 $root.removeChild($loader)
                 DarkModeCountriesStorage()
             break;
-        
+            case '#/skill/bookmark':
+                $root.appendChild(BookmarkSkill())
+                document.querySelector('body').style.background = 'white'
+            break;
             default:
             break;
         }
