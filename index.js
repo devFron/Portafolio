@@ -76,7 +76,10 @@ document.addEventListener('click',async(e)=>{
         e.target.classList.toggle('menu-bookmark-icon__enabled')
         document.querySelector('.header__bookmar__menu').classList.toggle('header__bookmar__menu__active')
     }
-
+    if(e.target.matches('.menu-bookmark-icon-close')){
+        document.querySelector('.menu-bookmark-icon').classList.toggle('menu-bookmark-icon__enabled')
+        document.querySelector('.header__bookmar__menu').classList.toggle('header__bookmar__menu__active')
+    }
 })
 document.addEventListener('keydown',(e)=>{
     if(e.target.matches('.search-country__input')&&e.key ==='Enter'){
