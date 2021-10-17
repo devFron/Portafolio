@@ -72,6 +72,10 @@ document.addEventListener('click',async(e)=>{
     if(e.target.matches('.dark-mode__icon-country')||e.target.matches('.dark-mode__box > *')){
         DarkModeCountries()
     }
+    if(e.target.matches('.menu-bookmark-icon')){
+        e.target.classList.toggle('menu-bookmark-icon__enabled')
+        document.querySelector('.header__bookmar__menu').classList.toggle('header__bookmar__menu__active')
+    }
 
 })
 document.addEventListener('keydown',(e)=>{
