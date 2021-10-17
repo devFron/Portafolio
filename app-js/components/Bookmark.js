@@ -1,3 +1,4 @@
+import MenuSkill from "./Menu_skill.js"
 const BookmarkSkill =()=>{
     const BookMark = document.createElement('section')
     const $Header = document.createElement('header')
@@ -302,6 +303,7 @@ const BookmarkSkill =()=>{
     $Info.appendChild($InfoMenu)
     $Footer.appendChild($Info)
     BookMark.appendChild($Footer)
+    BookMark.appendChild(MenuSkill('https://www.frontendmentor.io/challenges/bookmark-landing-page-5d0b588a9edda32581d29158'))
     return BookMark   
 }
 export default BookmarkSkill
