@@ -80,6 +80,10 @@ document.addEventListener('click',async(e)=>{
         document.querySelector('.menu-bookmark-icon').classList.toggle('menu-bookmark-icon__enabled')
         document.querySelector('.header__bookmar__menu').classList.toggle('header__bookmar__menu__active')
     }
+    if(e.target.matches('.arrow-question')){
+        e.target.parentElement.parentElement.querySelector('.question__item__description').classList.toggle('question__item__description-active')
+        e.target.classList.toggle('arro-active-question')
+    }
 })
 document.addEventListener('keydown',(e)=>{
     if(e.target.matches('.search-country__input')&&e.key ==='Enter'){
