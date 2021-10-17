@@ -1410,4 +1410,57 @@ $White:hsl(0, 0%, 100%);
       z-index:999;
     }
   }
+  .manager__bookmark{
+    padding:1rem ;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    img{
+      width: 100%;
+    }
+    .manager__bookmark__title{
+      color:$dark-blue;
+      font-size:20px;
+      text-align: center;
+      font-weight: 700;
+    }
+    .manager__bookmark__description{
+      text-align: center;
+      color:$grayish-blue;
+      line-height: 25px;
+    }
+    .manager__bookmark__box__buttons{
+      display: flex;
+      justify-content: space-between;
+    }
+    button{
+      background:transparent;
+      border:none;
+      padding:10px 0;
+      font-weight: 700;
+      border-radius:5px;
+      padding:1rem;
+    }
+    button:first-child{
+      margin:0 1rem 0 0 ;
+      background:$soft-blue;
+      color:#fff;
+      &:hover{
+        background: transparent;
+        border:2px solid $soft-blue;
+        color:$soft-blue;
+      }
+    }
+    button:last-child{
+      margin:0 1rem 0 0 ;
+      background:#eeee;
+      box-shadow:0 5px 10px hsl(229, 50%, 80%);
+      &:hover{
+        background: transparent;
+        border:2px solid #000;
+        color:#000;
+      }
+    }
+  }
 }
