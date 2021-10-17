@@ -1543,4 +1543,46 @@ $White:hsl(0, 0%, 100%);
       }
     }
   }
+  .download__bookmark{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:0 1rem;
+    .download__item{
+      padding:3rem 0 1rem 0;
+      border-radius:10px;
+      box-shadow:0 0 15px hsl(229, 50%, 80%);
+      margin:2rem 0 0 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .download__item__title{
+        margin:2rem 0 0 0;
+        font-size:20px;
+        font-weight: 700;
+      }
+      .download__item__version{
+        color:$grayish-blue
+      }
+      .download__item__button{
+        background:$soft-blue;
+        color:white;
+        font-weight: 700;
+        border:none;
+        padding:1rem;
+        border-radius:10px;
+        &:hover{
+          background:transparent;
+          border:2px solid $soft-blue;
+          color:$soft-blue;
+        }
+      }
+      .download__item__line{
+        width: 100%;
+        margin:1rem 0;
+      }
+    }
+  }
 }
