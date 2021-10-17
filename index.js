@@ -93,3 +93,8 @@ document.addEventListener('keydown',(e)=>{
         })
     }
 })
+document.addEventListener('submit',(e)=>{
+    if(e.target.matches('.footer__bookmark__formulario > form')){
+        e.preventDefault()
+    }
+})
