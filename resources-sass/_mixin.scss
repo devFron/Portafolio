@@ -1806,4 +1806,57 @@ $White:hsl(0, 0%, 100%);
       }
     }
   }
+  @media screen and(min-width:700px){
+    .header__bookmark{
+      .header__bookmar__menu{
+        background:transparent;
+        display:flex;
+        position: static;
+        flex-direction: row;
+        align-items: center;
+        li{
+          border:none;
+          padding:0 1rem;
+          p{
+            color:#000;
+          }
+          &:nth-last-child(2){
+            p{
+              color:#fff;
+              padding:1rem;
+              background:$soft-red;
+              border:none;
+              &:hover{
+                color:#000;
+                box-sizing: border-box;
+                background:transparent;
+                border:2px solid $soft-red;
+              }
+            }
+          }
+        }
+      }
+      .menu-bookmark-icon,.menu-bookmark-icon-close{
+        display: none;
+      }
+    }
+    .download__bookmark{
+      grid-template-columns: repeat(3,1fr);
+      margin:0;
+      .download__item{
+        &:first-child{
+          margin:0;
+        }
+        &:nth-child(2){
+          margin:7rem 0 0 0 ;
+        }
+        &:last-child{
+          margin:15rem 0 0 0 ;
+        }
+        .download__item__button{
+          padding:13px 5px ;
+        }
+      }
+    }
+  }
 }
