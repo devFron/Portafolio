@@ -92,6 +92,13 @@ document.addEventListener('keydown',(e)=>{
             by:e.target.value.toLowerCase()
         })
     }
+    if(e.target.matches('.footer__bookmark__input')){
+        if(/^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$/.test(e.target.value)){
+            document.querySelector('.footer__bookmark__message').classList.remove('footer__input__error')
+        }else{
+            document.querySelector('.footer__bookmark__message').classList.add('footer__input__error')
+        }
+    }
 })
 document.addEventListener('submit',(e)=>{
     if(e.target.matches('.footer__bookmark__formulario > form')){
