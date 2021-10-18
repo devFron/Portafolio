@@ -47,18 +47,22 @@ export const DarkModeToggle =()=>{
 export const DarkModeSave = ()=>{
 
     let {hash}=location
-
-    if(localStorage.getItem('devfron-dark-mode')==='true'){
-        document.querySelector('header').classList.add('background-item-dark')
-        document.querySelectorAll('.menu__link').forEach(item=>item.classList.add('font-dark'))
-        document.querySelector('.dakr-mode').classList.add('dark-mode-dark')
-        document.querySelector('body').classList.add('body-dark')   
-    }else{
-        document.querySelector('header').classList.remove('background-item-dark')
-        document.querySelectorAll('.menu__link').forEach(item=>item.classList.remove('font-dark'))
-        document.querySelector('.dakr-mode').classList.remove('dark-mode-dark')
-        document.querySelector('body').classList.remove('body-dark')   
+    if(location.href.indexOf('#/skill/') === -1){
+        if(localStorage.getItem('devfron-dark-mode')==='true'){
+            document.querySelector('header').classList.add('background-item-dark')
+            document.querySelectorAll('.menu__link').forEach(item=>item.classList.add('font-dark'))
+            document.querySelector('.dakr-mode').classList.add('dark-mode-dark')
+            document.querySelector('body').classList.add('body-dark')   
+            document.querySelector('.dark-mode__circle').classList.add('dark-mode__circle__active')
+        }else{
+            document.querySelector('header').classList.remove('background-item-dark')
+            document.querySelectorAll('.menu__link').forEach(item=>item.classList.remove('font-dark'))
+            document.querySelector('.dakr-mode').classList.remove('dark-mode-dark')
+            document.querySelector('body').classList.remove('body-dark')   
+            document.querySelector('.dark-mode__circle').classList.remove('dark-mode__circle__active')
+        }
     }
+   
 
     if(hash === '' || hash ==='#/inicio'){
         if(localStorage.getItem('devfron-dark-mode')==='true'){
