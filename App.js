@@ -1,26 +1,15 @@
 import Loader from './app-js/components/loader.js';
-import Header from './app-js/components/header.js'
 import Router from './app-js/helpers/router.js'
 const App =async(countires)=>{
-
     const $root = document.getElementById('root')
     $root.innerHTML = ''
-    const $Fragment = document.createDocumentFragment()
-    const $mainHome = document.createElement('section')
-    
-
-    $mainHome.classList.add('main__box')
-
-    $root.appendChild(Loader())
-    if(location.href.indexOf('#/skill/') !== -1){
-        await Router(countires)
-        document.querySelector('.loader-box').classList.add('loader-enabled')
-    }else{
-        $Fragment.appendChild(Header())
-        $Fragment.appendChild($mainHome)
-        $root.appendChild($Fragment)
-        await Router()
-        document.querySelector('.loader-box').classList.add('loader-enabled')
-    } 
+    const $DynamicContent = document.createElement('section')
+    const $Loader = document.createElement('div')
+    $DynamicContent.id ='dynamic-content'
+    $Loader.appendChild(Loader())
+    $root.appendChild($DynamicContent)
+    $root.appendChild($Loader)
+    await Router(countires)
+    if(location.href.indexOf('#/skill/') === -1) $root.removeChild($Loader)
 }
 export default App
