@@ -1,3 +1,4 @@
+import Header from '../components/header.js'
 import PresentationCard from '../components/presentation_card.js'
 import GetProyects from './get_proyects.js'
 import Cv from '../components/cv.js'
@@ -10,53 +11,17 @@ import CountriesSkill, { DarkModeCountriesStorage } from '../components/Countrie
 import Loader from '../components/loader.js'
 import BookmarkSkill from '../components/Bookmark.js'
 const Router =async(countries)=>{
-    let {hash} = location
+    let {hash,href} = location
     let title = document.querySelector('title')
-    const $mainHome = document.querySelector('.main__box')
     const $root = document.getElementById('root')
-    console.log(hash)
-    if(hash.indexOf('#/skill/')!== -1){
+    const $DynamicContent = document.getElementById('dynamic-content')
+    if(href.indexOf('#/skill/') !== -1){
         $root.innerHTML = ''
-    }else{
-        $mainHome.innerHTML = ''
-    }
-
-    if(hash === '#/inicio' || hash === ''){
-        const $sectionHome = document.createElement('section')
-        const $ProyectsBox = document.createElement('section')
-        const $SkillsBox = document.createElement('section')
-
-        $sectionHome.classList.add('section__home')
-
-        $sectionHome.appendChild(PresentationCard())
-        $ProyectsBox.appendChild(GetProyects().Proyects)
-        $SkillsBox.appendChild(GetProyects().Skills)
-        $sectionHome.appendChild($ProyectsBox)
-        $sectionHome.appendChild($SkillsBox)
-        $mainHome.appendChild($sectionHome)
-        title.textContent = 'Inicio'
-    }else{
         switch (hash) {
-            case '#/cv':
-                $mainHome.appendChild(Cv())
-                title.textContent = 'CV'
-            break;
-
-            case '#/sobre':
-                $mainHome.appendChild(About())
-                title.textContent = 'Sobre'
-            break;
-
-            case '#/blog':
-                await $mainHome.appendChild(await BlogBox())
-                title.textContent = 'Blog'
-            break;
-
             case '#/skill/hunddle':
                 $root.appendChild(HunddleSkill())
                 document.querySelector('body').style.background = 'white'
             break;
-
             case '#/skill/fylo':
                 $root.appendChild(FyloSkill())
                 document.querySelector('body').style.background = 'white'
@@ -66,25 +31,54 @@ const Router =async(countries)=>{
                 document.querySelector('body').style.background = 'white'
             break;
             case '#/skill/rest-countries':
-                const $loader = document.createElement('section')
-                $loader.appendChild(Loader())
-                $root.appendChild($loader)
                 $root.appendChild(await CountriesSkill(countries))
                 document.querySelector('body').style.background = 'hsl(0, 0%, 98%)'
-                $root.removeChild($loader)
                 DarkModeCountriesStorage()
             break;
             case '#/skill/bookmark':
                 $root.appendChild(BookmarkSkill())
                 document.querySelector('body').style.background = 'white'
+            break; 
+        
+            default:
+            break;        
+        }
+    }else{
+        $root.insertAdjacentElement('afterbegin',Header())
+        $DynamicContent.innerHTML = ''
+
+        if(hash === '#/inicio' || hash === ''){
+            const $sectionHome = document.createElement('section')
+            const $ProyectsBox = document.createElement('section')
+            const $SkillsBox = document.createElement('section')
+            $sectionHome.classList.add('section__home')
+            $sectionHome.appendChild(PresentationCard())
+            $ProyectsBox.appendChild(GetProyects().Proyects)
+            $SkillsBox.appendChild(GetProyects().Skills)
+            $sectionHome.appendChild($ProyectsBox)
+            $sectionHome.appendChild($SkillsBox)
+            $DynamicContent.appendChild($sectionHome)
+            title.textContent = 'Inicio'
+        }
+        switch (hash) {
+            case '#/cv':
+                $DynamicContent.appendChild(Cv())
+                title.textContent = 'CV'
             break;
+
+            case '#/sobre':
+                $DynamicContent.appendChild(About())
+                title.textContent = 'Sobre'
+            break;
+
+            case '#/blog':
+                await $DynamicContent.appendChild(await BlogBox())
+                title.textContent = 'Blog'
+            break;
+        
             default:
             break;
         }
     }
-
-    
-
-
 }
 export default Router
