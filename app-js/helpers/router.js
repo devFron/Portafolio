@@ -20,24 +20,24 @@ const Router =async(countries)=>{
         switch (hash) {
             case '#/skill/hunddle':
                 $root.appendChild(HunddleSkill())
-                document.querySelector('body').style.background = 'white'
+                document.querySelector('.hunddle__box').style.background = 'white'
             break;
             case '#/skill/fylo':
                 $root.appendChild(FyloSkill())
-                document.querySelector('body').style.background = 'white'
+                document.querySelector('.fylo').style.background = 'white'
             break;
             case '#/skill/fylo-dark-theme':
                 $root.appendChild(FyloDark())
-                document.querySelector('body').style.background = 'white'
+                document.querySelector('.fylo-dark').style.background = 'white'
             break;
             case '#/skill/rest-countries':
                 $root.appendChild(await CountriesSkill(countries))
-                document.querySelector('body').style.background = 'hsl(0, 0%, 98%)'
+                document.querySelector('.countries').style.background = 'hsl(0, 0%, 98%)'
                 DarkModeCountriesStorage()
             break;
             case '#/skill/bookmark':
                 $root.appendChild(BookmarkSkill())
-                document.querySelector('body').style.background = 'white'
+                document.querySelector('.bookmark-box').style.background = 'white'
             break; 
         
             default:

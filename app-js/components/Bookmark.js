@@ -223,6 +223,7 @@ const BookmarkSkill =()=>{
     $FormularioFormButton.textContent = 'Contact Us'
     $InfoImage.src ='public/resources-skills/bookmark/logo-bookmark.svg' 
 
+    BookMark.classList.add('bookmark-box')
     $Header.classList.add('header__bookmark')
     $HeaderLogo.classList.add('header__bookmar__logo')
     $HeaderMenu.classList.add('header__bookmar__menu')

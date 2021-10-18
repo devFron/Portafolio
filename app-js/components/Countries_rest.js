@@ -48,9 +48,9 @@ export default CountriesSkill
 export const DarkModeCountries =()=>{
     document.querySelector('body').classList.toggle('box-countries-dark')
     if(document.querySelector('body').classList.contains('box-countries-dark')){
-        document.querySelector('body').style.background='hsl(207, 26%, 17%)'
+        document.querySelector('.countries').style.background='hsl(207, 26%, 17%)'
     }else{
-        document.querySelector('body').style.background='rgb(250, 250, 250)'
+        document.querySelector('.countries').style.background='rgb(250, 250, 250)'
     }
     document.querySelector('.header__country').classList.toggle('box-countries-dark-countri')
     document.querySelector('.country__search__a').classList.toggle('box-countries-dark-countri')
@@ -73,7 +73,7 @@ export const DarkModeCountries =()=>{
 export const DarkModeCountriesStorage = ()=>{
     if(localStorage.getItem('devfron-skill-countries')==='true'){
         document.querySelector('body').classList.add('box-countries-dark')
-        document.querySelector('body').style.background='hsl(207, 26%, 17%)'
+        document.querySelector('.countries').style.background='hsl(207, 26%, 17%)'
         document.querySelector('.header__country').classList.add('box-countries-dark-countri')
         document.querySelector('.country__search__a').classList.add('box-countries-dark-countri')
         document.querySelector('.filter-country__box').classList.add('box-countries-dark-countri')
@@ -88,7 +88,7 @@ export const DarkModeCountriesStorage = ()=>{
         }
     }else{
         document.querySelector('body').classList.remove('box-countries-dark')
-        document.querySelector('body').style.background='rgb(250, 250, 250)'
+        document.querySelector('.countries').style.background='rgb(250, 250, 250)'
         document.querySelector('.header__country').classList.remove('box-countries-dark-countri')
         document.querySelector('.country__search__a').classList.remove('box-countries-dark-countri')
         document.querySelector('.filter-country__box').classList.remove('box-countries-dark-countri')
